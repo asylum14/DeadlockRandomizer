@@ -1,0 +1,149 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	GlobalAssetBrowserContext = 
+	{
+		browser_geo = "AdnQywADAAD/////////+AAAB4AAAAQIAAABswAAAKYAAAXMAAADYQAAAAACAAAAB4AAAAAAAAAAFwAAB38AAAQH"
+		browser_state = "AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAA4AEEAcwBzAGUAdABCAHIAbwB3AHMAZQByAF8AVwBvAHIAawBpAG4AZwBTAGUAdABzAEQAbwBjAGsAAAAAAP////8AAAEsAP///wAAAAEAAAFeAAADl/wCAAAAAfsAAAAwAEEAcwBzAGUAdABCAHIAbwB3AHMAZQByAF8AUAByAGUAdgBpAGUAdwBEAG8AYwBrAQAAAEYAAAOXAAAArQD///8AAAYeAAADlwAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAABAAAAEABUAG8AbwBsAHMAQgBhAHIBAAAAAP////8AAAAAAAAAAA=="
+		preview_splitter = "AAAA/wAAAAEAAAACAAACWQAAASwA/////wEAAAACAA=="
+		browser_visible = true
+		browser_views = 
+		[
+			{
+				set_name = "All Assets"
+				user_tab_name = ""
+				view_mode_name = "Grid"
+				grid_icon_scale_name = "Medium"
+				hidden_types = 
+				{
+					"0" = "VData"
+					"1" = "VData Include"
+					"2" = "Particle System"
+					"3" = "Material"
+					"4" = "Compiled Texture"
+					"6" = "Sound"
+					"7" = "Surface Properties"
+					"8" = "Sound Event Script"
+					"9" = "Sound Stack Script"
+					"10" = "Postprocessing Settings"
+					"11" = "Panorama Style"
+					"12" = "Panorama Layout"
+					"13" = "Panorama Dynamic Images"
+					"14" = "JavaScript"
+					"15" = "Vector Graphic"
+					"16" = "Particle Snapshot"
+					"17" = "Lua Script"
+					"18" = "Sheetfile"
+					"19" = "ModelDoc Template"
+					"20" = "ModelDoc Prefab"
+					"21" = "Animation Graph"
+					"22" = "Animation Sub-Graph"
+					"23" = "Photoshop File"
+					"24" = "TGA File"
+					"25" = "TIF File"
+					"26" = "TIFF File"
+					"27" = "PFM File"
+					"28" = "EXR File"
+					"29" = "PNG File"
+					"30" = "JPG File"
+					"31" = "Map"
+					"32" = "Sub-Rectangle Definition"
+					"33" = "Panorama Movie (webm)"
+					"34" = "Composite Material Kit"
+					"35" = "Smart Prop"
+					"36" = "Response Rules"
+				}
+				mod_selection = 
+				{
+					selected_mods = 
+					{
+						citadel = true
+						core = true
+					}
+				}
+				tag_selection = 
+				{
+					require_all_include = false
+					include_all_tags = true
+					include_untagged = true
+					include = null
+					exclude = null
+				}
+				List = 
+				{
+					column_0_width = 100
+					column_1_width = 100
+					column_2_width = 100
+					column_3_width = 100
+				}
+				Grid = null
+				Tree = 
+				{
+					assettreeview_folders = 
+					{
+						expanded = [  ]
+						collapsed = [  ]
+						show_hierarchy = false
+						auto_expand = true
+					}
+					assettreeview_column_0_width = 350
+					assettreeview_column_1_width = 100
+					assettreeview_column_2_width = 100
+					assettreeview_column_3_width = 100
+					assettreeview_column_4_width = 39
+				}
+				filter_text = ""
+				active_view = true
+			},
+			{
+				set_name = "Most Recently Used Assets"
+				user_tab_name = ""
+				view_mode_name = "Grid"
+				grid_icon_scale_name = "Medium"
+				hidden_types = null
+				mod_selection = 
+				{
+					selected_mods = 
+					{
+						citadel = true
+						core = true
+					}
+				}
+				tag_selection = 
+				{
+					require_all_include = false
+					include_all_tags = true
+					include_untagged = true
+					include = null
+					exclude = null
+				}
+				List = 
+				{
+					column_0_width = 100
+					column_1_width = 100
+					column_2_width = 100
+					column_3_width = 100
+				}
+				Grid = null
+				Tree = 
+				{
+					assettreeview_folders = 
+					{
+						expanded = [  ]
+						collapsed = [  ]
+						show_hierarchy = false
+						auto_expand = true
+					}
+					assettreeview_column_0_width = 350
+					assettreeview_column_1_width = 100
+					assettreeview_column_2_width = 100
+					assettreeview_column_3_width = 100
+					assettreeview_column_4_width = 39
+				}
+				filter_text = ""
+			},
+		]
+	}
+	"options.m_bShowAllAssets" = false
+	"options.m_bShowRejectedAssets" = true
+	"options.m_bUsePerforceIntegration" = true
+}

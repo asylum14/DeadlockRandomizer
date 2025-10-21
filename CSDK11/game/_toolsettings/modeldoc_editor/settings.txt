@@ -1,0 +1,203 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	geometry = "AdnQywADAAAAAAAHAAAAAAAAB4gAAAREAAAACAAAAB8AAAeHAAAEQwAAAAAAAAAAB4AAAAAIAAAAHwAAB4cAAARD"
+	state = "AAAA/wAAAAH9AAAAAwAAAAAAAAI0AAACXvwCAAAAAfwAAABAAAACXgAAAGMA/////AEAAAAC+wAAACAATQBvAGQAZQBsAEQAbwBjAE8AdQB0AGwAaQBuAGUAcgEAAAAAAAABLAAAADUA/////AAAATAAAAEEAAAAewD////6AAAAAAEAAAAC+wAAACQATQBvAGQAZQBsAEQAbwBjAE4AbwBkAGUARQBkAGkAdABvAHIBAAAAAP////8AAAA9AP////sAAAAmAE0AbwBkAGUAbABEAG8AYwBVAG4AZABvAEgAaQBzAHQAbwByAHkBAAAAAP////8AAAA1AP///wAAAAEAAAEEAAACXvwCAAAAAfsAAAAoAE0AbwBkAGUAbABQAHIAZQB2AGkAZQB3AE8AdQB0AGwAaQBuAGUAcgEAAABAAAACXgAAABsA////AAAAAwAAB4AAAAFe/AEAAAAC+wAAACAATQBvAGQAZQBsAEQAbwBjAFQAaQBtAGUAbABpAG4AZQEAAAAAAAADJwAAADUA/////AAAAysAAARVAAAAewD////6AAAAAAEAAAAH+wAAADYATQBvAGQAZQBsAEQAbwBjAFAAcgBlAHYAaQBlAHcAUwBlAHEAdQBlAG4AYwBlAEwAaQBzAHQBAAAAAP////8AAAA1AP////sAAAA2AE0AbwBkAGUAbABEAG8AYwBQAHIAZQB2AGkAZQB3AFMAZQBxAHUAZQBuAGMAZQBMAGkAcwB0AQAAAAD/////AAAANQD////7AAAAOABNAG8AZABlAGwARABvAGMAUAByAGUAdgBpAGUAdwBNAG8AcAByAGgARQB4AHAAbABvAHIAZQByAQAAAAD/////AAAANQD////7AAAAKgBNAG8AZABlAGwARABvAGMAQgBvAG4AZQBNAGUAcgBnAGUAVABvAG8AbAEAAAAA/////wAAADUA////+wAAACoATQBvAGQAZQBsAEQAbwBjAE4AbwBkAGUAVwBvAHIAawBzAGgAZQBlAHQBAAAAAP////8AAAA9AP////sAAAAsAE0AbwBkAGUAbABEAG8AYwBGAGkAbgBkAEEAbgBkAFIAZQBwAGwAYQBjAGUBAAAAAP////8AAAA9AP////sAAABQAE0AbwBkAGUAbABEAG8AYwBTAG8AdQBuAGQARQB2AGUAbgB0AFAAcgBlAHYAaQBlAHcAVABvAG8AbABfAEQAbwBjAGsAVwBpAGQAZwBlAHQBAAAAAP////8AAAA1AP///wAABEAAAAJeAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAABIAE0AbwBkAGUAbABEAG8AYwBFAGQAaQB0AG8AcgBTAGUAcwBzAGkAbwBuAFMAZQB0AHQAaQBuAGcAcwBUAG8AbwBsAGIAYQByAQAAAAD/////AAAAAAAAAAAAAAA4AE0AbwBkAGUAbABEAG8AYwBFAGQAaQB0AG8AcgBQAHIAZQB2AGkAZQB3AFQAbwBvAGwAYgBhAHIBAAABzP////8AAAAAAAAAAAAAAEAATQBvAGQAZQBsAEQAbwBjAEUAZABpAHQAbwByAEEAbgBpAG0AQwBhAHAAdAB1AHIAZQBUAG8AbwBsAGIAYQByAQAAA1b/////AAAAAAAAAAA="
+	floating = null
+	dockwidgetsvisibility = null
+	General = 
+	{
+		"Closed Correctly" = true
+		"Perforce Integration" = true
+		"Custom Changelist" = false
+		"Time Between Saves" = 15
+		"Max Autosave Space 2" = 2000
+		"Max Saves Per Map" = 5
+		"Load Autosave On Crash" = true
+		"Autosaves Enabled" = true
+	}
+	RecentFiles = 
+	{
+		"Filename 0" = "F:\\Program Files (x86)\\Steam\\steamapps\\common\\Deadlock\\CSDK11_TEST\\content\\core\\models\\editor\\env_cubemap.vmdl"
+		"ClosedCorrectly 0" = true
+		"Autosaved 0" = false
+		"DisplayInList 0" = true
+	}
+	NewFiles = null
+	BaseEditor = 
+	{
+		LastLoadDirectory = "F:\\Program Files (x86)\\Steam\\steamapps\\common\\Deadlock\\CSDK11_TEST\\content\\citadel\\models"
+		LastSaveDirectory = "F:\\Program Files (x86)\\Steam\\steamapps\\common\\Deadlock\\CSDK11_TEST\\content\\citadel\\models"
+	}
+	EditorSettings = 
+	{
+		GroundPlane = 
+		{
+			drawGroundAndAxis = true
+			groundPlaneEnabled = true
+			groundPlaneWireframe = false
+			treadmillEnabled = true
+			initialOffsetEnabled = true
+			axisOriginEnabled = true
+			groundSize = 200.0
+			groundGridScale = 10.0
+			groundHeight = 0.0
+			axisOriginSize = 10.0
+		}
+		Selection = null
+		Animation = 
+		{
+			showAbsoluteFrameNumbers = false
+			showAnimationHUD = false
+			previewAnimationEvents = true
+			limitPlayback = true
+		}
+		Rendering = 
+		{
+			renderWireframe = false
+			drawShadows = true
+			drawSkybox = true
+			smoothToolCamera = false
+			showFPS = false
+			showRenderingInfo = false
+			showPhysicsInfo = false
+			showNormals = false
+			showBentNormals = false
+			showTangents = false
+			normalSize = 1.0
+			wireframeBackfaces = false
+			wireframeColor = [ 0, 255, 0 ]
+			lightRig = "Dust2 Basic + Headlight"
+			toolsVisMode = ""
+			tonemappingMode = 0
+			tonemappingScale = 0.0
+			cameraFOV = 60
+			showModelConfig = true
+			showAllAttachments = false
+			showAllHitboxes = false
+			showAllConstraints = false
+			showAllJiggleBones = false
+			showAllClothShapes = false
+			showAllPhysicsJoints = false
+			showAllPhysicsShapes = false
+			physicsHighlightSilhouette = false
+			physicsHideSourceMesh = false
+		}
+		Skeleton = 
+		{
+			showSkeleton = false
+			showBoneLines = true
+			showBoneNames = false
+			showBonePositionsLabels = false
+			showBoneOrientationLabels = false
+			boneLabelsParentSpace = false
+			showBoneEnds = false
+			showAxisOnAllBones = false
+			showClothBones = false
+			boneAxisSize = 1.0
+			boneEndSize = 0.3
+		}
+		Cloth = 
+		{
+			physicsSelfCollision = false
+			showCloth = false
+			showSimulatedCloth = false
+			simulatedClothColorRenderChannel = 0
+			showParticleCollisionSpheres = true
+			showParticleStrayRadii = false
+			showGoalCloth = false
+			showTrajectoryTrails = false
+			showClothBendConstraints = false
+			showClothWireframe = false
+			clothXRay = 0.0
+			clothPressureForceScale = 0.0
+			clothGoalTween = 0.0
+			showClothNormals = false
+			showClothVolumetricElements = false
+			resetSimOnLoop = false
+			simulateClothDuringPause = false
+			clothHideRenderTriangles = false
+			clothColor = 4292664520
+			clothCollider0Color = 4283469030
+			clothCollider1Color = 4280837290
+			clothIgnoreTreadmill = false
+			clothGroundCollision = false
+			clothWobblePreview = false
+			clothPreviewRealtimeUpdate = false
+			clothChainUi = null
+		}
+		Export = 
+		{
+			exportUseCurrentPose = true
+			exportMaterials = true
+			exportEmbedTextures = true
+			exportUnit = 0
+			exportCustomScale = 1.0
+			exportBinary = true
+			exportNameFilter = ""
+			exportLastDir = ""
+		}
+		Behavior = 
+		{
+			autoRecompileOnExternalChange = false
+			autoPropertyEditorLabelColumnSize = false
+			showModelModifierWarnings = true
+			deltaAnimPreviewOverBindPose = true
+		}
+		Outliner = 
+		{
+			singletonOrder = 
+			[
+				"ModelContentDataList",
+				"ModelModifierList",
+				"ModelDataList",
+				"RenderMeshList",
+				"BodyGroupList",
+				"LODGroupList",
+				"MaterialGroupList",
+				"Skeleton",
+				"BoneMarkupList",
+				"AttachmentList",
+				"HitboxSetList",
+				"PhysicsShapeList",
+				"PhysicsJointList",
+				"PhysicsBodyMarkupList",
+				"ClothShapeList",
+				"ClothProxyMeshList",
+				"Softbody",
+				"JiggleBoneList",
+				"BreakPieceList",
+				"AnimationList",
+				"AnimConstraintList",
+				"IKData",
+				"PoseParamList",
+				"WeightListList",
+				"MorphControlList",
+				"MorphRuleList",
+				"VSNAPList",
+				"SoundeventList",
+				"GameDataList",
+				"DynamicConfigList",
+				"SpawnConfig",
+				"PrefabList",
+				"ChildDocumentList",
+				"SelectionSetList",
+				"ScratchArea",
+				"ScaleSetList",
+			]
+			expandedTypes = 
+			[
+				"ModelContentDataList",
+				"ModelModifierList",
+				"ModelDataList",
+				"RenderMeshList",
+				"BodyGroupList",
+				"LODGroupList",
+				"MaterialGroupList",
+				"VSNAPList",
+				"DynamicConfigList",
+				"SpawnConfig",
+				"PrefabList",
+			]
+		}
+	}
+}

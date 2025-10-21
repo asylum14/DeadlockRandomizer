@@ -1,0 +1,98 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "pbr.vfx"
+
+	//---- PBR ----
+	F_SELF_ILLUM 1
+
+	//---- Texture Transforms ----
+	F_ENABLE_TEXTURE_TRANSFORMS 1
+
+	//---- Vertex Painting ----
+	F_PAINT_VERTEX_COLORS 1
+
+	//---- Color ----
+	g_bMaskColorTint1 "1"
+	g_bMaskVertexColorTint1 "1"
+	g_flAlbedoTexcoordRotation1 "0.000"
+	g_fVertexColorStrength1 "1.000"
+	g_nTextureColorTintMode1 "0" // Multiply
+	g_vAlbedoContrastSaturationBrightness1 "[1.000 1.000 1.000]"
+	g_vAlbedoScrollSpeed1 "[0.000 1.000]"
+	g_vAlbedoTexcoordOffset1 "[0.000 0.000]"
+	g_vAlbedoTexcoordScale1 "[1.000 1.000]"
+	g_vColorTint1 "[1.000000 1.000000 1.000000 0.000000]"
+	TextureColor1 "materials/signage/skybox_neon_02_color.png"
+	TextureTintMask1 "[0.000000 0.000000 0.000000 0.000000]"
+
+	//---- Metalness ----
+	TextureMetalness1 "materials/signage/skybox_neon_02_536e9844_metal.png"
+
+	//---- Normal and Roughness ----
+	g_flNormalTexcoordRotation1 "0.000"
+	g_vNormalAndRoughnessScrollSpeed1 "[0.000 0.000]"
+	g_vNormalTexcoordOffset1 "[0.000 0.000]"
+	g_vNormalTexcoordScale1 "[1.000 1.000]"
+	TextureNormal1 "materials/default/default_normal.tga"
+	TextureRoughness1 "materials/default/default_7be61377_rough.png"
+
+	//---- Occlusion ----
+	g_flDisplacementAmount1 "0.000"
+	g_flVertexAOAmount1 "1.000"
+	TextureAmbientOcclusion1 "materials/default/default_ao.tga"
+	TextureDisplacement1 "materials/signage/skybox_neon_02_vmat_g_ttintmaskdisplacement_85b8da6.png"
+
+	//---- Self Illum ----
+	g_flSelfIllumAlbedoFactor1 "1.000"
+	g_flSelfIllumScale1 "10.000"
+	g_flSelfIllumTexcoordRotation1 "0.000"
+	g_vSelfIllumScrollSpeed1 "[0.166 -0.005]"
+	g_vSelfIllumTexcoordOffset1 "[0.000 0.000]"
+	g_vSelfIllumTexcoordScale1 "[1.000 1.000]"
+	g_vSelfIllumTint1 "[1.000000 1.000000 1.000000 0.000000]"
+	TextureSelfIllumMask1 "materials/signage/skybox_neon_02_mask.png"
+
+	//---- Texture Coordinates ----
+	g_nScaleTexCoord2UByModelScaleAxis "0" // None
+	g_nScaleTexCoord2UByModelScaleOrigin "0" // Left
+	g_nScaleTexCoord2VByModelScaleAxis "0" // None
+	g_nScaleTexCoord2VByModelScaleOrigin "2" // Bottom
+	g_nScaleTexCoordUByModelScaleAxis "0" // None
+	g_nScaleTexCoordUByModelScaleOrigin "0" // Left
+	g_nScaleTexCoordVByModelScaleAxis "0" // None
+	g_nScaleTexCoordVByModelScaleOrigin "2" // Bottom
+
+	UnusedVariables
+	{
+		"g_flOverrideBloomAmount1" "4"
+	}
+
+
+	VariableState
+	{
+		"Color"
+		{
+			"Uvs" 0
+		}
+		"Metalness"
+		{
+		}
+		"Normal and Roughness"
+		{
+			"UVs" 0
+		}
+		"Occlusion"
+		{
+		}
+		"Self Illum"
+		{
+			"UVs" 0
+		}
+		"Texture Coordinates"
+		{
+			"Scale" 0
+		}
+	}
+}

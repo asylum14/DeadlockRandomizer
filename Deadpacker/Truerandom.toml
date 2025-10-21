@@ -1,0 +1,9 @@
+[[step]] 
+[step.compile] 
+resource_compiler_path = 'C:/Users/micha/Desktop/Randomizer/CSDK11/game/bin/win64/resourcecompiler.exe' 
+addon_content_directory = 'C:/Users/micha/Desktop/Randomizer/CSDK11/content/citadel_addons/TrueRandom' 
+[[step]] 
+[step.pack] 
+input_directory = 'C:/Users/micha/Desktop/Randomizer/CSDK11/game/citadel_addons/TrueRandom' 
+output_path = 'D:/SteamLibrary/steamapps/common/Deadlock/game/citadel/addons/pak01_dir.vpk' 
+exclude = ['cache_*.soc', 'tools_thumbnail_cache.bin'] 

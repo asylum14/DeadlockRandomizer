@@ -1,0 +1,705 @@
+"CitadelKeys"
+{
+	"Commands"
+	{
+		//=============================================================
+		//
+		// Default
+		//
+		//=============================================================
+		"Default"
+		{
+			"AbilityMelee"
+			{
+				"Action"		"+in_weapon1"
+			}
+
+			"Ability1"
+			{
+				"Action"		"+in_ability1"
+				"IsAlsoDeadBind" "1"
+			}
+
+			"Ability2"
+			{
+				"Action"		"+in_ability2"
+				"IsAlsoDeadBind" "1"
+			}
+			"Ability3"
+			{
+				"Action"		"+in_ability3"
+				"IsAlsoDeadBind" "1"
+			}
+			"Ability4"
+			{
+				"Action"		"+in_ability4"
+				"IsAlsoDeadBind" "1"
+			}
+			"Item1"
+			{
+				"Action"		"+in_item1"
+			}
+			"Item2"
+			{
+				"Action"		"+in_item2"
+			}
+			"Item3"
+			{
+				"Action"		"+in_item3"
+			}
+			"Item4"
+			{
+				"Action"		"+in_item4"
+			}
+			"Mantle"
+			{
+				"Action"		"+in_mantle"
+			}
+						
+			"Roll"
+			{
+				"Action"		"+in_innate1"
+			}
+			
+			"Crouch"
+			{
+				"Action"		"+duck"
+			}
+						
+			"Teleport"
+			{
+				"Action"		"+in_teleport"
+			}
+
+			"OpenHeroSheet"
+			{
+				"Action"		"citadel_open_hero_sheet"
+				"IsUnique" "1"
+				"IsAlsoSpectatorBind" "1"
+				"IsAlsoReplayBind" "1"
+			}
+			
+			"PushToTalk"
+			{
+				"Action"		"+voicerecord"
+				"IsAlsoSpectatorBind" "1"
+			}
+			"PushToTalkParty"
+			{
+				"Action"		"+voicerecord_party"
+			}
+			
+			"Scoreboard"
+			{
+				"Action"		"+show_scoreboard"
+				"IsUnique" "1"
+				"IsAlsoSpectatorBind" "1"
+				"IsAlsoReplayBind" "1"
+			}
+			
+			"Reload"
+			{
+				"Action"		"+reload"
+			}
+			
+			"ExtraInfo"
+			{
+				"Action"		"+in_extra_info"
+				"IsAlsoSpectatorBind" "1"
+				"IsAlsoReplayBind" "1"
+			}
+			"ToggleFreeCursor"
+			{
+				"Action"		"hud_free_cursor_toggle"
+				"IsUnique" "1"
+				"IsAlsoSpectatorBind" "1"
+				"IsAlsoReplayBind" "1"
+			}
+			"AltCastModifier"
+			{
+				"Action"		"+in_alt_cast_modifier"
+			}
+			"MoveForward"
+			{
+				"Action"		"+forward"
+				"IsAlsoSpectatorBind" "1"
+				"IsAlsoReplayBind" "1"
+			}
+			
+			"MoveBackwards"
+			{
+				"Action"		"+back"
+				"IsAlsoSpectatorBind" "1"
+				"IsAlsoReplayBind" "1"
+			}
+			
+			"MoveLeft"
+			{
+				"Action"		"+left"
+				"IsAlsoSpectatorBind" "1"
+				"IsAlsoReplayBind" "1"
+			}
+			
+			"MoveRight"
+			{
+				"Action"		"+right"
+				"IsAlsoSpectatorBind" "1"
+				"IsAlsoReplayBind" "1"
+			}
+			
+			"Attack"
+			{
+				"Action"		"+attack"
+			}
+			
+			"ADS"
+			{
+				"Action"		"+attack2"
+			}
+			
+			"Chat"
+			{
+				"Action"		"say_chat"
+				"IsAlsoSpectatorBind" "1"
+			}
+			
+			"ChatTeam"
+			{
+				"Action"		"say_chat_team"
+				"IsAlsoSpectatorBind" "1"
+			}
+			
+			"Ping"
+			{
+				"Action"		"+in_ability_ping"
+				"IsAlsoSpectatorBind" "1"
+				"AllowDuplicateBind" "1"
+			}
+						
+			"MouseWheel"
+			{
+				"Action"		"+chatwheel"
+			}
+			
+			"HeldItem"
+			{
+				"Action"		"+in_ability_held"
+			}	
+			
+			"SwitchPlayerCam1"
+			{
+				"Action"		"+citadel_swtich_player_cam 1"
+				"IsAlsoDeadBind" "1"
+			}
+
+			"SwitchPlayerCam2"
+			{
+				"Action"		"+citadel_swtich_player_cam 2"
+				"IsAlsoDeadBind" "1"
+			}	
+
+			"SwitchPlayerCam3"
+			{
+				"Action"		"+citadel_swtich_player_cam 3"
+				"IsAlsoDeadBind" "1"
+			}
+
+			"SwitchPlayerCam4"
+			{
+				"Action"		"+citadel_swtich_player_cam 4"
+				"IsAlsoDeadBind" "1"
+			}	
+
+			"SwitchPlayerCam5"
+			{
+				"Action"		"+citadel_swtich_player_cam 5"
+				"IsAlsoDeadBind" "1"
+			}	
+			
+			"DevConsole"
+			{
+				"Action"		"toggleconsole"
+				"PreGameBind"		"1"
+			}
+
+			"Pause"
+			{
+				"Action"		"citadel_pause"
+			}
+
+			"Targeting"
+			{
+				"AltCastDirect"
+				{
+					"Action"		"+in_alt_cast"
+					"AllowDuplicateBind" "1"
+				}
+			}
+
+			"Casting"
+			{
+				"CancelAbility"
+				{
+					"Action"		"+in_cancel_ability"
+					"AllowDuplicateBind" "1"
+				}
+			}
+
+			"Dead"
+			{
+				"ReplayDeath"
+				{
+					"Action"		"+in_replay_death"
+					"AllowDuplicateBind" "1"
+				}
+			}
+		}
+
+		"Spectator"
+		{
+			"ToggleSpectatorCamera"
+			{
+				"Action"		"+in_spec_mode"
+			}
+
+			"ToggleSpectatorTeam"
+			{
+				"Action"		"+in_spec_toggle_team"
+			}
+
+			"SpectatorNextTarget"
+			{
+				"Action"		"spec_next"
+			}
+
+			"SpectatorPrevTarget"
+			{
+				"Action"		"spec_prev"
+			}
+
+			"SpectatorChase"
+			{
+				"Action"		"spec_chase"
+			}
+
+			"SpectatorInEye"
+			{
+				"Action"		"spec_in_eye"
+			}
+
+			"SpectatorFlyUp"
+			{
+				"Action"		"spec_fly_up"
+			}
+
+			"SpectatorFlyDown"
+			{
+				"Action"		"spec_fly_down"
+			}
+		}
+
+		"Replays"
+		{
+			"ToggleReplayCamera"
+			{
+				"Action"		"+in_spec_mode"
+			}
+			
+			"ToggleReplayTeam"
+			{
+				"Action"		"+in_spec_toggle_team"
+			}
+
+			"ReplayNextTarget"
+			{
+				"Action"		"spec_next"
+			}
+
+			"ReplayPrevTarget"
+			{
+				"Action"		"spec_prev"
+			}
+
+			"ReplayChase"
+			{
+				"Action"		"spec_chase"
+			}
+
+			"ReplayInEye"
+			{
+				"Action"		"spec_in_eye"
+			}
+
+			"ReplayFlyUp"
+			{
+				"Action"		"spec_fly_up"
+			}
+
+			"ReplayFlyDown"
+			{
+				"Action"		"spec_fly_down"
+			}
+
+			"ReplayIncreaseSpeed"
+			{
+				"Action"		"citadel_increase_replay_speed"
+			}
+
+			"ReplayDecreaseSpeed"
+			{
+				"Action"		"citadel_decrease_replay_speed"
+			}
+
+			"ReplayTogglePause"
+			{
+				"Action"		"citadel_replay_toggle_pause"
+			}
+		}
+		"Dead"
+		{
+			"ReplayDeath"
+			{
+				"Action"		"+in_replay_death"
+				"AllowDuplicateBind" "1"
+			}
+		}
+		"DeathReplays"
+		{
+			"StopReplayDeath"
+			{
+				"Action"		"replay_stop"
+				"AllowDuplicateBind" "1"
+			}
+		}
+		"Targeting"
+		{
+			"AltCastDirect"
+			{
+				"Action"		"+in_alt_cast"
+				"AllowDuplicateBind" "1"
+			}
+		}
+
+		"Casting"
+		{
+			"CancelAbility"
+			{
+				"Action"		"+in_cancel_ability"
+				"AllowDuplicateBind" "1"
+			}
+		}
+	}
+
+	"Templates"
+	{
+
+		"DEFAULT"
+		{
+			"Name"		"DEFAULT"
+			"Version"		"1"
+			"AlgorithmicUpdateVersion"		"2"
+		
+			"Keys"
+			{
+				"AbilityMelee"
+				{
+					"Key"		"Q"
+				}
+				"Ability1"
+				{
+					"Key"		"1"
+				}
+
+				"Ability2"
+				{
+					"Key"		"2"
+				}
+				"Ability3"
+				{
+					"Key"		"3"
+				}
+				"Ability4"
+				{
+					"Key"		"4"
+				}
+				"Item1"
+				{
+					"Key"		"Z"
+				}
+
+				"Item2"
+				{
+					"Key"		"X"
+				}
+				"Item3"
+				{
+					"Key"		"C"
+				}
+				"Item4"
+				{
+					"Key"		"V"
+				}
+				"Mantle"
+				{
+					"Key"		"SPACE"
+				}				
+				"OpenHeroSheet"
+				{
+					"Key"		"B"
+				}
+				
+				"Roll"
+				{
+					"Key"		"SHIFT"
+				}
+				
+				"Crouch"
+				{
+					"Key"		"CTRL"
+				}
+				
+				"PushToTalk"
+				{
+					"Key"		"T"
+				}
+				
+				"Scoreboard"
+				{
+					"Key"		"TAB"
+				}
+				
+				"Reload"
+				{
+					"Key"		"R"
+				}
+							
+				"ExtraInfo"
+				{
+					"Key"		"ALT"
+				}
+
+				"AltCastDirect"
+				{
+					"Key"		"MOUSE3"
+				}
+
+				"AltCastModifier"
+				{
+					"Key"		""
+				}
+
+				"ReplayDeath"
+				{
+					"Key"		"R"
+				}
+							
+				"StopReplayDeath"
+				{
+					"Key"		"R"
+				}
+													
+				"MoveForward"
+				{
+					"Key"		"W"
+				}
+				
+				"MoveBackwards"
+				{
+					"Key"		"S"
+				}
+				
+				"MoveLeft"
+				{
+					"Key"		"A"
+				}
+				
+				"MoveRight"
+				{
+					"Key"		"D"
+				}
+				
+				"Attack"
+				{
+					"Key"		"MOUSE1"
+				}
+				
+				"ADS"
+				{
+					"Key"		"MOUSE2"
+				}
+				
+				"Chat"
+				{
+					"Key"		"ENTER"
+					"Modifier"		"SHIFT"
+				}
+				
+				"ChatTeam"
+				{
+					"Key"		"ENTER"
+				}
+				
+				"Ping"
+				{
+					"Key"		"MOUSE3"
+				}
+								
+				"MouseWheel"
+				{
+					"Key"		"Y"
+				}
+				
+				"HeldItem"
+				{
+					"Key"		"F"
+				}
+
+				"SwitchPlayerCam1"
+				{
+					"Key"		"F1"
+				}
+
+				"SwitchPlayerCam2"
+				{
+					"Key"		"F2"
+				}	
+
+				"SwitchPlayerCam3"
+				{
+					"Key"		"F3"
+				}
+
+				"SwitchPlayerCam4"
+				{
+					"Key"		"F4"
+				}	
+
+				"SwitchPlayerCam5"
+				{
+					"Key"		"F5"
+				}	
+				
+				"ToggleSpectatorCamera"
+				{
+					"Key"		"C"
+				}
+				
+				"ToggleFreeCursor"
+				{
+					"Key"		"J"
+				}
+
+				"ToggleSpectatorTeam"
+				{
+					"Key"		"SPACE"
+				}
+
+				"SpectatorNextTarget"
+				{
+					"Key"		"MOUSE1"
+				}
+
+				"SpectatorPrevTarget"
+				{
+					"Key"		"MOUSE2"
+				}
+
+				"SpectatorChase"
+				{
+					"Key"		"MWHEELDOWN"
+				}
+
+				"SpectatorInEye"
+				{
+					"Key"		"MWHEELUP"
+				}
+
+				"SpectatorFlyUp"
+				{
+					"Key"		"SHIFT"
+				}
+
+				"SpectatorFlyDown"
+				{
+					"Key"		"CTRL"
+				}
+
+				"ToggleReplayCamera"
+				{
+					"Key"		"C"
+				}
+
+				"ToggleReplayTeam"
+				{
+					"Key"		"SPACE"
+				}
+
+				"ReplayNextTarget"
+				{
+					"Key"		"MOUSE1"
+				}
+
+				"ReplayPrevTarget"
+				{
+					"Key"		"MOUSE2"
+				}
+
+				"ReplayChase"
+				{
+					"Key"		"MWHEELDOWN"
+				}
+
+				"ReplayInEye"
+				{
+					"Key"		"MWHEELUP"
+				}
+
+				"ReplayFlyUp"
+				{
+					"Key"		"SHIFT"
+				}
+
+				"ReplayFlyDown"
+				{
+					"Key"		"CTRL"
+				}
+
+				"ReplayIncreaseSpeed"
+				{
+					"Key"		"="
+				}
+
+				"ReplayDecreaseSpeed"
+				{
+					"Key"		"-"
+				}
+
+				"ReplayTogglePause"
+				{
+					"Key"		"P"
+				}
+				
+				"DevConsole"
+				{
+					"Key"		"F7"
+				}
+
+				"Pause"
+				{
+					"Key"		"P"
+				}
+
+				"Teleport"
+				{
+					"Key"		"G"
+				}
+
+				"CancelAbility"
+				{
+					"Key"		"SPACE"
+				}
+			}
+		}		
+		
+	}
+}

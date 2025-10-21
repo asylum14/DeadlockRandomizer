@@ -1,0 +1,44 @@
+﻿"lang"
+{
+	"Language"		"latam"
+	"Tokens"
+	{
+
+		//-----------------------------------------------------------------------------
+		// Upgrades: Weapon
+		//-----------------------------------------------------------------------------
+
+		//Basic Magazine
+		//"upgrade_clip_size_desc"			"Increases <span class=\"highlight\">ammo</span>."
+
+		//Extended Magazine
+		//"upgrade_clip_size_fixed_desc"		"Increases <span class=\"highlight\">ammo</span>."
+
+		//Extra Large Magazine
+		//"upgrade_clip_size_fixed_t3_desc"		"Greatly Increases <span class=\"highlight\">ammo</span>."
+
+		//Big Clip
+		//"upgrade_clip_size_2_desc"			"Big Increase <span class=\"highlight\">ammo</span>."
+
+		//Extra Large Magazine
+		//"upgrade_clip_size_3_desc"			"Greatly Increases <span class=\"highlight\">ammo</span>."
+
+		//Ammo Scavenger
+		"upgrade_ammo_scavenger_desc"		"Cada vez que aseguras o deniegas un alma, <span class=\"highlight\">recuperas munición</span> y obtienes <span class=\"highlight\">poder espiritual</span> acumulable."
+		"AmmoScavengerDuration_postfix"		"s"
+
+		//Stabilizer
+		//"upgrade_stabilizer_desc"		"Removes the <span class=\"highlight\">movement speed penalty</span> while shooting, and increases <span class=\"highlight\">bullet speed</span>."
+
+		//Melee Lifesteal
+		"upgrade_lifestrike_gauntlets_desc"	"Tus ataques <span class=\"highlight\">cuerpo a cuerpo</span> <span class=\"highlight\">te curan</span> un {s:LifestrikeHealPercent} % del <span class=\"highlight\">daño cuerpo a cuerpo</span> que infliges más {s:LifestrikeHeal}. Esta curación tiene una efectividad del {s:NonHeroHealPct} % contra unidades que no sean héroes."
+"HealPercentPerHeadshot_postfix"	" %"
+"MagicCarpetShieldDuration_label"		"de duración del escudo"
+		"MagicCarpetShieldDuration_postfix"		"s"
+//crow_mask_908_comment
+		//crow_mask_909_comment
+		//crow_mask_910_comment
+		//crow_mask_911_comment
+		//crow_mask_912_comment
+	}
+}

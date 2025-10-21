@@ -1,0 +1,36 @@
+"Layer0"
+{
+	"shader"	"citadel_overlay.vfx"
+	"g_bForceApply"	"0"
+	"g_flAdditiveDisplacement"	"1"
+	"g_flDisplacementAmount"	"0"
+	"g_flSelfIllumAlbedoFactor"	"1"
+	"g_flSelfIllumScale"	"0"
+	"g_vAlbedoScrollSpeed"	"[0.000000 0.000000 0.000000 0.000000]"
+	"g_vAlbedoTexcoordUVOffset"	"[0.000000 0.000000 0.000000 0.000000]"
+	"g_vColorTint"	"[1.000000 1.000000 1.000000 0.000000]"
+	"g_vNormalAndRoughnessScrollSpeed"	"[0.000000 0.000000 0.000000 0.000000]"
+	"g_vNormalAndRoughnessTexcoordUVOffset"	"[0.000000 0.000000 0.000000 0.000000]"
+	"g_vSelfIllumScrollSpeed"	"[0.000000 0.000000 0.000000 0.000000]"
+	"g_vSelfIllumTexcoordOffset"	"[0.000000 0.000000 0.000000 0.000000]"
+	"g_vSelfIllumTint"	"[1.000000 1.000000 1.000000 0.000000]"
+	"TextureAmbientOcclusion"	"materials/default/default_ao.tga"
+	"TextureColor"	"materials/signage/signage_billboards_03_color.png"
+	"TextureTranslucency"	"materials/signage/signage_billboards_03_86599d86_trans.png"
+	"TextureSelfIllumMask"	"materials/signage/signage_billboards_03_tint_mask.png"
+	"TextureDisplacement"	"materials/signage/signage_billboards_03_tint_mask_b9df7236_disp.png"
+	"TextureTintMask"	"materials/signage/signage_billboards_03_tint_mask_b9df7236_mask.png"
+	"TextureNormal"	"materials/default/default_normal.tga"
+	"TextureRoughness"	"materials/default/default_7be61377_rough.png"
+	"Compiled Textures"
+	{
+		"g_tAmbientOcclusion"	"materials/default/default_ao_tga_c832464.vtex"
+		"g_tColor"	"materials/signage/signage_billboards_03_color_psd_86599d86.vtex"
+		"g_tDisplacementSelfIllumTintMask"	"materials/signage/signage_billboards_03_tint_mask_psd_b9df7236.vtex"
+		"g_tNormalRoughness"	"materials/default/default_normal_tga_7be61377.vtex"
+	}
+	"ToolAttributes"
+	{
+		"SubrectDefinition"	"materials\overlays\signage_billboards_03.rect"
+	}
+}

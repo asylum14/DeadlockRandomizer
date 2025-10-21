@@ -1,0 +1,17 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "sky.vfx"
+
+	//---- Format ----
+	F_TEXTURE_FORMAT2 6 // RGBM (8-bit uncompressed)
+
+	g_bOverrideSkyAlpha "0"
+	g_flOverrideAlphaValue "0.000"
+
+	//---- Texture ----
+	g_flBrightnessExposureBias "0.000"
+	g_flRenderOnlyExposureBias "0.000"
+	SkyTexture "materials/skybox/lightingtest_interior_basic.png"
+}
