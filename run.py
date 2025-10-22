@@ -10,7 +10,7 @@ class DirectorySelectorApp:
         self.entries = {}
 
         # number of directory fields (can be dynamic if needed)
-        self.num_dirs = 3  
+        self.num_dirs = 4  
 
         
         frame = tk.Frame(root)
@@ -35,6 +35,16 @@ class DirectorySelectorApp:
 
         frame = tk.Frame(root)
         frame.pack(padx=10, pady=5, fill='x')
+        label = tk.Label(frame, text=f"Dead Packer directory:")
+        label.pack(side='left', padx=5)
+        entry = tk.Entry(frame, width=50)
+        entry.pack(side='left', padx=5, fill='x', expand=True)
+        self.entries["dead_packer_directory"]=entry
+        button = tk.Button(frame, text="Browse", command=lambda e=entry: self.browse_dir(e))
+        button.pack(side='left', padx=5)
+
+        frame = tk.Frame(root)
+        frame.pack(padx=10, pady=5, fill='x')
         label = tk.Label(frame, text=f"Deadlock directory:")
         label.pack(side='left', padx=5)
         entry = tk.Entry(frame, width=50)
@@ -42,6 +52,7 @@ class DirectorySelectorApp:
         self.entries["Deadlock_directory"]=entry
         button = tk.Button(frame, text="Browse", command=lambda e=entry: self.browse_dir(e))
         button.pack(side='left', padx=5)
+        
 
         button_frame = tk.Frame(root)
         button_frame.pack(pady=10)

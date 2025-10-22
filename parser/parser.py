@@ -1,5 +1,6 @@
 import re
-s_CSDK =input()
+import sys
+s_CSDK = sys.argv[1]
 #fix the lash viper bug
 f = open("DeadlockRandomizer\\abilities.vdata", "r")
 data = f.read()
@@ -99,3 +100,4 @@ for i, char in enumerate(chars):
         f.write(output)
         f.close()
 
+print("Hero Data Parsed Successfully!")

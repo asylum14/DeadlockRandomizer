@@ -1,14 +1,15 @@
 import re
 import os
 import glob
-from datetime import date, datetime, timezone
-from random import randint, random,seed
+from datetime import  datetime, timezone
+from random import randint, seed
+import sys
 utc_now = datetime.now(timezone.utc)
 dt = utc_now.date()
 seed(str(dt))
 
 
-s_CSDK =input()
+s_CSDK =sys.argv[1]
 
 count = 76
 directory_path = "DeadlockRandomizer\\Characters"
