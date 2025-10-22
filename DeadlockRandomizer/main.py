@@ -16,6 +16,7 @@ directory_path = "DeadlockRandomizer\\Characters"
 
 search_pattern = os.path.join(directory_path, "*.txt")
 chars = glob.glob(search_pattern)
+chars.sort()
 output=""
 ultimates = []
 abilities = []
@@ -72,7 +73,7 @@ f.close()
 data=data[:-1]
 data = f"{data}\n{output}"
 data+="}"
-with open(f"{s_CSDK}\\content\\citadel_addons\\TrueRandom\\scripts\\heroes.vdata", "w") as f:
+with open(f"{s_CSDK}\\content\\citadel_addons\\Randomizer\\scripts\\heroes.vdata", "w") as f:
     f.write(data)
     f.close()
     

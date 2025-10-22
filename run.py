@@ -97,7 +97,6 @@ class DirectorySelectorApp:
             for entry, path in data.items():
                 self.entries[entry].delete(0, tk.END)
                 self.entries[entry].insert(0, path)
-            print("Config loaded:", data)
         except Exception as e:
             messagebox.showerror("Error", f"Failed to load config: {e}")
 

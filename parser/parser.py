@@ -50,7 +50,7 @@ for i, wset in enumerate(weaponSets):
 
     data = data.replace(oLash, setInfo)
 
-with open(f"{s_CSDK}\\content\\citadel_addons\\TrueRandom\\scripts\\abilities.vdata", "w") as f:
+with open(f"{s_CSDK}\\content\\citadel_addons\\Randomizer\\scripts\\abilities.vdata", "w") as f:
     f.write(data)
     f.close()
 
@@ -96,8 +96,7 @@ for i, char in enumerate(chars):
     if i == len(chars)-1:
         break
 
-    with open(f"DeadlockRandomizer\\Characters\{herodict[char]}.txt", "w") as f:
+    with open(fr"DeadlockRandomizer\\Characters\{herodict[char]}.txt", "w") as f:
         f.write(output)
         f.close()
 
-print("Hero Data Parsed Successfully!")
