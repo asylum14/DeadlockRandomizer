@@ -14,6 +14,8 @@ hero_dynamo =
 		m_HeroID = 11
 		m_strModelName = resource_name:"models/heroes_wip/dynamo/dynamo.vmdl"
 		m_strUIShoppingMap = "maps/ui/hero_shop/prof_dynamo_shop.vmap"
+		m_strUITeamRevealMap = "maps/ui/team_reveal_hero/prof_dynamo_team_reveal.vmap"
+		m_strUIPostgamePortraitMap = "maps/ui/hero_postgame_portrait/prof_dynamo_postgame_portrait.vmap"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
 		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
@@ -22,20 +24,20 @@ hero_dynamo =
 		m_nModelSkin = 0
 		m_mapStartingStats = 
 		{
-			EMaxMoveSpeed = 6.800000
-			ESprintSpeed = 2.000000
+			EMaxMoveSpeed = 6.700000
+			ESprintSpeed = 1.600000
 			ECrouchSpeed = 4.750000
 			EMoveAcceleration = 4
 			ELightMeleeDamage = 50
 			EHeavyMeleeDamage = 116
-			EMaxHealth = 800
+			EMaxHealth = 850
 			EWeaponPower = 0
 			EReloadSpeed = 1
 			EWeaponPowerScale = 1
 			EProcBuildUpRateScale = 1
 			EStamina = 3
-			EBaseHealthRegen = 2.000000
-			EStaminaRegenPerSecond = 0.200000
+			EBaseHealthRegen = 1.750000
+			EStaminaRegenPerSecond = 0.222222
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
 			ECritDamageReceivedScale = 1.000000
@@ -92,9 +94,6 @@ hero_dynamo =
 				1.000000,
 			]
 		}
-		m_flCollisionRadius = 20
-		m_flCollisionHeight = 80
-		m_flStepHeight = 32
 		m_mapBoundAbilities = 
 		{
 			ESlot_Weapon_Primary = "citadel_weapon_sumo_set"
@@ -108,6 +107,7 @@ hero_dynamo =
 			ESlot_Ability_Innate_1 = "citadel_ability_dash"
 			ESlot_Ability_Innate_2 = "citadel_ability_sprint"
 			ESlot_Ability_Innate_3 = "citadel_ability_melee_parry"
+			ESlot_Cosmetic_1 = "cosmetic_item_voting_poster"
 			ESlot_Signature_1 = "citadel_ability_stomp"
 			ESlot_Signature_2 = "citadel_ability_void_sphere"
 			ESlot_Signature_3 = "citadel_ability_nikuman"
@@ -552,6 +552,24 @@ hero_dynamo =
 					EAbilityPoints = 1
 				}
 			}
+			"35" = 
+			{
+				m_unRequiredGold = 47000
+				m_bUseStandardUpgrade = true
+				m_mapBonusCurrencies = 
+				{
+					EAbilityPoints = 1
+				}
+			}
+			"36" = 
+			{
+				m_unRequiredGold = 49000
+				m_bUseStandardUpgrade = true
+				m_mapBonusCurrencies = 
+				{
+					EAbilityPoints = 1
+				}
+			}
 		}
 		m_flStealthSpeedMetersPerSecond = 4
 		m_vecAnimGraphDefaultValueOverrides = 
@@ -589,30 +607,6 @@ hero_dynamo =
 			207,
 			185,
 			69,
-		]
-		m_colorGlowFriendly = 
-		[
-			255,
-			239,
-			215,
-		]
-		m_colorGlowEnemy = 
-		[
-			255,
-			0,
-			0,
-		]
-		m_colorGlowTeam1 = 
-		[
-			231,
-			182,
-			89,
-		]
-		m_colorGlowTeam2 = 
-		[
-			91,
-			121,
-			230,
 		]
 		m_vecAmbientParticleSettings = 
 		[
@@ -752,7 +746,7 @@ hero_dynamo =
 		}
 		m_mapStandardLevelUpUpgrades = 
 		{
-			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 0.400000
+			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 0.440000
 			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL_ALT_FIRE = 0.000000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 59
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 1.580000
@@ -812,6 +806,7 @@ hero_dynamo =
 					"EStaminaCooldown",
 					"EStaminaRegenIncrease",
 					"EStamina",
+					"EDashSpeedInMeters",
 				]
 			}
 			m_eSpiritStatsDisplay = 
@@ -858,37 +853,37 @@ hero_dynamo =
 				
 				{
 					nGoldThreshold = 4800
-					flBonus = 29
+					flBonus = 49
 					flPercentOnGraph = 10
 				},
 				
 				{
 					nGoldThreshold = 7200
-					flBonus = 40
+					flBonus = 60
 					flPercentOnGraph = 10
 				},
 				
 				{
 					nGoldThreshold = 9600
-					flBonus = 60
+					flBonus = 80
 					flPercentOnGraph = 11
 				},
 				
 				{
 					nGoldThreshold = 16000
-					flBonus = 75
+					flBonus = 95
 					flPercentOnGraph = 11
 				},
 				
 				{
 					nGoldThreshold = 22400
-					flBonus = 95
+					flBonus = 115
 					flPercentOnGraph = 12
 				},
 				
 				{
 					nGoldThreshold = 28800
-					flBonus = 115
+					flBonus = 135
 					flPercentOnGraph = 12
 				},
 			]
@@ -897,61 +892,61 @@ hero_dynamo =
 				
 				{
 					nGoldThreshold = 800
-					flBonus = 8
+					flBonus = 75
 					flPercentOnGraph = 8
 				},
 				
 				{
 					nGoldThreshold = 1600
-					flBonus = 10
+					flBonus = 125
 					flPercentOnGraph = 8
 				},
 				
 				{
 					nGoldThreshold = 2400
-					flBonus = 13
+					flBonus = 200
 					flPercentOnGraph = 9
 				},
 				
 				{
 					nGoldThreshold = 3200
-					flBonus = 17
+					flBonus = 275
 					flPercentOnGraph = 9
 				},
 				
 				{
 					nGoldThreshold = 4800
-					flBonus = 22
+					flBonus = 525
 					flPercentOnGraph = 10
 				},
 				
 				{
 					nGoldThreshold = 7200
-					flBonus = 27
+					flBonus = 625
 					flPercentOnGraph = 10
 				},
 				
 				{
 					nGoldThreshold = 9600
-					flBonus = 32
+					flBonus = 750
 					flPercentOnGraph = 11
 				},
 				
 				{
 					nGoldThreshold = 16000
-					flBonus = 36
+					flBonus = 1000
 					flPercentOnGraph = 11
 				},
 				
 				{
 					nGoldThreshold = 22400
-					flBonus = 40
+					flBonus = 1200
 					flPercentOnGraph = 12
 				},
 				
 				{
 					nGoldThreshold = 28800
-					flBonus = 44
+					flBonus = 1400
 					flPercentOnGraph = 12
 				},
 			]
@@ -984,118 +979,236 @@ hero_dynamo =
 				
 				{
 					nGoldThreshold = 4800
-					flBonus = 25
+					flBonus = 38
 					flPercentOnGraph = 10
 				},
 				
 				{
 					nGoldThreshold = 7200
-					flBonus = 32
+					flBonus = 52
 					flPercentOnGraph = 10
 				},
 				
 				{
 					nGoldThreshold = 9600
-					flBonus = 44
+					flBonus = 64
 					flPercentOnGraph = 11
 				},
 				
 				{
 					nGoldThreshold = 16000
-					flBonus = 56
+					flBonus = 76
 					flPercentOnGraph = 11
 				},
 				
 				{
 					nGoldThreshold = 22400
-					flBonus = 69
+					flBonus = 89
 					flPercentOnGraph = 12
 				},
 				
 				{
 					nGoldThreshold = 28800
-					flBonus = 81
+					flBonus = 101
 					flPercentOnGraph = 12
 				},
 			]
 		}
+		m_strDeathSound = soundevent:"Damage.Receive.Lethal"
+		m_mapItemDraftWeights = 
+		{
+			upgrade_ability_power_shard = 2.400000
+			upgrade_ability_refresher = 2.400000
+			upgrade_absorbing_armor = 1.000000
+			upgrade_acolytes_glove = 2.200000
+			upgrade_active_reload = 1.000000
+			upgrade_aerial_supremacy = 1.000000
+			upgrade_ancient_shield = 1.000000
+			upgrade_aoe_root = 2.400000
+			upgrade_apex_combat = 1.000000
+			upgrade_aprounds = 1.000000
+			upgrade_arcane_extension = 2.400000
+			upgrade_arcane_surge = 2.400000
+			upgrade_arctic_blast = 1.000000
+			upgrade_banshee_slugs = 1.000000
+			upgrade_berserker = 1.000000
+			upgrade_blitz_bullets = 1.000000
+			upgrade_blood_tribute = 1.000000
+			upgrade_boundless_spirit = 2.400000
+			upgrade_boxing_glove = 2.200000
+			upgrade_bullet_armor_reduction_aura = 1.000000
+			upgrade_bullet_resist_shredder = 2.400000
+			upgrade_burst_fire = 1.000000
+			upgrade_capacitor = 1.000000
+			upgrade_cardio_calibrator = 2.400000
+			upgrade_chain_lightning = 1.000000
+			upgrade_cheat_death = 1.000000
+			upgrade_chonky = 1.000000
+			upgrade_clip_size = 1.000000
+			upgrade_cloaking_device_active = 1.000000
+			upgrade_close_quarter_combat = 1.000000
+			upgrade_close_range = 1.000000
+			upgrade_cold_front = 1.000000
+			upgrade_colossus = 1.000000
+			upgrade_containment = 2.400000
+			upgrade_cooldown_reduction = 2.400000
+			upgrade_counterspell = 1.000000
+			upgrade_crackshot = 1.000000
+			upgrade_critshot = 1.000000
+			upgrade_crushing_fists = 2.200000
+			upgrade_damage_recycler = 1.000000
+			upgrade_debuff_reducer = 2.400000
+			upgrade_deflecting_armor = 1.000000
+			upgrade_discord = 1.000000
+			upgrade_divine_barrier = 1.000000
+			upgrade_diviners_kevlar = 2.400000
+			upgrade_dps_aura = 1.000000
+			upgrade_enchanted_holsters = 1.000000
+			upgrade_endurance = 0.400000
+			upgrade_escalating_exposure = 1.000000
+			upgrade_ethereal_bullets = 1.000000
+			upgrade_express_shot = 1.000000
+			upgrade_extra_charge = 2.400000
+			upgrade_fervor = 1.000000
+			upgrade_fleetfoot_boots = 2.400000
+			upgrade_focus_lens = 1.000000
+			upgrade_fury_trance = 1.000000
+			upgrade_glass_cannon = 1.000000
+			upgrade_glitch = 1.000000
+			upgrade_greater_withering_whip = 1.000000
+			upgrade_guardian_ward = 1.000000
+			upgrade_haunting_scream = 1.000000
+			upgrade_headhunter = 2.400000
+			upgrade_headshot_booster = 2.400000
+			upgrade_headshot_booster2 = 1.000000
+			upgrade_healbane = 1.000000
+			upgrade_healbuff = 2.400000
+			upgrade_healing_booster = 2.400000
+			upgrade_health = 1.000000
+			upgrade_health_nova = 1.000000
+			upgrade_health_stealing_magic = 1.000000
+			upgrade_health_stimpak = 2.400000
+			upgrade_high_velocity_mag = 1.000000
+			upgrade_hollow_point_rounds = 1.000000
+			upgrade_imbued_duration_extender = 2.400000
+			upgrade_improved_bullet_armor = 1.000000
+			upgrade_improved_spirit = 2.400000
+			upgrade_improved_stamina = 2.400000
+			upgrade_infinite_rounds = 1.000000
+			upgrade_infuser = 1.000000
+			upgrade_inhibitor = 1.000000
+			upgrade_intensifying_clip = 1.000000
+			upgrade_juggernaut = 2.400000
+			upgrade_kinetic_sash = 2.400000
+			upgrade_lifestrike_gauntlets = 2.200000
+			upgrade_long_range = 1.000000
+			upgrade_magic_burst = 2.400000
+			upgrade_magic_carpet = 1.000000
+			upgrade_magic_reach = 2.400000
+			upgrade_magic_shield = 2.400000
+			upgrade_magic_shock = 2.400000
+			upgrade_magic_slow = 1.000000
+			upgrade_magic_storm = 2.400000
+			upgrade_magic_tempo = 2.400000
+			upgrade_magic_vulnerability = 1.000000
+			upgrade_medic_bullets = 0.400000
+			upgrade_melee_charge = 2.200000
+			upgrade_melee_rebuttal = 1.000000
+			upgrade_metal_skin = 1.000000
+			upgrade_mystic_regeneration = 1.000000
+			upgrade_non_player_bonus = 1.000000
+			upgrade_non_player_bonus_sacrifice = 1.000000
+			upgrade_omnicharge_pendant = 1.000000
+			upgrade_phantom_strike = 1.000000
+			upgrade_pristine_emblem = 1.000000
+			upgrade_proc_silence = 1.000000
+			upgrade_quick_silver = 1.000000
+			upgrade_rapid_recharge = 2.400000
+			upgrade_rapid_rounds = 1.000000
+			upgrade_reduce_debuff_duration = 2.400000
+			upgrade_regenerating_bullet_shield = 2.400000
+			upgrade_reinforcing_casings = 1.000000
+			upgrade_rescue_beam = 2.400000
+			upgrade_resonant_healing = 1.000000
+			upgrade_restorative_locket = 1.000000
+			upgrade_return_fire = 1.000000
+			upgrade_ricochet = 1.000000
+			upgrade_rocket_booster = 2.400000
+			upgrade_rupture = 1.000000
+			upgrade_self_bubble = 1.000000
+			upgrade_shadow_step = 1.000000
+			upgrade_sharpshooter = 1.000000
+			upgrade_siphon_bullets = 1.000000
+			upgrade_slowing_bullets = 1.000000
+			upgrade_soaring_spirit = 2.400000
+			upgrade_spellbreaker = 1.000000
+			upgrade_spellslinger_headshots = 1.000000
+			upgrade_spirit_bubble = 2.400000
+			upgrade_spirit_burn = 2.400000
+			upgrade_spirit_sap = 1.000000
+			upgrade_spirit_snatch = 2.200000
+			upgrade_split_shot = 1.000000
+			upgrade_sprint_booster = 2.400000
+			upgrade_superior_stamina = 1.000000
+			upgrade_suppressor = 1.000000
+			upgrade_surging_power = 1.000000
+			upgrade_target_stun = 1.000000
+			upgrade_targeted_silence = 1.000000
+			upgrade_tech_bleed = 2.400000
+			upgrade_tech_damage_pulse = 1.000000
+			upgrade_tech_defense_shredders = 1.000000
+			upgrade_tech_overflow = 2.400000
+			upgrade_tech_purge = 2.400000
+			upgrade_tech_range = 2.400000
+			upgrade_thermal_detonator = 2.400000
+			upgrade_timeless_emblem = 1.000000
+			upgrade_titan_round = 1.000000
+			upgrade_toxic_bullets = 1.000000
+			upgrade_transcendent_cooldown = 2.400000
+			upgrade_trophy_collector = 1.000000
+			upgrade_ultimate_burst = 1.000000
+			upgrade_unstoppable = 2.400000
+			upgrade_vampire = 1.000000
+			upgrade_veil_walker = 2.400000
+			upgrade_vex_barrier = 1.000000
+			upgrade_warp_stone = 2.400000
+			upgrade_weapon_backstabber = 1.000000
+			upgrade_weapon_shielding = 2.400000
+			upgrade_weighted_shots = 1.000000
+			upgrade_withering_whip = 1.000000
+			upgrade_bulletshredimbue = 1.000000
+			upgrade_rechargingbullets = 1.000000
+			upgrade_icarus_wings = 1.000000
+			upgrade_mystical_piano = 1.000000
+			upgrade_nullification_aura = 1.000000
+			upgrade_celestial_guidance = 1.000000
+			upgrade_eternal_gift = 1.000000
+			upgrade_patrons_blessing = 1.000000
+			upgrade_eldritch_shot = 1.000000
+			upgrade_cloak_of_opportunity = 1.000000
+			upgrade_runed_gauntlets = 1.000000
+			upgrade_electric_slippers = 1.000000
+			upgrade_prism_blast = 1.000000
+			upgrade_unstable_concoction = 1.000000
+			upgrade_shivas_bracelet = 1.000000
+			upgrade_shadow_strike = 1.000000
+			upgrade_shrink_ray = 0.300000
+		}
 		_base = "hero_base"
 		m_bNewPlayerRecommended = true
 		m_bLaneTestingRecommended = true
-		m_strSelectionImage = panorama:"file://{images}/heroes/sumo.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/sumo_sm.psd"
 		m_strMinimapImage = panorama:"file://{images}/heroes/sumo_mm.psd"
-		m_strDeathSound = soundevent:"Generated.Dynamo.Hero.Death.VO"
+		m_strLogoImageEnglish = panorama:"file://{images}/heroes/hero_names/dynamo.svg"
+		m_strLogoImageLocalized = panorama:"file://{images}/heroes/hero_names/dynamo_localized.svg"
+		m_strDeathVOSound = soundevent:"Generated.Dynamo.Hero.Death.VO"
+		m_strHeroSearchName = "#hero_dynamo_search"
 		m_hGameSoundEventScript = resource_name:"soundevents/hero/dynamo.vsndevts"
 		m_strRosterSelectedSound = soundevent:"Generated.Dynamo.Hero.Pick.VO"
 		m_strIconHeroCard = panorama:"file://{images}/heroes/sumo_card.psd"
+		m_strIconHeroCardCritical = panorama:"file://{images}/heroes/sumo_card_critical.psd"
+		m_strIconHeroCardGloat = panorama:"file://{images}/heroes/sumo_card_gloat.psd"
 		m_strRosterRemovedSound = soundevent:"Generated.Dynamo.Hero.Remove.VO"
-		m_strTopBarImage = panorama:"file://{images}/hud/hero_portraits/sumo_hud.psd"
-		m_RecommendedUpgrades = 
-		[
-			"upgrade_non_player_bonus",
-			"upgrade_extra_charge",
-			"upgrade_magic_burst",
-			"upgrade_magic_reach",
-			"upgrade_non_player_bonus_sacrifice",
-			"upgrade_magic_tempo",
-			"upgrade_arcane_extension",
-			"upgrade_cooldown_reduction",
-			"upgrade_healing_booster",
-			"upgrade_rapid_recharge",
-			"upgrade_rocket_booster",
-			"upgrade_tech_range",
-			"upgrade_arcane_surge",
-			"upgrade_ability_refresher",
-			"upgrade_healbuff",
-			"upgrade_boundless_spirit",
-			"upgrade_diviners_kevlar",
-			"upgrade_cheat_death",
-		]
-		m_mapRecommendedUpgradeHints = 
-		{
-			upgrade_cooldown_reduction = 
-			{
-				sImbueTarget = "citadel_ability_self_vacuum"
-			}
-			upgrade_magic_reach = 
-			{
-				sImbueTarget = "citadel_ability_self_vacuum"
-			}
-			upgrade_magic_tempo = 
-			{
-				sImbueTarget = "citadel_ability_self_vacuum"
-			}
-			upgrade_arcane_extension = 
-			{
-				sImbueTarget = "citadel_ability_self_vacuum"
-			}
-		}
-		m_RecommendedUpgradeTags = 
-		[
-			"citadel_build_tag_spirit",
-			"citadel_build_tag_vitality",
-			"citadel_ability_self_vacuum",
-		]
-		m_RecommendedAbilityOrder = 
-		[
-			"citadel_ability_nikuman",
-			"citadel_ability_void_sphere",
-			"citadel_ability_stomp",
-			"citadel_ability_self_vacuum",
-			"citadel_ability_stomp",
-			"citadel_ability_stomp",
-			"citadel_ability_void_sphere",
-			"citadel_ability_self_vacuum",
-			"citadel_ability_self_vacuum",
-			"citadel_ability_self_vacuum",
-			"citadel_ability_nikuman",
-			"citadel_ability_nikuman",
-			"citadel_ability_nikuman",
-			"citadel_ability_stomp",
-			"citadel_ability_void_sphere",
-			"citadel_ability_void_sphere",
-		]
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/prof_dynamo.vmap"
 		m_strTopBarVertical = panorama:"file://{images}/heroes/sumo_vertical.psd"
 		m_strPostGameDefeatSound = soundevent:"Dynamo.Progession.Page.Lose.VO"

@@ -30,3 +30,5 @@ hero_frank,victor
 hero_bookworm,paige
 hero_doorman,doorman
 hero_punkgoat,billy
+hero_necro,graves
+hero_familiar,rem

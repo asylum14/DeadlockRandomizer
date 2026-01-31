@@ -1,4 +1,4 @@
-hero_bookworm = 
+hero_necro = 
 	{
 		_class = "CitadelHeroData_t"
 		m_bPlayerSelectable = true
@@ -8,14 +8,14 @@ hero_bookworm =
 		m_bAssignedPlayersOnly = false
 		m_bLimitedTesting = false
 		m_bPrereleaseOnly = false
-		m_nComplexity = 1
-		m_nAllyBotDifficulty = 1
-		m_nEnemyBotDifficulty = 1
-		m_HeroID = 67
-		m_strModelName = resource_name:"models/heroes_wip/bookworm/bookworm.vmdl"
-		m_strUIShoppingMap = "maps/ui/hero_shop/bookworm_shop.vmap"
-		m_strUITeamRevealMap = "maps/ui/team_reveal_hero/bookworm_team_reveal.vmap"
-		m_strUIPostgamePortraitMap = "maps/ui/hero_postgame_portrait/bookworm_postgame_portrait.vmap"
+		m_nComplexity = 2
+		m_nAllyBotDifficulty = -1
+		m_nEnemyBotDifficulty = -1
+		m_HeroID = 76
+		m_strModelName = resource_name:"models/heroes_wip/necro/necro.vmdl"
+		m_strUIShoppingMap = "maps/ui/hero_shop/necro_shop.vmap"
+		m_strUITeamRevealMap = "maps/ui/team_reveal_hero/necro_team_reveal.vmap"
+		m_strUIPostgamePortraitMap = "maps/ui/hero_postgame_portrait/necro_postgame_portrait.vmap"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
 		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
@@ -24,19 +24,19 @@ hero_bookworm =
 		m_nModelSkin = 0
 		m_mapStartingStats = 
 		{
-			EMaxMoveSpeed = 6.900000
-			ESprintSpeed = 3.500000
+			EMaxMoveSpeed = 6.600000
+			ESprintSpeed = 1.600000
 			ECrouchSpeed = 4.750000
 			EMoveAcceleration = 4
-			ELightMeleeDamage = 42.000000
-			EHeavyMeleeDamage = 120.000000
-			EMaxHealth = 650.000000
+			ELightMeleeDamage = 50
+			EHeavyMeleeDamage = 116
+			EMaxHealth = 700.000000
 			EWeaponPower = 0
 			EReloadSpeed = 1
 			EWeaponPowerScale = 1
 			EProcBuildUpRateScale = 1
-			EStamina = 2
-			EBaseHealthRegen = 2.000000
+			EStamina = 2.000000
+			EBaseHealthRegen = 1.000000
 			EStaminaRegenPerSecond = 0.222222
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
@@ -50,6 +50,8 @@ hero_bookworm =
 			EGroundDashDuration = 0.680000
 			EAirDashDistanceInMeters = 8.000000
 			EAirDashDuration = 0.470000
+			EBuildUpRate = -50.000000
+			EBulletLifesteal = 8.000000
 		}
 		m_groundDashPositionCurve = 
 		{
@@ -96,8 +98,8 @@ hero_bookworm =
 		}
 		m_mapBoundAbilities = 
 		{
-			ESlot_Weapon_Primary = "citadel_weapon_bookworm_set2"
-			ESlot_Weapon_Melee = "ability_melee_bookworm"
+			ESlot_Weapon_Primary = "citadel_weapon_necro_set"
+			ESlot_Weapon_Melee = "ability_melee_necro"
 			ESlot_Ability_Mantle = "citadel_ability_mantle"
 			ESlot_Ability_Jump = "citadel_ability_jump"
 			ESlot_Ability_Slide = "citadel_ability_slide"
@@ -108,10 +110,10 @@ hero_bookworm =
 			ESlot_Ability_Innate_2 = "citadel_ability_sprint"
 			ESlot_Ability_Innate_3 = "citadel_ability_melee_parry"
 			ESlot_Cosmetic_1 = "cosmetic_item_voting_poster"
-			ESlot_Signature_1 = "ability_bookworm_dragonfire"
-			ESlot_Signature_2 = "ability_bookworm_knightbarrier"
-			ESlot_Signature_3 = "ability_bookworm_aoemagic"
-			ESlot_Signature_4 = "ability_bookworm_knightcharge"
+			ESlot_Signature_1 = "ability_necro_hauntingskull"
+			ESlot_Signature_2 = "ability_necro_zombiewall"
+			ESlot_Signature_3 = "ability_necro_fear"
+			ESlot_Signature_4 = "ability_necro_gravestone"
 		}
 		m_mapItemSlotInfo = 
 		{
@@ -582,7 +584,7 @@ hero_bookworm =
 			
 			{
 				m_strParamName = "e_SWITCH_Recoil_ON/OFF"
-				m_strParamValue = "0"
+				m_strParamValue = "1"
 			},
 			
 			{
@@ -599,9 +601,9 @@ hero_bookworm =
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
-			156,
-			205,
-			236,
+			152,
+			57,
+			82,
 		]
 		m_vecAmbientParticleSettings = 
 		[
@@ -696,11 +698,6 @@ hero_bookworm =
 		}
 		m_mapScalingStats = 
 		{
-			EHeavyMeleeDamage = 
-			{
-				eScalingStat = "ETechPower"
-				flScale = 0.300000
-			}
 		}
 		m_heroStatsDisplay = 
 		{
@@ -746,10 +743,10 @@ hero_bookworm =
 		}
 		m_mapStandardLevelUpUpgrades = 
 		{
-			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 0.520000
+			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 0.060000
 			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL_ALT_FIRE = 0.000000
-			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 29
-			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 1.200000
+			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 33.000000
+			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 1.580000
 			MODIFIER_VALUE_BONUS_ATTACK_RANGE = 0.000000
 			MODIFIER_VALUE_BOON_COUNT = 1
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
@@ -782,8 +779,8 @@ hero_bookworm =
 					"ELightMeleeDamage",
 					"EHeavyMeleeDamage",
 				]
-				m_eWeaponAttributes = "EWeaponAttribute_RapidFire | EWeaponAttribute_LongRange"
-				m_strWeaponImage = panorama:"file://{images}/heroes/guns/bookworm_gun.psd"
+				m_eWeaponAttributes = "EWeaponAttribute_BurstFire | EWeaponAttribute_MediumRange"
+				m_strWeaponImage = panorama:"file://{images}/heroes/guns/necro_hand.psd"
 			}
 			m_eVitalityStatsDisplay = 
 			{
@@ -1024,24 +1021,24 @@ hero_bookworm =
 			upgrade_active_reload = 1.000000
 			upgrade_aerial_supremacy = 1.000000
 			upgrade_ancient_shield = 1.000000
-			upgrade_aoe_root = 2.400000
+			upgrade_aoe_root = 1.000000
 			upgrade_apex_combat = 1.000000
 			upgrade_aprounds = 1.000000
 			upgrade_arcane_extension = 2.400000
-			upgrade_arcane_surge = 2.400000
+			upgrade_arcane_surge = 1.000000
 			upgrade_arctic_blast = 1.000000
 			upgrade_banshee_slugs = 1.000000
 			upgrade_berserker = 1.000000
-			upgrade_blitz_bullets = 1.000000
+			upgrade_blitz_bullets = 2.400000
 			upgrade_blood_tribute = 1.000000
 			upgrade_boundless_spirit = 2.400000
 			upgrade_boxing_glove = 2.200000
 			upgrade_bullet_armor_reduction_aura = 1.000000
 			upgrade_bullet_resist_shredder = 1.000000
-			upgrade_burst_fire = 2.400000
-			upgrade_capacitor = 1.000000
-			upgrade_cardio_calibrator = 1.000000
-			upgrade_chain_lightning = 1.000000
+			upgrade_burst_fire = 1.000000
+			upgrade_capacitor = 2.400000
+			upgrade_cardio_calibrator = 2.400000
+			upgrade_chain_lightning = 2.400000
 			upgrade_cheat_death = 1.000000
 			upgrade_chonky = 1.000000
 			upgrade_clip_size = 1.000000
@@ -1054,50 +1051,50 @@ hero_bookworm =
 			upgrade_cooldown_reduction = 2.400000
 			upgrade_counterspell = 1.000000
 			upgrade_crackshot = 1.000000
-			upgrade_critshot = 2.400000
+			upgrade_critshot = 1.000000
 			upgrade_crushing_fists = 2.200000
 			upgrade_damage_recycler = 1.000000
 			upgrade_debuff_reducer = 1.000000
 			upgrade_deflecting_armor = 1.000000
 			upgrade_discord = 1.000000
-			upgrade_divine_barrier = 2.400000
+			upgrade_divine_barrier = 1.000000
 			upgrade_diviners_kevlar = 1.000000
-			upgrade_dps_aura = 1.000000
+			upgrade_dps_aura = 2.400000
 			upgrade_enchanted_holsters = 1.000000
 			upgrade_endurance = 0.400000
-			upgrade_escalating_exposure = 1.000000
+			upgrade_escalating_exposure = 2.400000
 			upgrade_ethereal_bullets = 1.000000
-			upgrade_express_shot = 2.400000
+			upgrade_express_shot = 1.000000
 			upgrade_extra_charge = 2.400000
 			upgrade_fervor = 1.000000
-			upgrade_fleetfoot_boots = 1.000000
+			upgrade_fleetfoot_boots = 2.400000
 			upgrade_focus_lens = 1.000000
 			upgrade_fury_trance = 1.000000
-			upgrade_glass_cannon = 2.400000
+			upgrade_glass_cannon = 1.000000
 			upgrade_glitch = 1.000000
 			upgrade_greater_withering_whip = 1.000000
-			upgrade_guardian_ward = 2.400000
+			upgrade_guardian_ward = 1.000000
 			upgrade_haunting_scream = 1.000000
 			upgrade_headhunter = 1.000000
-			upgrade_headshot_booster = 2.400000
+			upgrade_headshot_booster = 1.000000
 			upgrade_headshot_booster2 = 1.000000
-			upgrade_healbane = 1.000000
-			upgrade_healbuff = 2.400000
-			upgrade_healing_booster = 1.000000
-			upgrade_health = 1.000000
+			upgrade_healbane = 2.400000
+			upgrade_healbuff = 1.000000
+			upgrade_healing_booster = 2.400000
+			upgrade_health = 2.400000
 			upgrade_health_nova = 1.000000
 			upgrade_health_stealing_magic = 1.000000
-			upgrade_health_stimpak = 2.400000
-			upgrade_high_velocity_mag = 2.400000
-			upgrade_hollow_point_rounds = 2.400000
+			upgrade_health_stimpak = 1.000000
+			upgrade_high_velocity_mag = 1.000000
+			upgrade_hollow_point_rounds = 1.000000
 			upgrade_imbued_duration_extender = 2.400000
 			upgrade_improved_bullet_armor = 1.000000
 			upgrade_improved_spirit = 2.400000
-			upgrade_improved_stamina = 2.400000
+			upgrade_improved_stamina = 1.000000
 			upgrade_infinite_rounds = 1.000000
 			upgrade_infuser = 1.000000
 			upgrade_inhibitor = 1.000000
-			upgrade_intensifying_clip = 1.000000
+			upgrade_intensifying_clip = 2.400000
 			upgrade_juggernaut = 1.000000
 			upgrade_kinetic_sash = 1.000000
 			upgrade_lifestrike_gauntlets = 2.200000
@@ -1107,39 +1104,39 @@ hero_bookworm =
 			upgrade_magic_reach = 2.400000
 			upgrade_magic_shield = 2.400000
 			upgrade_magic_shock = 2.400000
-			upgrade_magic_slow = 1.000000
+			upgrade_magic_slow = 2.400000
 			upgrade_magic_storm = 1.000000
 			upgrade_magic_tempo = 2.400000
-			upgrade_magic_vulnerability = 1.000000
+			upgrade_magic_vulnerability = 2.400000
 			upgrade_medic_bullets = 0.400000
 			upgrade_melee_charge = 2.200000
 			upgrade_melee_rebuttal = 1.000000
 			upgrade_metal_skin = 1.000000
 			upgrade_mystic_regeneration = 1.000000
-			upgrade_non_player_bonus = 1.000000
+			upgrade_non_player_bonus = 2.400000
 			upgrade_non_player_bonus_sacrifice = 1.000000
 			upgrade_omnicharge_pendant = 1.000000
 			upgrade_phantom_strike = 1.000000
 			upgrade_pristine_emblem = 1.000000
 			upgrade_proc_silence = 1.000000
-			upgrade_quick_silver = 2.400000
+			upgrade_quick_silver = 1.000000
 			upgrade_rapid_recharge = 2.400000
-			upgrade_rapid_rounds = 1.000000
+			upgrade_rapid_rounds = 2.400000
 			upgrade_reduce_debuff_duration = 1.000000
 			upgrade_regenerating_bullet_shield = 1.000000
 			upgrade_reinforcing_casings = 1.000000
-			upgrade_rescue_beam = 2.400000
-			upgrade_resonant_healing = 2.400000
+			upgrade_rescue_beam = 1.000000
+			upgrade_resonant_healing = 1.000000
 			upgrade_restorative_locket = 1.000000
 			upgrade_return_fire = 1.000000
-			upgrade_ricochet = 1.000000
+			upgrade_ricochet = 2.400000
 			upgrade_rocket_booster = 1.000000
 			upgrade_rupture = 1.000000
 			upgrade_self_bubble = 1.000000
 			upgrade_shadow_step = 1.000000
 			upgrade_sharpshooter = 1.000000
 			upgrade_siphon_bullets = 1.000000
-			upgrade_slowing_bullets = 1.000000
+			upgrade_slowing_bullets = 2.400000
 			upgrade_soaring_spirit = 2.400000
 			upgrade_spellbreaker = 1.000000
 			upgrade_spellslinger_headshots = 1.000000
@@ -1147,23 +1144,23 @@ hero_bookworm =
 			upgrade_spirit_burn = 2.400000
 			upgrade_spirit_sap = 1.000000
 			upgrade_spirit_snatch = 2.200000
-			upgrade_split_shot = 2.400000
+			upgrade_split_shot = 1.000000
 			upgrade_sprint_booster = 1.000000
-			upgrade_superior_stamina = 1.000000
+			upgrade_superior_stamina = 2.400000
 			upgrade_suppressor = 1.000000
-			upgrade_surging_power = 1.000000
+			upgrade_surging_power = 2.400000
 			upgrade_target_stun = 1.000000
 			upgrade_targeted_silence = 1.000000
 			upgrade_tech_bleed = 2.400000
 			upgrade_tech_damage_pulse = 1.000000
 			upgrade_tech_defense_shredders = 1.000000
-			upgrade_tech_overflow = 1.000000
+			upgrade_tech_overflow = 2.400000
 			upgrade_tech_purge = 1.000000
 			upgrade_tech_range = 2.400000
-			upgrade_thermal_detonator = 2.400000
+			upgrade_thermal_detonator = 1.000000
 			upgrade_timeless_emblem = 1.000000
-			upgrade_titan_round = 2.400000
-			upgrade_toxic_bullets = 1.000000
+			upgrade_titan_round = 1.000000
+			upgrade_toxic_bullets = 2.400000
 			upgrade_transcendent_cooldown = 2.400000
 			upgrade_trophy_collector = 1.000000
 			upgrade_ultimate_burst = 2.400000
@@ -1177,7 +1174,7 @@ hero_bookworm =
 			upgrade_weighted_shots = 1.000000
 			upgrade_withering_whip = 1.000000
 			upgrade_bulletshredimbue = 1.000000
-			upgrade_rechargingbullets = 1.000000
+			upgrade_rechargingbullets = 2.400000
 			upgrade_icarus_wings = 1.000000
 			upgrade_mystical_piano = 1.000000
 			upgrade_nullification_aura = 1.000000
@@ -1186,7 +1183,7 @@ hero_bookworm =
 			upgrade_patrons_blessing = 1.000000
 			upgrade_eldritch_shot = 1.000000
 			upgrade_cloak_of_opportunity = 1.000000
-			upgrade_runed_gauntlets = 1.000000
+			upgrade_runed_gauntlets = 0.400000
 			upgrade_electric_slippers = 1.000000
 			upgrade_prism_blast = 1.000000
 			upgrade_unstable_concoction = 1.000000
@@ -1195,34 +1192,34 @@ hero_bookworm =
 			upgrade_shrink_ray = 0.300000
 		}
 		_base = "hero_base"
-		m_bNewPlayerRecommended = false
-		m_bLaneTestingRecommended = false
-		m_strIconImageSmall = panorama:"file://{images}/heroes/bookworm_sm.psd"
-		m_strMinimapImage = panorama:"file://{images}/heroes/bookworm_mm.psd"
-		m_strLogoImageEnglish = panorama:"file://{images}/heroes/hero_names/paige.svg"
-		m_strLogoImageLocalized = panorama:"file://{images}/heroes/hero_names/paige_localized.svg"
-		m_strDeathVOSound = soundevent:"Generated.Bookworm.Hero.Death.VO"
-		m_strHeroSearchName = "#hero_bookworm_search"
-		m_hGameSoundEventScript = resource_name:"soundevents/hero/hornet.vsndevts"
-		m_strRosterSelectedSound = soundevent:"Generated.Bookworm.Hero.Pick.VO"
-		m_strIconHeroCard = panorama:"file://{images}/heroes/bookworm_card.psd"
-		m_strUIPortraitMap = "maps/ui/hero_prefabs/bookworm.vmap"
-		m_strTopBarVertical = panorama:"file://{images}/heroes/bookworm_vertical.psd"
-		m_strPostGameDefeatSound = soundevent:"Inferno.Progession.Page.Lose.VO"
-		m_strRosterRemovedSound = soundevent:"Generated.Bookworm.Hero.Remove.VO"
+		m_iAddedTime = 1768852800
+		m_strIconImageSmall = panorama:"file://{images}/heroes/necro_sm.psd"
+		m_strMinimapImage = panorama:"file://{images}/heroes/necro_mm.psd"
+		m_strHeroSortName = "#hero_necro_sort"
+		m_strHeroSearchName = "#hero_necro_search"
+		m_hGameSoundEventScript = resource_name:"soundevents/hero/chrono.vsndevts"
+		m_strRosterSelectedSound = soundevent:"Generated.Necro.Hero.Pick.VO"
+		m_strDeathVOSound = soundevent:"Generated.Necro.Hero.Death.VO"
+		m_strIconHeroCard = panorama:"file://{images}/heroes/necro_card.psd"
+		m_strVoteRevealSound = soundevent:"Vo.VoteReveal.Necro"
+		m_strUIPortraitMap = "maps/ui/hero_prefabs/necro.vmap"
+		m_strTopBarVertical = panorama:"file://{images}/heroes/necro_vertical.psd"
 		m_vecHeroTags = 
 		[
-			"#Citadel_Bookworm_HeroTag_1",
-			"#Citadel_Bookworm_HeroTag_2",
-			"#Citadel_Bookworm_HeroTag_3",
+			"#Citadel_Necro_HeroTag_1",
+			"#Citadel_Necro_HeroTag_2",
+			"#Citadel_Necro_HeroTag_3",
 		]
-		m_strGunTag = "#Attribute_EWeaponAttribute_Projectile"
-		m_strHideoutRichPresence = "#Steam_Citadel_Hideout_Read"
-		m_eHeroType = "ECitadelHeroType_Mystic"
-		m_hGeneratedVOEventScript = resource_name:"soundevents/vo/generated_vo_hero_bookworm.vsndevts"
-		m_strVoteRevealSound = soundevent:"Vo.VoteReveal.Bookworm"
-		m_strIconHeroCardCritical = panorama:"file://{images}/heroes/bookworm_card_critical.psd"
-		m_strIconHeroCardGloat = panorama:"file://{images}/heroes/bookworm_card_gloat.psd"
-		m_strPostGameVictorySound = soundevent:"Bookworm.Progession.Page.Win.VO"
+		m_strGunTag = "#Attribute_EWeaponAttribute_Pistol"
+		m_strHideoutRichPresence = "#Steam_Citadel_Hideout_Dead"
+		m_eHeroType = "ECitadelHeroType_Marksman"
+		m_strRosterRemovedSound = soundevent:"Generated.Necro.Hero.Remove.VO"
+		m_hGeneratedVOEventScript = resource_name:"soundevents/vo/generated_vo_hero_necro.vsndevts"
+		m_sAG2VariationName = resource_name:"animgraphs/animgraph2/hero/hero.vnmgraph+vampirebat.vnmgraph"
+		m_strIconHeroCardCritical = panorama:"file://{images}/heroes/necro_card_critical.psd"
+		m_strIconHeroCardGloat = panorama:"file://{images}/heroes/necro_card_gloat.psd"
+		m_strLogoImageEnglish = panorama:"file://{images}/heroes/hero_names/necro.svg"
+		m_strPostGameVictorySound = soundevent:"Necro.Progession.Page.Win.VO"
+		m_strLogoImageLocalized = panorama:"file://{images}/heroes/hero_names/necro_localized.svg"
 	}
 	

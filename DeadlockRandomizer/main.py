@@ -1,39 +1,38 @@
 import re
 import os
 import glob
-from datetime import  datetime, timezone
+from datetime import datetime, timezone
 from random import randint, seed
-import sys
+import json
+
 utc_now = datetime.now(timezone.utc)
 dt = utc_now.date()
 seed(str(dt))
 
 
-s_CSDK =sys.argv[1]
+with open("config.json", 'r') as file:
+    configData = json.load(file)
+s_CSDK = configData["CSDK_directory"]
 
-count = 76
+count = 83
 directory_path = "DeadlockRandomizer\\Characters"
-
 search_pattern = os.path.join(directory_path, "*.txt")
 chars = glob.glob(search_pattern)
-chars.sort()
-output=""
+output = ""
 ultimates = []
 abilities = []
-names =[]
+names = []
 for char in chars:
     names.append(char)
     f = open(char)
     data = f.read()
     f.close()
     result = re.findall("^\t\t\t.*ESlot_Signature.*", data, re.MULTILINE)
-    ultimate =result[3][24:-1]
+    ultimate = result[3][24:-1]
     ultimates.append(ultimate)
     result.pop(3)
     for i in range(len(result)):
         abilities.append(result[i][24:-1])
-        
-
 
 for char in chars:
     f = open(char)
@@ -47,7 +46,7 @@ for char in chars:
     namePattern = "^"+namePattern
     charSelect = re.findall("^\t\tm_bDisabled = false$", data, re.MULTILINE)
     currHeroId = f"m_HeroID = {count}"
-    heroName = f"hero_{count - 76}"
+    heroName = f"hero_{count - 83}"
     currData = data
     currData = re.sub(idPattern, currHeroId, currData)
     currData = re.sub(namePattern, heroName, currData)
@@ -55,25 +54,28 @@ for char in chars:
 
     for i in range(len(result)):
         if i % 4 == 3:
-            uIndex =randint(0, len(ultimates)-1)
+            uIndex = randint(0, len(ultimates)-1)
             currData = re.sub(result[i][24:-1], ultimates[uIndex], currData)
             ultimates.pop(uIndex)
         else:
-            aIndex = randint(0,len(abilities)-1)
-            currData = re.sub(result[i][19:-1], f"{i+1} = \"{abilities[aIndex]}", currData)
+            aIndex = randint(0, len(abilities)-1)
+            replacement = f"{i+1} = \"{abilities[aIndex]}"
+            currData = re.sub(result[i][19:-1], replacement, currData)
             abilities.pop(aIndex)
 
     output += currData
-    output+="\n"
+    output += "\n"
     count += 1
 
 f = open("DeadlockRandomizer\\heroes.vdata")
 data = f.read()
 f.close()
-data=data[:-1]
+data = data[:-1]
 data = f"{data}\n{output}"
-data+="}"
-with open(f"{s_CSDK}\\content\\citadel_addons\\Randomizer\\scripts\\heroes.vdata", "w") as f:
+data += "}"
+output_path = (
+    f"{s_CSDK}\\content\\citadel_addons\\TrueRandom\\scripts\\heroes.vdata"
+)
+with open(output_path, "w") as f:
     f.write(data)
     f.close()
-    

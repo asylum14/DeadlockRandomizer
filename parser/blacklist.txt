@@ -22,3 +22,8 @@
 \thero_druid
 \thero_graf
 \thero_fortuna
+\thero_airheart
+\thero_opera
+\thero_fencer
+\thero_werewolf
+\thero_unicorn
