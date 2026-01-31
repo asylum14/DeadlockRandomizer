@@ -1,0 +1,5190 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+		"scripts/talker/response_rules_criterion.vrr",
+		"scripts/talker/response_rules_contextual_ping.vrr",
+		"scripts/talker/response_rules_contextual_ping.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/generated_vo_misc.vsndevts",
+		"soundevents/vo/generated_vo_hero_familiar.vsndevts",
+		"soundevents/vo/generated_vo_hero_doorman.vsndevts",
+	]
+	m_VcdLists = 
+	[
+		"scenes/conversations_vcdlist.vrman",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Familiar_Asleep_NeedHeal"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_need_heal_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.500000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_NeedHeal"
+								m_Requirements = 
+								[
+									"ConceptNeedHeal",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Lets_Do_Mid"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_take_mid_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Lets_Do_Mid"
+								m_Requirements = 
+								[
+									"ConceptPingedMid",
+									"IsPassive",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_There_In_Mid"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_theyre_in_mid_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_There_In_Mid"
+								m_Requirements = 
+								[
+									"ConceptPingedMid",
+									"IsAggressive",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Going_In"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_going_in_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_going_in_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Going_In"
+								m_Requirements = 
+								[
+									"ConceptGoingIn",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Good_Job"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_good_job_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Good_Job"
+								m_Requirements = 
+								[
+									"ConceptGoodJob",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Good_Job_All_Chat"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_good_job_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Good_Job_All_Chat"
+								m_Requirements = 
+								[
+									"ConceptGoodJobAllChat",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Good_Game"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_good_game_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_good_game_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_good_game_03_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Good_Game"
+								m_Requirements = 
+								[
+									"ConceptGoodGame",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Well_Played"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_well_played_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Well_Played"
+								m_Requirements = 
+								[
+									"ConceptWellPlayed",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Retreat"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_retreat_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Retreat"
+								m_Requirements = 
+								[
+									"ConceptRetreat",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Im_Back"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_right_back_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Im_Back"
+								m_Requirements = 
+								[
+									"ConceptBack",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Stay_Together"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_stay_together_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Stay_Together"
+								m_Requirements = 
+								[
+									"ConceptStayTogether",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Help_Yellow"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_need_help_yellow_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Help_Yellow"
+								m_Requirements = 
+								[
+									"ConceptHelp",
+									"PlayerInYellow",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Help_Green"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_need_help_green_alt_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Help_Green"
+								m_Requirements = 
+								[
+									"ConceptHelp",
+									"PlayerInGreen",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Help_Blue"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_need_help_blue_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Help_Blue"
+								m_Requirements = 
+								[
+									"ConceptHelp",
+									"PlayerInBlue",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Help_With_Idol"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_help_with_idol_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Help_With_Idol"
+								m_Requirements = 
+								[
+									"ConceptHelpWithIdol",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Youre_Welcome"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_welcome_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Youre_Welcome"
+								m_Requirements = 
+								[
+									"ConceptYoureWelcome",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Thank_You"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_thank_you_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_thank_you_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Thank_You"
+								m_Requirements = 
+								[
+									"ConceptThanks",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Thank_You_AllChat"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_thank_you_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_thank_you_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Thank_You_AllChat"
+								m_Requirements = 
+								[
+									"ConceptThanksAllChat",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_On_My_Way"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_on_way_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_On_My_Way"
+								m_Requirements = 
+								[
+									"ConceptOnMyWay",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Yes"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_affermative_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_affermative_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_affermative_03_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Yes"
+								m_Requirements = 
+								[
+									"ConceptYes",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_No"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_negative_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_negative_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_negative_03_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_No"
+								m_Requirements = 
+								[
+									"ConceptNo",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Push_Boss_Green_Lane"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_push_green_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_push_green_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Push_Boss_Green_Lane"
+								m_Requirements = 
+								[
+									"ConceptPushLane",
+									"GreenLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Push_Boss_Yellow_Lane"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_push_yellow_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_push_yellow_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Push_Boss_Yellow_Lane"
+								m_Requirements = 
+								[
+									"ConceptPushLane",
+									"YellowLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Push_Boss_Blue_Lane"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_push_blue_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_push_blue_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Push_Boss_Blue_Lane"
+								m_Requirements = 
+								[
+									"ConceptPushLane",
+									"BlueLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Defend_Boss_Blue_Lane"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_headed_blue_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_headed_blue_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Defend_Boss_Blue_Lane"
+								m_Requirements = 
+								[
+									"ConceptDefendLane",
+									"BlueLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Blue_Lane_Boss_Needs_Help"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_blue_help_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_blue_help_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Blue_Lane_Boss_Needs_Help"
+								m_Requirements = 
+								[
+									"ConceptDefendLane",
+									"BlueLane",
+									"IsAggressive",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Defend_Boss_Yellow_Lane"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_headed_yellow_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_headed_yellow_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Defend_Boss_Yellow_Lane"
+								m_Requirements = 
+								[
+									"ConceptDefendLane",
+									"YellowLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Yellow_Lane_Boss_Needs_Help"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_yellow_help_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_yellow_help_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Yellow_Lane_Boss_Needs_Help"
+								m_Requirements = 
+								[
+									"ConceptDefendLane",
+									"YellowLane",
+									"IsAggressive",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Defend_Boss_Green_Lane"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_defend_green_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_defend_green_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Defend_Boss_Green_Lane"
+								m_Requirements = 
+								[
+									"ConceptDefendLane",
+									"GreenLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Green_Lane_Boss_Needs_Help"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_green_help_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_green_help_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Green_Lane_Boss_Needs_Help"
+								m_Requirements = 
+								[
+									"ConceptDefendLane",
+									"GreenLane",
+									"IsAggressive",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Heading_Generic"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_headed_this_way_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Heading_Generic"
+								m_Requirements = 
+								[
+									"ConceptHeadingLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Heading_Blue"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_headed_blue_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_headed_blue_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Heading_Blue"
+								m_Requirements = 
+								[
+									"ConceptHeadingLane",
+									"BlueLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Heading_Yellow"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_headed_yellow_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_headed_yellow_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Heading_Yellow"
+								m_Requirements = 
+								[
+									"ConceptHeadingLane",
+									"YellowLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Heading_Green"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_headed_green_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_headed_green_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Heading_Green"
+								m_Requirements = 
+								[
+									"ConceptHeadingLane",
+									"GreenLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Lets_Go_Blue"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_lets_go_blue_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_lets_go_blue_alt_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Lets_Go_Blue"
+								m_Requirements = 
+								[
+									"ConceptLetsGoHere",
+									"BlueLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Lets_Go_Yellow"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_lets_go_yellow_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_lets_go_yellow_alt_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Lets_Go_Yellow"
+								m_Requirements = 
+								[
+									"ConceptLetsGoHere",
+									"YellowLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Lets_Go_Green"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_lets_go_green_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_lets_go_green_alt_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Lets_Go_Green"
+								m_Requirements = 
+								[
+									"ConceptLetsGoHere",
+									"GreenLane",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Be_Right_back"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_right_back_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_be_back_soon_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Be_Right_back"
+								m_Requirements = 
+								[
+									"ConceptHeadedToBase",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Going_To_Shop"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_going_shop_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Going_To_Shop"
+								m_Requirements = 
+								[
+									"ConceptGoingToShop",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Idol_Ping"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_jar_call_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_jar_call_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Idol_Ping"
+								m_Requirements = 
+								[
+									"ConceptIdolPing",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Need_Plan"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_need_plan_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Need_Plan"
+								m_Requirements = 
+								[
+									"ConceptNeedPlan",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ability1_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_ability1_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ability1_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityReady",
+									"IsAbility1",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ability3_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_ability3_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ability3_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityReady",
+									"IsAbility3",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ability4_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_ability4_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_ability4_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_ability4_03_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_ability4_04_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_ability4_05_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ability4_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityReady",
+									"IsAbility4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ability1_Almost_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_ability1_almost_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ability1_Almost_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityAlmostReady",
+									"IsAbility1",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ability3_Almost_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_ability3_almost_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ability3_Almost_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityAlmostReady",
+									"IsAbility3",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ability4_Almost_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_ability4_almost_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ability4_Almost_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityAlmostReady",
+									"IsAbility4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ability1_OnCooldown"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_ability1_not_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ability1_OnCooldown"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityOnCooldown",
+									"IsAbility1",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ability3_OnCooldown"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_ability3_not_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ability3_OnCooldown"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityOnCooldown",
+									"IsAbility3",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ability4_OnCooldown"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_ability4_not_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ability4_OnCooldown"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityOnCooldown",
+									"IsAbility4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Item_OnCooldown"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_item_not_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Item_OnCooldown"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityOnCooldown",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Item_AlmostReady"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_item_almost_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Item_AlmostReady"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityAlmostReady",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Item_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_item_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Item_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityReady",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_HealNova_OnCooldown"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_health_nova_not_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_HealNova_OnCooldown"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityOnCooldown",
+									"HealNovaItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_HealNova_AlmostReady"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_health_nova_almost_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_HealNova_AlmostReady"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityAlmostReady",
+									"HealNovaItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_HealNova_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_health_nova_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_HealNova_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityReady",
+									"HealNovaItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Refresher_OnCooldown"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_refresher_not_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Refresher_OnCooldown"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityOnCooldown",
+									"RefresherItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Refresher_AlmostReady"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_refresher_almost_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Refresher_AlmostReady"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityAlmostReady",
+									"RefresherItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Refresher_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_refresher_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Refresher_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityReady",
+									"RefresherItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Rupture_OnCooldown"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_rupture_not_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Rupture_OnCooldown"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityOnCooldown",
+									"RuptureItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Rupture_AlmostReady"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_rupture_almost_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Rupture_AlmostReady"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityAlmostReady",
+									"RuptureItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Rupture_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_rupture_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Rupture_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityReady",
+									"RuptureItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_StimPack_OnCooldown"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_stim_pack_not_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_StimPack_OnCooldown"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityOnCooldown",
+									"StimPackItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_StimPack_AlmostReady"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_stim_pack_almost_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_StimPack_AlmostReady"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityAlmostReady",
+									"StimPackItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_StimPack_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_stim_pack_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_StimPack_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityReady",
+									"StimPackItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_WarpStone_OnCooldown"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_warp_stone_not_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_WarpStone_OnCooldown"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityOnCooldown",
+									"WarpStoneItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_WarpStone_AlmostReady"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_warp_stone_almost_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_WarpStone_AlmostReady"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityAlmostReady",
+									"WarpStoneItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_WarpStone_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_warp_stone_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_WarpStone_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityReady",
+									"WarpStoneItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Glitch_OnCooldown"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_glitch_not_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Glitch_OnCooldown"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityOnCooldown",
+									"GlitchItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Glitch_AlmostReady"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_glitch_almost_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Glitch_AlmostReady"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityAlmostReady",
+									"GlitchItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Glitch_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_glitch_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Glitch_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityReady",
+									"GlitchItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Knockdown_OnCooldown"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_kncokdown_not_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Knockdown_OnCooldown"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityOnCooldown",
+									"KnockdownItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Knockdown_AlmostReady"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_kncokdown_almost_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Knockdown_AlmostReady"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityAlmostReady",
+									"KnockdownItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Knockdown_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_kncokdown_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Knockdown_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityReady",
+									"KnockdownItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Silence_OnCooldown"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_silence_not_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Silence_OnCooldown"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityOnCooldown",
+									"SilenceItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Silence_AlmostReady"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_silence_almost_ready_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Silence_AlmostReady"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityAlmostReady",
+									"SilenceItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Silence_Ready"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_use_silence_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Silence_Ready"
+								m_Requirements = 
+								[
+									"ConceptAbilityPing",
+									"AbilityReady",
+									"SilenceItem",
+									"IsItem",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_See_Hero"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_see_enemy_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+										m_bCancelExisting = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_See_Hero"
+								m_Requirements = 
+								[
+									"ConceptPingedEnemyPlayer",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Sorry"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_sorry_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_sorry_02_alt_01_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_sorry_02_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_sorry_03_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Sorry"
+								m_Requirements = 
+								[
+									"ConceptPlayerSorry",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Youre_Welcome"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_welcome_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Youre_Welcome"
+								m_Requirements = 
+								[
+									"ConceptYoureWelcome",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Request_Follow"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_request_follow_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Request_Follow"
+								m_Requirements = 
+								[
+									"ConceptRequestFollow",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Ping_Going_To_Gank"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_gank_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Ping_Going_To_Gank"
+								m_Requirements = 
+								[
+									"ConceptGoingToGank",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_rejuv_drop"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_rejuv_drop_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_rejuv_drop"
+								m_Requirements = 
+								[
+									"ConceptPingRejuvDrop",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Need_Cover"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_need_cover_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Need_Cover"
+								m_Requirements = 
+								[
+									"ConceptPingNeedCover",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_No_Teamfight"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_no_teamfight_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_No_Teamfight"
+								m_Requirements = 
+								[
+									"ConceptNoTeamFight",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Press_Advantage"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_press_advantage_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Press_Advantage"
+								m_Requirements = 
+								[
+									"ConceptPressAdvantage",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Lets_Hide"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_lets_hide_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Lets_Hide"
+								m_Requirements = 
+								[
+									"ConceptLetsHide",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Danger_Area"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_danger_area_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Danger_Area"
+								m_Requirements = 
+								[
+									"ConceptDangerArea",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Clear_Troopers"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_clear_troopers_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Clear_Troopers"
+								m_Requirements = 
+								[
+									"ConceptClearTroopers",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Meet_Here"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_meet_here_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Meet_Here"
+								m_Requirements = 
+								[
+									"ConceptMeetHere",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Flank"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_ping_flank_ping_2d"
+									m_params = 
+									{
+										m_respeakdelay.start = 3.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Flank"
+								m_Requirements = 
+								[
+									"ConceptFlank",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptPing",
+						]
+					}
+				},
+				
+				{
+					m_name = "Familiar_Asleep_Defend_Base"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "familiar_asleep_ping_defend_base_01_ping_2d"
+							m_params = 
+							{
+								m_bCancelExisting = true
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Familiar_Asleep_Defend_Base"
+						m_Requirements = 
+						[
+							"ConceptDefendLane",
+							"IsFinalObjective",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Familiar_Asleep_Killstreak_Low_Familiar_Asleep"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_killstreak_start_01_hero_announcer"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 3.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_killstreak_start_02_hero_announcer"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 3.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_killstreak_start_03_hero_announcer"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 3.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_killstreak_start_04_hero_announcer"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 3.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_killstreak_start_05_hero_announcer"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 3.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Killstreak_Low_Familiar_Asleep"
+								m_Requirements = 
+								[
+									"IsKillStreakLow",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Killstreak_Mid_Familiar_Asleep"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_killstreak_mid_01_hero_announcer"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 3.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_killstreak_mid_02_hero_announcer"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 3.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_killstreak_mid_03_hero_announcer"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 3.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Killstreak_Mid_Familiar_Asleep"
+								m_Requirements = 
+								[
+									"IsKillStreakMid",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Killstreak_High_Familiar_Asleep"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_killstreak_high_01_hero_announcer"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 3.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_killstreak_high_02_hero_announcer"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 3.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_killstreak_high_03_hero_announcer"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 3.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Killstreak_High_Familiar_Asleep"
+								m_Requirements = 
+								[
+									"IsKillStreakHigh",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptKillStreak",
+						]
+						m_recipientFilter = "all_players"
+					}
+				},
+				
+				{
+					m_name = "Familiar_Asleep_Buy_Upgrade_Spirit_Team_2"
+					m_notes = "MANUAL SHOPPING LINES //"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_01_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_02_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_03_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_04_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_05_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_06_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_07_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_08_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_09_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_10_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_11_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_12_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_13_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_14_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_15_shopkeeper"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+					]
+					m_children = 
+					[
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Weapon_Team_2"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_02_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_03_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_04_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_05_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_06_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_07_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_08_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_09_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_10_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_11_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_12_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_13_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_14_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_15_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Weapon_Team_2"
+								m_Requirements = 
+								[
+									"UpgradeWeapon",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Armor_Team_2"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_02_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_03_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_04_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_05_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_06_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_07_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_08_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_09_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_10_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_11_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_12_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_13_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_14_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_15_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_16_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Armor_Team_2"
+								m_Requirements = 
+								[
+									"UpgradeArmor",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Glass_Cannon_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_glass_cannon_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+									m_flWeight = 4.000000
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Glass_Cannon_test"
+								m_Requirements = 
+								[
+									"UpgradeWeapon",
+									"IsGlassCannon",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Vampiric_Burst_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_belt_fed_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_vampiric_burst_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Vampiric_Burst_test"
+								m_Requirements = 
+								[
+									"UpgradeWeapon",
+									"IsSurgingPower",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Spiritual_Overflow_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_magic_overflow_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_spiritual_overflow_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Spiritual_Overflow_test"
+								m_Requirements = 
+								[
+									"UpgradeWeapon",
+									"IsMagicOverflow",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Richochet_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_richochet_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Richochet_test"
+								m_Requirements = 
+								[
+									"UpgradeWeapon",
+									"IsRicochet",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Silencer_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_silencer_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Silencer_test"
+								m_Requirements = 
+								[
+									"UpgradeWeapon",
+									"IsSilencer",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Phantom_Strike_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_phantom_strike_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Phantom_Strike_test"
+								m_Requirements = 
+								[
+									"UpgradeArmor",
+									"IsPhantomStrike",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Unstoppable_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_unstoppable_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Unstoppable_test"
+								m_Requirements = 
+								[
+									"UpgradeArmor",
+									"IsUnstoppable",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Leech_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_leech_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Leech_test"
+								m_Requirements = 
+								[
+									"UpgradeArmor",
+									"IsLeech",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Shadow_Weave_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_shadow_weave_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Shadow_Weave_test"
+								m_Requirements = 
+								[
+									"IsShadowWeave",
+									"IsItemTier4",
+									"UpgradeWeapon",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Diviners_Kevlar_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_diviners_kevlar_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_diviners_kevlar_02_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Diviners_Kevlar_test"
+								m_Requirements = 
+								[
+									"IsDivinersKevlar",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Escalating_Exposure_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_escalating_exposure_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Escalating_Exposure_test"
+								m_Requirements = 
+								[
+									"IsEscalatingExposure",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Echo_Shard_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_echo_shard_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Echo_Shard_test"
+								m_Requirements = 
+								[
+									"IsEchoShard",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Glitch_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_glitch_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_curse_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Glitch_test"
+								m_Requirements = 
+								[
+									"IsGlitch",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Refresher_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_refresher_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Refresher_test"
+								m_Requirements = 
+								[
+									"IsRefresher",
+									"IsItemTier4",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Crippling_Headshot_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_crippling_headshot_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Crippling_Headshot_test"
+								m_Requirements = 
+								[
+									"UpgradeWeapon",
+									"IsItemTier4",
+									"IsCripplingHeadshot",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Frenzy_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_frenzy_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Frenzy_test"
+								m_Requirements = 
+								[
+									"UpgradeWeapon",
+									"IsItemTier4",
+									"IsFrenzy",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Lucky_Shot_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_lucky_shot_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Lucky_Shot_test"
+								m_Requirements = 
+								[
+									"UpgradeWeapon",
+									"IsItemTier4",
+									"IsLuckyShot",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Siphon_Bullets_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_siphon_bullets_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Siphon_Bullets_test"
+								m_Requirements = 
+								[
+									"IsItemTier4",
+									"IsSiphonBullets",
+									"UpgradeArmor",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Inhibitor_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_inhibitor_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Inhibitor_test"
+								m_Requirements = 
+								[
+									"UpgradeArmor",
+									"IsItemTier4",
+									"IsInhibitor",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Colossus_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_colossus_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Colossus_test"
+								m_Requirements = 
+								[
+									"UpgradeArmor",
+									"IsItemTier4",
+									"IsColossus",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_Boundless_Spirit_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_boundless_spirit_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_Boundless_Spirit_test"
+								m_Requirements = 
+								[
+									"IsItemTier4",
+									"IsBoundlessSpirit",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_MysticReverb_test"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_mystic_reverb_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_MysticReverb_test"
+								m_Requirements = 
+								[
+									"IsItemTier4",
+									"IsMysticReverb",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_Asleep_Buy_Upgrade_MagicCarpet"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_magic_carpet_01_shopkeeper"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_Asleep_Buy_Upgrade_MagicCarpet"
+								m_Requirements = 
+								[
+									"IsItemTier4",
+									"IsMagicCarpet",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Familiar_Asleep_Buy_Upgrade_Spirit_Team_2"
+						m_Requirements = 
+						[
+							"ConceptBuyUpgrade",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_children = 
+							[
+								
+								{
+									m_name = "Familiar_Asleep_General_Observe_Three_Enemies_Affected_TEST"
+									m_responses = 
+									[
+										
+										{
+											m_type = "SPEAK"
+											m_value = "familiar_asleep_ping_nice_work_01_ping_2d"
+											m_params = 
+											{
+												m_respeakdelay.start = 15.000000
+												m_predelay.start = 3.000000
+											}
+										},
+									]
+									m_pEmbeddedRule = 
+									{
+										m_name = "Familiar_Asleep_General_Observe_Three_Enemies_Affected_TEST"
+										m_Requirements = 
+										[
+											"Affected3Players",
+										]
+									}
+								},
+								
+								{
+									m_name = "Familiar_Asleep_General_Observe_Three_Enemies_Killed_TEST"
+									m_responses = 
+									[
+										
+										{
+											m_type = "SPEAK"
+											m_value = "familiar_asleep_ping_nice_work_01_ping_2d"
+											m_params = 
+											{
+												m_respeakdelay.start = 15.000000
+												m_predelay.start = 3.000000
+											}
+										},
+									]
+									m_pEmbeddedRule = 
+									{
+										m_name = "Familiar_Asleep_General_Observe_Three_Enemies_Killed_TEST"
+										m_Requirements = 
+										[
+											"Killed3Players",
+										]
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_Requirements = 
+								[
+									"IsCasterAlly",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptObserveCastFinish",
+						]
+					}
+				},
+				
+				{
+					m_name = "Familiar_Asleep_Assists"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "familiar_asleep_congrats_01_hero_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 60.000000
+								m_predelay.start = 4.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "familiar_asleep_congrats_02_hero_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 60.000000
+								m_predelay.start = 4.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "familiar_asleep_congrats_03_hero_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 60.000000
+								m_predelay.start = 4.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "familiar_asleep_congrats_04_hero_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 60.000000
+								m_predelay.start = 4.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "familiar_asleep_congrats_05_hero_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 60.000000
+								m_predelay.start = 4.000000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Familiar_Asleep_Assists"
+						m_Requirements = 
+						[
+							"ConceptKillAssist",
+						]
+						m_recipientFilter = "nearby_allies_and_spectators"
+					}
+				},
+				
+				{
+					m_name = "Familiar_Asleep_Gains_Boon_Male_Patron"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_general_01_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_general_02_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_general_03_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_general_04_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_general_05_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_general_06_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_general_07_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_general_08_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_general_09_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_general_10_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_general_11_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_magic_01_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_magic_02_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_magic_03_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_magic_04_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_magic_05_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_magic_06_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_magic_07_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_magic_08_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_magic_09_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_magic_10_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_weapon_01_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_weapon_02_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_weapon_03_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_weapon_04_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_weapon_05_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_weapon_06_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_weapon_07_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_weapon_08_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_weapon_09_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_weapon_10_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_male_grant_boon_weapon_11_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Familiar_Asleep_Gains_Boon_Male_Patron"
+						m_Requirements = 
+						[
+							"ConceptLevelGained",
+							"IsTeam2",
+							"IsAfter5Minute",
+							"Chance50",
+						]
+					}
+				},
+				
+				{
+					m_name = "Familiar_Asleep_Gains_Boon_Female_Patron"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_general_01_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_general_02_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_general_03_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_general_04_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_general_05_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_general_06_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_general_07_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_general_08_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_general_09_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_general_10_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_general_11_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_magic_01_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_magic_02_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_magic_03_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_magic_04_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_magic_05_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_magic_06_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_magic_07_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_magic_08_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_magic_09_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_magic_10_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_weapon_01_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_weapon_02_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_weapon_03_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_weapon_04_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_weapon_05_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_weapon_06_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_weapon_07_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_weapon_08_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_weapon_09_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_weapon_10_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "patron_female_grant_boon_weapon_11_announcer"
+							m_params = 
+							{
+								m_respeakdelay.start = 120.000000
+								m_predelay.start = 1.000000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Familiar_Asleep_Gains_Boon_Female_Patron"
+						m_Requirements = 
+						[
+							"ConceptLevelGained",
+							"IsTeam3",
+							"IsAfter5Minute",
+							"Chance50",
+						]
+					}
+				},
+				
+				{
+					m_name = "Familiar_Asleep_Taunted_In_Hotel"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_01_short_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_02_short_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_03_short_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_04_short_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_05_short_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_06_short_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_07_short_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_08_short_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_09_short_ability_3d"
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Familiar_Asleep_Taunted_In_Hotel"
+						m_Requirements = 
+						[
+							"ConceptDoormanHotelTaunt",
+							"IsAbilityHotel",
+							"IsActionTeleportedToHotel",
+						]
+					}
+				},
+				
+				{
+					m_name = "Familiar_Asleep_Killed_By_Doorman_Ult"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_01_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_02_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_03_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_04_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_05_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_06_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_07_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_08_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "doorman_power4_generic_09_ability_3d"
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Familiar_Asleep_Killed_By_Doorman_Ult"
+						m_Requirements = 
+						[
+							"ConceptDeath",
+							"IsAbilityHotel",
+						]
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsFamiliar_Asleep",
+				]
+			}
+		},
+	]
+	m_speakerType = "player"
+	m_actorName = "Familiar_Asleep"
+}

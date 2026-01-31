@@ -1,0 +1,2288 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+		"scripts/talker/response_rules_contextual_ping.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+		"soundevents/vo/generated_vo_hero_kali.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Kali_Upgrade_OccilioBlade"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power1_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power1_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power1_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power1_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power1_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power1_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power1_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power1_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power1_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power1_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Upgrade_OccilioBlade"
+								m_Requirements = 
+								[
+									"IsOccilioBlade",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Upgrade_Speed_Burst"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power2_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power2_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power2_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power2_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power2_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power2_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power2_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power2_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power2_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power2_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Upgrade_Speed_Burst"
+								m_Requirements = 
+								[
+									"IsSpeedBurst",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Upgrade_Tranq_Bomb"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power3_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power3_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power3_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power3_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power3_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power3_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power3_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power3_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power3_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Upgrade_Tranq_Bomb"
+								m_Requirements = 
+								[
+									"IsTranqBomb",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Upgrade_Whirling_Blade"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power4_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power4_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power4_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power4_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power4_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power4_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power4_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power4_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power4_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_upgrade_power4_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Upgrade_Whirling_Blade"
+								m_Requirements = 
+								[
+									"IsWhirlingBlade",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUpgradeAbility",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Kali_Use_OccilioBlade"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power1_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power1_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power1_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power1_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Use_OccilioBlade"
+								m_Requirements = 
+								[
+									"IsOccilioBlade",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Use_Speed_Burst"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power2_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power2_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power2_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power2_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power2_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Use_Speed_Burst"
+								m_Requirements = 
+								[
+									"IsSpeedBurst",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Use_Tranq_Bomb"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power3_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power3_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power3_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Use_Tranq_Bomb"
+								m_Requirements = 
+								[
+									"IsTranqBomb",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Kali_Use_Whirling_Blade"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power4_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power4_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power4_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power4_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power4_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power4_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power4_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power4_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power4_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "rr_test_19_use_power4_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Use_Whirling_Blade"
+								m_Requirements = 
+								[
+									"IsWhirlingBlade",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+						]
+					}
+				},
+				
+				{
+					m_name = "Kali_Selected"
+					m_notes = "GAME START RESPONSES //"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "rr_test_19_select_01_hero_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "rr_test_19_select_02_hero_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "rr_test_19_select_03_hero_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "rr_test_19_select_04_hero_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "rr_test_19_select_05_hero_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "rr_test_19_select_06_hero_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "rr_test_19_select_07_hero_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "rr_test_19_select_08_hero_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "rr_test_19_select_09_hero_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "rr_test_19_select_10_hero_3d"
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Kali_Selected"
+						m_Requirements = 
+						[
+							"ConceptHeroSelected",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Kali_Early_Shop"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_early_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_early_02"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_early_03"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_early_04"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_early_05"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_early_06"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_early_07"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_early_08"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_early_09"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_early_10"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Early_Shop"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter1Minute",
+									"IsBefore6Minute",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Doing_Well"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_akimbo_winning"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Doing_Well"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamWinningByAlot",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Orion"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_orion_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Orion"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyOrion",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Astro"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_orion_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Astro"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyAstro",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Bebop"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_bebop_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Bebop"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyBebop",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Atlas"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_atlas_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Atlas"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyAtlas",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Chrono"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_chrono_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Chrono"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyChrono",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Krill"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_krill_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Krill"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyKrill",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Forge"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_forge_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Forge"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyForge",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Ghost"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_ghost_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Ghost"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyGhost",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Gigawatt"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_gigawatt_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Gigawatt"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyGigawatt",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Haze"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_haze_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Haze"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyHaze",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Hornet"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_hornet_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Hornet"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyHornet",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Inferno"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_inferno_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Inferno"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyInferno",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Kali"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_kali_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Kali"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyKali",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Kelvin"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_kelvin_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Kelvin"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyKelvin",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Nano"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_nano_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Nano"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyNano",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Shiv"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_shiv_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Shiv"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyShiv",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Dynamo"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_dynamo_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Dynamo"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyDynamo",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Warden"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_warden_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Warden"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyWarden",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Wraith"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_wraith_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Wraith"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyWraith",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Yamato"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_yamato_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Yamato"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyYamato",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Wrecker"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_butcher_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Wrecker"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyWrecker",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Lash"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_lash_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Lash"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyLash",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Viscous"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_viscous_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Viscous"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyViscous",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Akimbo"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_akimbo_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Akimbo"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyAkimbo",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Trouble_With_Ballista"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_balista_trouble_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Trouble_With_Ballista"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter20Minute",
+									"TeamLosingByAlot",
+									"EnemyBallista",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptOpenShop",
+						]
+					}
+				},
+				
+				{
+					m_name = "Kali_Upgrade_Tech_Or_Utility"
+					m_notes = "MANUAL SHOPPING LINES //"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_01"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_02"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_03"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_04"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_05"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_06"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_07"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_08"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_09"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_10"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_11"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_12"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_13"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_14"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_buy_tech_15"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_kali_buy_01"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_kali_buy_02"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_mysterious_kali_buy_03"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+					]
+					m_children = 
+					[
+						
+						{
+							m_name = "Kali_Upgrade_Weapon"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_01"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_02"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_03"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_04"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_05"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_06"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_07"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_08"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_09"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_10"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_11"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_12"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_13"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_14"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_gun_15"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_kali_buy_01"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_kali_buy_02"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_kali_buy_03"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Upgrade_Weapon"
+								m_Requirements = 
+								[
+									"UpgradeWeapon",
+								]
+							}
+						},
+						
+						{
+							m_name = "Kali_Upgrade_Armor"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_01"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_02"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_03"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_04"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_05"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_06"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_07"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_08"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_09"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_10"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_11"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_12"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_13"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_14"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_buy_armor_15"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_kali_buy_01"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_kali_buy_02"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_mysterious_kali_buy_03"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Kali_Upgrade_Armor"
+								m_Requirements = 
+								[
+									"UpgradeArmor",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Kali_Upgrade_Tech_Or_Utility"
+						m_Requirements = 
+						[
+							"ConceptBuyUpgrade",
+						]
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsKali",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsOccilioBlade"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_kali_spinning_blade"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSpeedBurst"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_kali_disruptive_charge"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTranqBomb"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_bolo_tranquilizer"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWhirlingBlade"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_kali_tornado_blade"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+}

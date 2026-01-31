@@ -1,0 +1,1042 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+		"soundevents/vo/generated_vo_misc.vsndevts",
+		"soundevents/vo/generated_vo_hero_frank.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_name = "Frank_Use_Revive_Ally"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "frank_use_power4_09_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "frank_use_power4_01_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "frank_use_power4_02_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "frank_use_power4_03_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "frank_use_power4_04_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "frank_use_power4_05_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "frank_use_power4_06_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "frank_use_power4_07_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "frank_use_power4_08_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Frank_Use_Revive_Ally"
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+							"IsFrankRevive",
+							"IsSpokenToAlliesOnly",
+						]
+					}
+				},
+				
+				{
+					m_name = "Frank_Use_Revive_Enemy"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "frank_use_power4_10_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Frank_Use_Revive_Enemy"
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+							"IsFrankRevive",
+							"IsSpokenToEnemiesOnly",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Frank_Use_Zap"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power1_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power1_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power1_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power1_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power1_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Use_Zap"
+								m_Requirements = 
+								[
+									"IsZap",
+									"Chance75",
+								]
+							}
+						},
+						
+						{
+							m_name = "Frank_Use_JumpStart"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power2_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power2_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power2_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power2_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power2_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Use_JumpStart"
+								m_Requirements = 
+								[
+									"IsJumpStart",
+									"Chance75",
+								]
+							}
+						},
+						
+						{
+							m_name = "Frank_Use_AuroOfPain"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power3_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power3_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power3_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power3_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_use_power3_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Use_AuroOfPain"
+								m_Requirements = 
+								[
+									"IsAuraOfPain",
+									"Chance75",
+									"IsToggledOn",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Frank_Desperation_Use_Zap"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Desperation_Use_Zap"
+								m_Requirements = 
+								[
+									"IsZap",
+									"IsHealthLowerThan20Percent",
+								]
+							}
+						},
+						
+						{
+							m_name = "Frank_Desperation_Use_JumpStart"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Desperation_Use_JumpStart"
+								m_Requirements = 
+								[
+									"IsJumpStart",
+									"IsHealthLowerThan20Percent",
+								]
+							}
+						},
+						
+						{
+							m_name = "Frank_Desperation_Use_AuroOfPain"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_desperation_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Desperation_Use_AuroOfPain"
+								m_Requirements = 
+								[
+									"IsAuraOfPain",
+									"IsToggledOn",
+									"IsHealthLowerThan20Percent",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Frank_Upgrade_Zap"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power1_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power1_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power1_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power1_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power1_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power1_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power1_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power1_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power1_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power1_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Upgrade_Zap"
+								m_Requirements = 
+								[
+									"IsZap",
+								]
+							}
+						},
+						
+						{
+							m_name = "Frank_Upgrade_Jump_Start"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power2_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power2_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power2_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power2_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power2_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power2_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power2_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power2_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power2_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power2_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Upgrade_Jump_Start"
+								m_Requirements = 
+								[
+									"IsJumpStart",
+								]
+							}
+						},
+						
+						{
+							m_name = "Frank_Upgrade_Aura_of_Pain"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power3_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power3_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power3_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power3_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power3_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power3_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power3_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power3_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power3_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power3_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Upgrade_Aura_of_Pain"
+								m_Requirements = 
+								[
+									"IsAuraOfPain",
+								]
+							}
+						},
+						
+						{
+							m_name = "Frank_Upgrade_Revive"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power4_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power4_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power4_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power4_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power4_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power4_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power4_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power4_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power4_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "frank_upgrade_power4_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Upgrade_Revive"
+								m_Requirements = 
+								[
+									"IsFrankRevive",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUpgradeAbility",
+						]
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsFrank",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsZap"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_frank_shocktarget2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsJumpStart"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_frank_selfzap"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAuraOfPain"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_frank_painaura"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFrankRevive"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_frank_revive"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+}

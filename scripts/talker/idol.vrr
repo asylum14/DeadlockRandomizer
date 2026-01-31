@@ -1,0 +1,682 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/generated_vo_misc.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_name = "IdolLanding"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropping_01_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropping_02_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropping_03_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropping_04_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropping_05_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropping_07_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropping_08_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropping_09_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropping_10_idol"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "IdolLanding"
+				m_Requirements = 
+				[
+					"ConceptIdol",
+					"IsIdol",
+					"is_event_idol_landing",
+				]
+				m_cooldown.start = 10.000000
+			}
+		},
+		
+		{
+			m_name = "IdolDropFromCrate"
+			m_pEmbeddedRule = 
+			{
+				m_name = "IdolDropFromCrate"
+				m_Requirements = 
+				[
+					"ConceptIdol",
+					"IsIdol",
+					"is_event_idol_spawn",
+					"is_from_crate",
+				]
+			}
+		},
+		
+		{
+			m_name = "IdolWaitingOnBridge"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_01_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_02_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_03_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_04_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_05_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_06_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_07_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_08_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_09_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_10_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_11_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_12_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_13_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_17_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_18_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_19_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_on_bridge_20_idol"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "IdolWaitingOnBridge"
+				m_Requirements = 
+				[
+					"ConceptIdol",
+					"IsIdol",
+					"is_event_idol_sitting",
+					"is_from_crate",
+					"is_life_time_5",
+				]
+				m_cooldown.start = 15.000000
+			}
+		},
+		
+		{
+			m_name = "IdolDropFromPlayer"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropped_01_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropped_02_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropped_03_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropped_04_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropped_05_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropped_06_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropped_07_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropped_08_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropped_09_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_dropped_10_idol"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "IdolDropFromPlayer"
+				m_Requirements = 
+				[
+					"ConceptIdol",
+					"IsIdol",
+					"is_event_idol_spawn",
+					"is_from_player",
+				]
+			}
+		},
+		
+		{
+			m_name = "IdolWaitingOnStreet"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_in_street_02_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_in_street_03_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_in_street_04_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_in_street_05_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_in_street_06_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_in_street_07_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_in_street_08_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_in_street_09_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_in_street_11_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_waiting_in_street_02_alt_01_idol"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "IdolWaitingOnStreet"
+				m_Requirements = 
+				[
+					"ConceptIdol",
+					"IsIdol",
+					"is_event_idol_sitting",
+					"is_life_time_5",
+					"is_from_player",
+				]
+				m_cooldown.start = 15.000000
+			}
+		},
+		
+		{
+			m_name = "IdolPickupFromBridge"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_picked_up_on_bridge_02_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_picked_up_on_bridge_06_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_picked_up_on_bridge_07_idol"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "IdolPickupFromBridge"
+				m_Requirements = 
+				[
+					"ConceptPickUpItem",
+					"IsItemIdol",
+					"is_from_crate",
+				]
+			}
+		},
+		
+		{
+			m_name = "IdolPickupFromStreet"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_picked_up_on_street_01_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_picked_up_on_street_02_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_picked_up_on_street_03_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_picked_up_on_street_04_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_picked_up_on_street_05_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_picked_up_on_street_07_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_picked_up_on_street_08_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_picked_up_on_street_09_idol"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "IdolPickupFromStreet"
+				m_Requirements = 
+				[
+					"ConceptPickUpItem",
+					"IsItemIdol",
+					"is_from_player",
+				]
+			}
+		},
+		
+		{
+			m_name = "IdolDelivered"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_delivered_01_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_delivered_02_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_delivered_03_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_delivered_04_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_delivered_05_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_delivered_06_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_delivered_07_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_delivered_08_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_delivered_09_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_delivered_10_idol"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "IdolDelivered"
+				m_Requirements = 
+				[
+					"ConceptIdol",
+					"is_event_idol_delivered",
+				]
+			}
+		},
+		
+		{
+			m_name = "IdolDroppedFromStun"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_gets_stunned_01_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_gets_stunned_02_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_gets_stunned_03_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_gets_stunned_04_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_gets_stunned_05_idol"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "IdolDroppedFromStun"
+				m_Requirements = 
+				[
+					"ConceptDropItem",
+					"IsItemIdol",
+					"IsInterrupted",
+				]
+			}
+		},
+		
+		{
+			m_name = "IdolCarrierTakeDamageWithLowHP"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_takes_big_damage_01_idol"
+					m_params = 
+					{
+						m_respeakdelay.start = 10.000000
+					}
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_takes_big_damage_02_idol"
+					m_params = 
+					{
+						m_respeakdelay.start = 10.000000
+					}
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_takes_big_damage_03_idol"
+					m_params = 
+					{
+						m_respeakdelay.start = 10.000000
+					}
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_takes_big_damage_04_idol"
+					m_params = 
+					{
+						m_respeakdelay.start = 10.000000
+					}
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_takes_big_damage_05_idol"
+					m_params = 
+					{
+						m_respeakdelay.start = 10.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "IdolCarrierTakeDamageWithLowHP"
+				m_Requirements = 
+				[
+					"ConceptPain",
+					"IsCarryingIdol",
+					"IsHealthLowerThan25Percent",
+				]
+			}
+		},
+		
+		{
+			m_name = "IsHoldingIdolTooLong"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_stalls_01_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_stalls_02_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_stalls_03_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_stalls_04_idol"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "spirit_jar_idol_holder_stalls_05_idol"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "IsHoldingIdolTooLong"
+				m_Requirements = 
+				[
+					"ConceptIdol",
+					"is_event_idol_holding",
+					"IsHoldingIdolTooLong",
+				]
+				m_cooldown.start = 10.000000
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "is_life_time_5"
+			m_matchKey = "life_time"
+			m_matchExpr = ">5"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "is_from_crate"
+			m_matchKey = "from_crate"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsIdol"
+			m_matchKey = "classname"
+			m_matchExpr = "citadel_point_talker_idol"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "is_from_player"
+			m_matchKey = "from_crate"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsInterrupted"
+			m_matchKey = "is_interrupted"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHoldingIdolTooLong"
+			m_matchKey = "idol_hold_duration"
+			m_matchExpr = ">60"
+			m_bRequired = true
+		},
+	]
+}

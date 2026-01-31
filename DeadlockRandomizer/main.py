@@ -74,7 +74,7 @@ data = data[:-1]
 data = f"{data}\n{output}"
 data += "}"
 output_path = (
-    f"{s_CSDK}\\content\\citadel_addons\\TrueRandom\\scripts\\heroes.vdata"
+    f"{s_CSDK}\\content\\citadel_addons\\Randomizer\\scripts\\heroes.vdata"
 )
 with open(output_path, "w") as f:
     f.write(data)

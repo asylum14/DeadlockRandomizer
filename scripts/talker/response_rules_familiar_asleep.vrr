@@ -1,0 +1,499 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+		"soundevents/vo/generated_vo_misc.vsndevts",
+		"soundevents/vo/generated_vo_hero_familiar.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_name = "Familiar_asleep_Use_Ultimate_Ally"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "familiar_asleep_use_power4_02_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "familiar_asleep_use_power4_03_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "familiar_asleep_use_power4_04_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "familiar_asleep_use_power4_05_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Familiar_asleep_Use_Ultimate_Ally"
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+							"IsSpokenToAlliesOnly",
+							"IsNaptimeAsleep",
+						]
+						m_predelay.start = 0.600000
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Familiar_asleep_Use_Sigil"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_use_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_use_power1_01_alt_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_use_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_use_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_use_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_use_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_use_power1_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_asleep_Use_Sigil"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsDarkCloudAsleep",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_asleep_Use_Lunge"
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_asleep_Use_Lunge"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsTagAlongAsleep",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_asleep_Use_Riposte"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_use_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_use_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_use_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_use_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_use_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_asleep_Use_Riposte"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsHelpingHandsAsleep",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Familiar_asleep_upgrade_Sigil"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power1_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power1_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power1_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power1_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power1_05_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_asleep_upgrade_Sigil"
+								m_Requirements = 
+								[
+									"IsDarkCloudAsleep",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_asleep_upgrade_lunge"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power2_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power2_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power2_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power2_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power2_05_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_asleep_upgrade_lunge"
+								m_Requirements = 
+								[
+									"IsTagAlongAsleep",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_asleep_upgrade_Lovebites"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power3_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power3_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power3_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power3_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power3_05_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_asleep_upgrade_Lovebites"
+								m_Requirements = 
+								[
+									"IsHelpingHandsAsleep",
+								]
+							}
+						},
+						
+						{
+							m_name = "Familiar_asleep_upgrade_Ultimate"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power4_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power4_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power4_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power4_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "familiar_asleep_upgrade_power4_05_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Familiar_asleep_upgrade_Ultimate"
+								m_Requirements = 
+								[
+									"IsNaptimeAsleep",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUpgradeAbility",
+						]
+					}
+				},
+				
+				{
+					m_name = "Familiar_asleep_Use_Ultimate_Enemy"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "familiar_asleep_use_power4_01_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Familiar_asleep_Use_Ultimate_Enemy"
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+							"IsSpokenToEnemiesOnly",
+							"IsNaptimeAsleep",
+						]
+						m_predelay.start = 0.600000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsFamiliar_Asleep",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsDarkCloudAsleep"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_familiar_ability02"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTagAlongAsleep"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_familiar_attach"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHelpingHandsAsleep"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_familiar_helpinghands"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsNaptimeAsleep"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_familiar_ability01"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+	m_actorName = "Familiar_Asleep"
+}

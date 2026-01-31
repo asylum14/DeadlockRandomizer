@@ -64,7 +64,7 @@ for i, wset in enumerate(weaponSets):
     data = data.replace(oLash, setInfo)
 
 output_path = (
-    f"{s_CSDK}\\content\\citadel_addons\\TrueRandom\\scripts\\abilities.vdata"
+    f"{s_CSDK}\\content\\citadel_addons\\Randomizer\\scripts\\abilities.vdata"
 )
 with open(output_path, "w") as f:
     f.write(data)

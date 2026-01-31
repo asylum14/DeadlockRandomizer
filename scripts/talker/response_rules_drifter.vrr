@@ -1,0 +1,1522 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+		"soundevents/vo/generated_vo_misc.vsndevts",
+		"soundevents/vo/generated_vo_hero_drifter.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_name = "Drifter_Use_Ult_Ally"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power4_12_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power4_11_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power4_10_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power4_09_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power4_08_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power4_07_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power4_06_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power4_05_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power4_04_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power4_02_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power4_01_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Drifter_Use_Ult_Ally"
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+							"IsDrifterUlt",
+							"IsSpokenToAlliesOnly",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Frank_Use_Rend"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power1_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power1_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power1_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power1_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Use_Rend"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsBloodBlast",
+								]
+								m_predelay.start = 0.750000
+							}
+						},
+						
+						{
+							m_name = "Frank_Use_Stalkers_Mark"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power2_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power2_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power2_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power2_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power2_11_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power2_12_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power2_13_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Use_Stalkers_Mark"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsShadowMark",
+								]
+								m_predelay.start = 0.750000
+							}
+						},
+						
+						{
+							m_name = "Frank_Use_Hunger"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power3_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power3_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power3_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power3_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power3_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Use_Hunger"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsTheHunger",
+								]
+							}
+						},
+						
+						{
+							m_name = "Frank_Desperation_Use_Rend"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Desperation_Use_Rend"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsBloodBlast",
+								]
+								m_predelay.start = 0.750000
+							}
+						},
+						
+						{
+							m_name = "Frank_Desperation_Use_Stalkers_Mark"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.750000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Desperation_Use_Stalkers_Mark"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsShadowMark",
+								]
+								m_predelay.start = 0.750000
+							}
+						},
+						
+						{
+							m_name = "Frank_Desperation_Use_Hunger"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_desperation_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Frank_Desperation_Use_Hunger"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsTheHunger",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+				
+				{
+					m_name = "dfd"
+					m_children = 
+					[
+						
+						{
+							m_name = "Drifter_Upgrade_Rend"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power1_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power1_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power1_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power1_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power1_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power1_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power1_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power1_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power1_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power1_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Upgrade_Rend"
+								m_Requirements = 
+								[
+									"IsBloodBlast",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Upgrade_Stalkers_Mark"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power2_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power2_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power2_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power2_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power2_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power2_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power2_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power2_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power2_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power2_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Upgrade_Stalkers_Mark"
+								m_Requirements = 
+								[
+									"IsShadowMark",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Upgrade_The_Hunger"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power3_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power3_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power3_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power3_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power3_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power3_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power3_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power3_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power3_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power3_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Upgrade_The_Hunger"
+								m_Requirements = 
+								[
+									"IsTheHunger",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Upgrade_The_Darkness"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power4_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power4_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power4_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power4_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power4_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power4_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power4_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power4_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power4_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_upgrade_power4_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Upgrade_The_Darkness"
+								m_Requirements = 
+								[
+									"IsDrifterUlt",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "dfd"
+						m_Requirements = 
+						[
+							"ConceptUpgradeAbility",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Drifter_Hunting_Calico"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_01_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Calico"
+								m_Requirements = 
+								[
+									"IsOtherHeroNano",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Grey_Talon"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_05_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_02_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power1_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power1_02_alt_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_use_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Grey_Talon"
+								m_Requirements = 
+								[
+									"IsOtherHeroOrion",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Geist"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_03_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Geist"
+								m_Requirements = 
+								[
+									"IsOtherHeroGhost",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Paige"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_04_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Paige"
+								m_Requirements = 
+								[
+									"IsOtherHeroBookworm",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Shiv"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_06_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Shiv"
+								m_Requirements = 
+								[
+									"IsOtherHeroShiv",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Holliday"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_07_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Holliday"
+								m_Requirements = 
+								[
+									"IsOtherHeroAstro",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Lash"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_08_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Lash"
+								m_Requirements = 
+								[
+									"IsOtherHeroLash",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Haze"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_09_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Haze"
+								m_Requirements = 
+								[
+									"IsOtherHeroHaze",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Pocket"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_10_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Pocket"
+								m_Requirements = 
+								[
+									"IsOtherHeroSynth",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Priest"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_11_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Priest"
+								m_Requirements = 
+								[
+									"IsOtherHeroPriest",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Vindicta"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_12_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Vindicta"
+								m_Requirements = 
+								[
+									"IsOtherHeroHornet",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Ivy"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_13_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Ivy"
+								m_Requirements = 
+								[
+									"IsOtherHeroTengu",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Seven"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_14_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Seven"
+								m_Requirements = 
+								[
+									"IsOtherHeroGigawatt",
+								]
+							}
+						},
+						
+						{
+							m_name = "Drifter_Hunting_Infernus"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "drifter_bespoke_ability_line_15_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Drifter_Hunting_Infernus"
+								m_Requirements = 
+								[
+									"IsOtherHeroInferno",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptHunting",
+						]
+					}
+				},
+				
+				{
+					m_name = "Drifter_Teleport"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power2_06_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power2_14_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power1_01_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power1_02_alt_01_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power1_09_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_desperation_power1_02_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_upgrade_power3_01_hero_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power3_10_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power3_02_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power3_06_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_desperation_power3_01_ability_3d"
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_desperation_power3_02_ability_3d"
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Drifter_Teleport"
+						m_Requirements = 
+						[
+							"ConceptAbilityFinish",
+							"IsShadowMark",
+						]
+					}
+				},
+				
+				{
+					m_name = "Drifter_Use_Ult_Enemy"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "drifter_use_power4_03_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Drifter_Use_Ult_Enemy"
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+							"IsDrifterUlt",
+							"IsSpokenToEnemiesOnly",
+						]
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsDrifter",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsShadowMark"
+			m_matchKey = "ability_name"
+			m_matchExpr = "drifter_shadow_mark"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBloodBlast"
+			m_matchKey = "ability_name"
+			m_matchExpr = "drifter_blood_blast"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTheHunger"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_drifter_hunger"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDrifterUlt"
+			m_matchKey = "ability_name"
+			m_matchExpr = "drifter_darkness"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+}

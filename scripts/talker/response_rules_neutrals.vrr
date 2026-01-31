@@ -1,0 +1,295 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+		"scripts/talker/response_rules_contextual_ping.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/generated_vo_misc.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_name = "Monster_Plant_Attack"
+			m_notes = "NEUTRAL RESPONSES //"
+			m_pEmbeddedRule = 
+			{
+				m_name = "Monster_Plant_Attack"
+				m_Requirements = 
+				[
+					"IsMonsterPlant",
+					"ConceptNeutralAggro",
+				]
+			}
+		},
+		
+		{
+			m_name = "Monster_Plant_Idle"
+			m_notes = "NEUTRAL RESPONSES //"
+			m_pEmbeddedRule = 
+			{
+				m_name = "Monster_Plant_Idle"
+				m_Requirements = 
+				[
+					"IsMonsterPlant",
+					"ConceptNeutralIdle",
+				]
+			}
+		},
+		
+		{
+			m_name = "Weak_Trash_Gremlin_Attack"
+			m_notes = "NEUTRAL RESPONSES //"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_surprise_01_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_14_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_12_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_13_gremlin"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "Weak_Trash_Gremlin_Attack"
+				m_Requirements = 
+				[
+					"IsWeakTrashGremlin",
+					"ConceptNeutralAggro",
+				]
+			}
+		},
+		
+		{
+			m_name = "Weak_Trash_Gremlin_Idle"
+			m_notes = "NEUTRAL RESPONSES //"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_idle_08_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_idle_10_gremlin"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "Weak_Trash_Gremlin_Idle"
+				m_Requirements = 
+				[
+					"IsWeakTrashGremlin",
+					"ConceptNeutralIdle",
+				]
+			}
+		},
+		
+		{
+			m_name = "Trash_Gremlin_Attack"
+			m_notes = "NEUTRAL RESPONSES //"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_02_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_03_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_07_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_08_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_09_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_10_gremlin"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "Trash_Gremlin_Attack"
+				m_Requirements = 
+				[
+					"IsTrashGremlin",
+					"ConceptNeutralAggro",
+				]
+			}
+		},
+		
+		{
+			m_name = "Trash_Gremlin_Idle"
+			m_notes = "NEUTRAL RESPONSES //"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_idle_10_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_idle_09_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_idle_08_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_idle_06_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_idle_05_gremlin"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "Trash_Gremlin_Idle"
+				m_Requirements = 
+				[
+					"IsTrashGremlin",
+					"ConceptNeutralIdle",
+				]
+			}
+		},
+		
+		{
+			m_name = "Strong_Trash_Gremlin_Attack"
+			m_notes = "NEUTRAL RESPONSES //"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_19_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_20_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_21_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_attack_22_gremlin"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "Strong_Trash_Gremlin_Attack"
+				m_Requirements = 
+				[
+					"IsStrongTrashGremlin",
+					"ConceptNeutralAggro",
+				]
+			}
+		},
+		
+		{
+			m_name = "Strong_Trash_Gremlin_Idle"
+			m_notes = "NEUTRAL RESPONSES //"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_idle_14_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_idle_15_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_idle_16_gremlin"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "neutral_gremlin_idle_17_gremlin"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "Strong_Trash_Gremlin_Idle"
+				m_Requirements = 
+				[
+					"IsStrongTrashGremlin",
+					"ConceptNeutralIdle",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsWeakTrashGremlin"
+			m_matchKey = "subclass"
+			m_matchExpr = "neutral_trooper_weak"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTrashGremlin"
+			m_matchKey = "subclass"
+			m_matchExpr = "neutral_trooper_normal"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsStrongTrashGremlin"
+			m_matchKey = "subclass"
+			m_matchExpr = "neutral_trooper_strong"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "CAI_CitadelNPC"
+}

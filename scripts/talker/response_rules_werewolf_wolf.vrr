@@ -1,0 +1,240 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+		"soundevents/vo/generated_vo_misc.vsndevts",
+		"soundevents/vo/generated_vo_hero_werewolf.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Werewolf_Wolf_Use_Frenzy"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "werewolf_wolf_effort_melee_big_01_emote_melee_effort_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "werewolf_wolf_effort_melee_big_02_emote_melee_effort_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "werewolf_wolf_effort_melee_big_03_emote_melee_effort_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "werewolf_wolf_effort_melee_big_04_emote_melee_effort_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "werewolf_wolf_effort_melee_big_05_emote_melee_effort_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "werewolf_wolf_effort_melee_big_06_emote_melee_effort_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "werewolf_wolf_effort_melee_small_01_emote_melee_effort_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "werewolf_wolf_effort_melee_small_02_emote_melee_effort_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "werewolf_wolf_effort_melee_small_03_emote_melee_effort_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "werewolf_wolf_effort_melee_small_04_emote_melee_effort_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "werewolf_wolf_effort_melee_small_05_emote_melee_effort_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Werewolf_Wolf_Use_Frenzy"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsWolfFrenzy",
+								]
+							}
+						},
+						
+						{
+							m_name = "Werewolf_Wolf_Use_Leap"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "werewolf_wolf_killstreak_high_01_alt_01_hero_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Werewolf_Wolf_Use_Leap"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsWolfLeap",
+								]
+							}
+						},
+						
+						{
+							m_name = "Werewolf_Wolf_Use_CripplingSlash"
+							m_pEmbeddedRule = 
+							{
+								m_name = "Werewolf_Wolf_Use_CripplingSlash"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsWolfCripplingSlash",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsWerewolf_wolf",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsWolfFrenzy"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_werewolf_frenzy"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWolfLeap"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_werewolf_leap"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWolfCripplingSlash"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_werewolf_cripplingslash"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWolfLycanCurse"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_werewolf_transformation"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+	m_actorName = "werewolf_wolf"
+}

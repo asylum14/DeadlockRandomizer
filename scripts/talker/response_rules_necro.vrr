@@ -1,0 +1,909 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+		"soundevents/vo/generated_vo_misc.vsndevts",
+		"soundevents/vo/generated_vo_hero_necro.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_name = "Necro_Use_Ultimate_Ally"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "necro_use_power4_02_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 38.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "necro_use_power4_03_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 38.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "necro_use_power4_04_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 38.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "necro_use_power4_05_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 38.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "necro_use_power4_09_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 38.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "necro_use_power4_10_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 38.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "necro_use_power4_08_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 38.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "necro_use_power4_01_alt_01_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 38.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "necro_desperation_power4_05_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 38.000000
+								m_predelay.start = 0.600000
+							}
+						},
+					]
+					m_children = 
+					[
+						
+						{
+							m_name = "Necro_Desperation_Use_Ultimate"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power4_04_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 38.000000
+										m_predelay.start = 0.600000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power4_01_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 38.000000
+										m_predelay.start = 0.600000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power4_02_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 38.000000
+										m_predelay.start = 0.600000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power4_03_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 38.000000
+										m_predelay.start = 0.600000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power4_05_alt_01_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 38.000000
+										m_predelay.start = 0.600000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Necro_Desperation_Use_Ultimate"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+								]
+								m_predelay.start = 0.600000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Necro_Use_Ultimate_Ally"
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+							"IsGravestone",
+							"IsSpokenToAlliesOnly",
+						]
+						m_respeakDelay.start = 38.000000
+						m_predelay.start = 0.600000
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Necro_Use_Sigil"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.500000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.500000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.500000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power1_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.500000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power1_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.500000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power1_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.500000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power1_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.500000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power1_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.500000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power1_01_alt_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.500000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power1_02_alt_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.500000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Necro_Use_Sigil"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsFloatingSkull",
+								]
+								m_predelay.start = 0.500000
+							}
+						},
+						
+						{
+							m_name = "Necro_Use_Coffin"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power3_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power3_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power3_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power3_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_use_power3_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Necro_Use_Coffin"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsZombieWall",
+								]
+							}
+						},
+						
+						{
+							m_name = "Necro_Desperation_Use_Sigil"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Necro_Desperation_Use_Sigil"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsFloatingSkull",
+								]
+							}
+						},
+						
+						{
+							m_name = "Necro_Use_Desperation_Coffin"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_desperation_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Necro_Use_Desperation_Coffin"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsHealthLowerThan20Percent",
+									"IsZombieWall",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Necro_upgrade_Sigil"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power1_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power1_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power1_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power1_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power1_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power1_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power1_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power1_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power1_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power1_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Necro_upgrade_Sigil"
+								m_Requirements = 
+								[
+									"IsFloatingSkull",
+								]
+							}
+						},
+						
+						{
+							m_name = "Necro_upgrade_ZombieWall"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power2_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power2_10_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power2_02_alt_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power3_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power3_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power3_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power3_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power3_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power3_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power3_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power3_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power3_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power3_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Necro_upgrade_ZombieWall"
+								m_Requirements = 
+								[
+									"IsZombieWall",
+								]
+							}
+						},
+						
+						{
+							m_name = "Necro_upgrade_Lovebites"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power6_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power6_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power6_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power6_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power6_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power6_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power6_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power6_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power6_10_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power6_11_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power6_12_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Necro_upgrade_Lovebites"
+								m_Requirements = 
+								[
+									"IsCoffin",
+								]
+							}
+						},
+						
+						{
+							m_name = "Necro_upgrade_Ultimate"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power4_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power4_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power4_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power4_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power4_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power4_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power4_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "necro_upgrade_power4_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Necro_upgrade_Ultimate"
+								m_Requirements = 
+								[
+									"IsGravestone",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUpgradeAbility",
+						]
+					}
+				},
+				
+				{
+					m_name = "Necro_Use_Ultimate_Enemy"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "necro_use_power4_08_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Necro_Use_Ultimate_Enemy"
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+							"IsGravestone",
+							"IsSpokenToEnemiesOnly",
+						]
+						m_predelay.start = 0.600000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsNecro",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsFloatingSkull"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_necro_hauntingskull"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsZombieWall"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_necro_zombiewall"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCoffin"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_necro_fear"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGravestone"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_necro_gravestone"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+}

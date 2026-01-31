@@ -1,0 +1,1243 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+		"soundevents/vo/generated_vo_misc.vsndevts",
+		"soundevents/vo/generated_vo_hero_bookworm.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_name = "Bookworm_Use_Knights_of_the_Round_Ally"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "bookworm_use_power4_02_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "bookworm_use_power4_03_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "bookworm_use_power4_04_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "bookworm_use_power4_06_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "bookworm_use_power4_07_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "bookworm_use_power4_08_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "bookworm_use_power4_09_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "bookworm_use_power4_10_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+					]
+					m_children = 
+					[
+						
+						{
+							m_name = "Bookworm_Use_Knights_of_the_Round_Desperation"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power4_01_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power4_02_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power4_03_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power4_04_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power4_05_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power4_01_alt_01_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Bookworm_Use_Knights_of_the_Round_Desperation"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Bookworm_Use_Knights_of_the_Round_Ally"
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+							"IsKnightsOfTheRound",
+							"IsSpokenToAlliesOnly",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Bookworm_Use_Dragon_Fire"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_10_alt_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_01_alt_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_02_alt_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_03_alt_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_04_alt_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_05_alt_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_06_alt_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_07_alt_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_08_alt_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power1_09_alt_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Bookworm_Use_Dragon_Fire"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsDragonFire",
+								]
+							}
+						},
+						
+						{
+							m_name = "Bookworm_Use_Knights_Shield_Other"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_11_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_12_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_13_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_14_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_15_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_16_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_17_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_18_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_19_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_20_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Bookworm_Use_Knights_Shield_Other"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsKnightBarrier",
+									"IsTargetAlly",
+								]
+							}
+						},
+						
+						{
+							m_name = "Bookworm_Knights_Shield_Self"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_on_self_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_on_self_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_on_self_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_on_self_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_on_self_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_on_self_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_on_self_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_on_self_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_on_self_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power2_on_self_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Bookworm_Knights_Shield_Self"
+								m_Requirements = 
+								[
+									"IsKnightBarrier",
+									"IsTargetSelf",
+									"Chance75",
+								]
+							}
+						},
+						
+						{
+							m_name = "Bookworm_Use_Excalibur"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power3_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power3_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power3_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power3_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power3_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_use_power3_11_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Bookworm_Use_Excalibur"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsAoEMagic",
+								]
+							}
+						},
+						
+						{
+							m_name = "Bookworm_Use_Dragon_Fire_Desperation"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Bookworm_Use_Dragon_Fire_Desperation"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsDragonFire",
+									"IsHealthLowerThan20Percent",
+								]
+							}
+						},
+						
+						{
+							m_name = "Bookworm_Use_Knights_Shield_Desperation"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Bookworm_Use_Knights_Shield_Desperation"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsKnightBarrier",
+									"IsHealthLowerThan20Percent",
+								]
+							}
+						},
+						
+						{
+							m_name = "Bookworm_Use_Excalibur_Desperation"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power3_02_alt_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "bookworm_desperation_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Bookworm_Use_Excalibur_Desperation"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsAoEMagic",
+									"IsHealthLowerThan20Percent",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+				
+				{
+					m_name = "Bookworm_Use_Knights_of_the_Round_Enemy"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "bookworm_use_power4_01_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.150000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Bookworm_Use_Knights_of_the_Round_Enemy"
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+							"IsKnightsOfTheRound",
+							"IsSpokenToEnemiesOnly",
+						]
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsBookworm",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsDragonFire"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_bookworm_dragonfire"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKnightBarrier"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_bookworm_knightbarrier"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAoEMagic"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_bookworm_aoemagic"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKnightsOfTheRound"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_bookworm_knightcharge"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+}

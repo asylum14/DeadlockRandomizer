@@ -1,0 +1,1174 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+		"soundevents/vo/generated_vo_misc.vsndevts",
+		"soundevents/vo/generated_vo_hero_vampirebat.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_name = "Vampirebat_Use_Batswarm_Ally"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power4_01_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power4_02_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power4_03_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power4_04_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power4_05_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power4_06_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power4_07_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power4_09_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power4_10_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+					]
+					m_children = 
+					[
+						
+						{
+							m_name = "Vampirebat_Desperation_Use_Batswarm"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power4_01_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.600000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power4_02_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.600000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power4_03_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.600000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power4_04_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.600000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power4_05_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.600000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Vampirebat_Desperation_Use_Batswarm"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+								]
+								m_predelay.start = 0.600000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Vampirebat_Use_Batswarm_Ally"
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+							"IsBatCloud",
+							"IsSpokenToAlliesOnly",
+						]
+						m_predelay.start = 0.600000
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Vampirebat_Use_Rake"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power1_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power1_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power1_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power1_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power1_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Vampirebat_Use_Rake"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsRake",
+								]
+							}
+						},
+						
+						{
+							m_name = "Vampirebat_Use_Batblink"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power2_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power2_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power2_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power2_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_use_power2_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Vampirebat_Use_Batblink"
+								m_Requirements = 
+								[
+									"Chance75",
+									"IsBatBlink",
+								]
+							}
+						},
+						
+						{
+							m_name = "Vampirebat_Desperation_Use_Rake"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Vampirebat_Desperation_Use_Rake"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsRake",
+								]
+							}
+						},
+						
+						{
+							m_name = "Vampirebat_Desperation_Use_Batblink"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Vampirebat_Desperation_Use_Batblink"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsBatBlink",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+				
+				{
+					m_name = "Vampirebat_LoveBites_BurstDamage"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_01_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_02_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_03_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_04_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_05_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_06_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_07_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_08_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_09_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_10_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_11_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_12_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_13_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_14_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_15_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_16_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_17_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_18_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_19_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power3_20_ability_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 30.000000
+							}
+						},
+					]
+					m_children = 
+					[
+						
+						{
+							m_name = "Vampirebat_Desperation_LoveBites_BurstDamage"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_desperation_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 30.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Vampirebat_Desperation_LoveBites_BurstDamage"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Vampirebat_LoveBites_BurstDamage"
+						m_Requirements = 
+						[
+							"ConceptInteractWithAbility",
+							"IsAbilityActionLoveBitesBurstDamage",
+							"Chance50",
+						]
+						m_respeakDelay.start = 30.000000
+					}
+				},
+				
+				{
+					m_name = "dsd"
+					m_children = 
+					[
+						
+						{
+							m_name = "Vampirebat_upgrade_Rake"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power1_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power1_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power1_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power1_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power1_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power1_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power1_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power1_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power1_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power1_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Vampirebat_upgrade_Rake"
+								m_Requirements = 
+								[
+									"IsRake",
+								]
+							}
+						},
+						
+						{
+							m_name = "Vampirebat_upgrade_batblink"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power2_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power2_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power2_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power2_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power2_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power2_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power2_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power2_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power2_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Vampirebat_upgrade_batblink"
+								m_Requirements = 
+								[
+									"IsBatBlink",
+								]
+							}
+						},
+						
+						{
+							m_name = "Vampirebat_upgrade_Lovebites"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power3_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power3_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power3_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power3_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power3_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power3_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power3_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power3_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power3_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power3_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Vampirebat_upgrade_Lovebites"
+								m_Requirements = 
+								[
+									"IsLoveBites",
+								]
+							}
+						},
+						
+						{
+							m_name = "Vampirebat_upgrade_Batswarm"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power4_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power4_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power4_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power4_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power4_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power4_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power4_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power4_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power4_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "vampirebat_upgrade_power4_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Vampirebat_upgrade_Batswarm"
+								m_Requirements = 
+								[
+									"IsBatCloud",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "dsd"
+						m_Requirements = 
+						[
+							"ConceptUpgradeAbility",
+						]
+					}
+				},
+				
+				{
+					m_name = "Vampirebat_Use_Batswarm_Enemy"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "vampirebat_use_power4_08_ult_3d"
+							m_params = 
+							{
+								m_respeakdelay.start = 0.000000
+								m_predelay.start = 0.600000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Vampirebat_Use_Batswarm_Enemy"
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+							"IsBatCloud",
+							"IsSpokenToEnemiesOnly",
+						]
+						m_predelay.start = 0.600000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsVampirebat",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsRake"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_vampirebat_steallife"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBatBlink"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_vampirebat_batblink"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLoveBites"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_vampirebat_lovebites"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBatCloud"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_vampirebat_batswarm"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+}

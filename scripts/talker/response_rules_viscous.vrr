@@ -1,0 +1,1481 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+		"scripts/talker/response_rules_contextual_ping.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/generated_vo_hero_viscous.vsndevts",
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+		"soundevents/vo/generated_vo_misc.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Viscous_Upgrade_Goo_ball"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power1_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power1_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power1_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power1_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power1_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power1_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power1_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power1_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power1_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power1_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Upgrade_Goo_ball"
+								m_Requirements = 
+								[
+									"IsGooBall",
+								]
+							}
+						},
+						
+						{
+							m_name = "Viscous_Upgrade_Goo_Cube"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power2_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power2_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power2_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power2_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power2_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power2_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power2_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power2_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power2_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power2_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Upgrade_Goo_Cube"
+								m_Requirements = 
+								[
+									"IsGooCube",
+								]
+							}
+						},
+						
+						{
+							m_name = "Viscous_Upgrade_Goo_punch"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_11_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_12_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_13_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_14_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_15_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_16_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_17_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_18_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_19_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_20_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_10_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power3_09_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Upgrade_Goo_punch"
+								m_Requirements = 
+								[
+									"IsGooPunch",
+								]
+							}
+						},
+						
+						{
+							m_name = "Viscous_Upgrade_Goo_Bowling"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power4_11_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power4_12_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power4_13_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power4_14_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power4_15_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power4_16_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power4_17_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power4_18_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power4_19_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_upgrade_power4_20_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Upgrade_Goo_Bowling"
+								m_Requirements = 
+								[
+									"IsMarbleMadness",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUpgradeAbility",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Viscous_Use_Goo_Ball"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power1_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power1_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power1_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power1_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power1_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power1_11_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Use_Goo_Ball"
+								m_Requirements = 
+								[
+									"IsGooBall",
+									"Chance75",
+								]
+							}
+						},
+						
+						{
+							m_name = "Viscous_Use_Goo_Cube"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_11_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Use_Goo_Cube"
+								m_Requirements = 
+								[
+									"IsGooCube",
+									"IsTargetSelf",
+									"Chance75",
+								]
+							}
+						},
+						
+						{
+							m_name = "Viscous_Use_Goo_Cube_On_Ally"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_on_others_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_on_others_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_on_others_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_on_others_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_on_others_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_on_others_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_on_others_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_on_others_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_on_others_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power2_on_others_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Use_Goo_Cube_On_Ally"
+								m_Requirements = 
+								[
+									"IsGooCube",
+									"IsTargetAlly",
+									"Chance75",
+								]
+							}
+						},
+						
+						{
+							m_name = "Viscous_Use_Goo_Punch"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power3_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power3_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power3_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power3_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power3_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Use_Goo_Punch"
+								m_Requirements = 
+								[
+									"IsGooPunch",
+									"Chance75",
+								]
+							}
+						},
+						
+						{
+							m_name = "Viscous_Desperation_Splatter"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Desperation_Splatter"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsGooBall",
+								]
+							}
+						},
+						
+						{
+							m_name = "Viscous_Desperation_Cube"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power4_01_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power4_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power4_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power4_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power4_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power4_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power4_05_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Desperation_Cube"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsGooCube",
+									"IsTargetSelf",
+								]
+							}
+						},
+						
+						{
+							m_name = "Viscous_Desperation_Goo_Punch"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Desperation_Goo_Punch"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsGooPunch",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Viscous_Introduced_By_Patron_Female"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_female_ally_viscous_start_06_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_female_ally_viscous_start_07_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_female_ally_viscous_start_08_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_female_ally_viscous_start_09_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_female_ally_viscous_start_10_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_female_ally_viscous_start_11_02_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_female_ally_viscous_start_11_announcer"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Introduced_By_Patron_Female"
+								m_Requirements = 
+								[
+									"IsTeam3",
+								]
+							}
+						},
+						
+						{
+							m_name = "Viscous_Introduced_By_Patron_Male"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_male_ally_viscous_start_01_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_male_ally_viscous_start_02_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_male_ally_viscous_start_03_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_male_ally_viscous_start_04_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_male_ally_viscous_start_05_announcer"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Introduced_By_Patron_Male"
+								m_Requirements = 
+								[
+									"IsTeam2",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptMatchStart",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Viscous_Use_Goo_Bowling_Ally"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power4_11_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power4_12_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power4_13_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power4_14_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power4_15_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power4_16_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power4_17_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power4_18_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power4_20_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Use_Goo_Bowling_Ally"
+								m_Requirements = 
+								[
+									"IsMarbleMadness",
+									"IsSpokenToAlliesOnly",
+								]
+							}
+						},
+						
+						{
+							m_name = "Viscous_Desperation_Marble_Maddness"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power4_10_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power4_09_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power4_08_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power4_07_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_desperation_power4_06_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Desperation_Marble_Maddness"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsMarbleMadness",
+									"IsSpokenToAlliesOnly",
+								]
+							}
+						},
+						
+						{
+							m_name = "Viscous_Use_Goo_Bowling_Enemy"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "viscous_use_power4_19_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Viscous_Use_Goo_Bowling_Enemy"
+								m_Requirements = 
+								[
+									"IsMarbleMadness",
+									"IsSpokenToEnemiesOnly",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+						]
+					}
+				},
+				
+				{
+					m_name = "viscous_seasonal_unlock"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "newscaster_seasonal_viscous_unlock_01_seasonal_unlock"
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "viscous_seasonal_unlock"
+						m_Requirements = 
+						[
+							"ConceptSeasonalEvent",
+						]
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsViscous",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsGooBall"
+			m_matchKey = "ability_name"
+			m_matchExpr = "viscous_goo_grenade"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGooCube"
+			m_matchKey = "ability_name"
+			m_matchExpr = "viscous_restorative_goo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGooPuddle"
+			m_matchKey = "ability_name"
+			m_matchExpr = "viscous_goo_puddle"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGooWall"
+			m_matchKey = "ability_name"
+			m_matchExpr = "viscous_goo_wall"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGooPunch"
+			m_matchKey = "ability_name"
+			m_matchExpr = "viscous_telepunch"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMarbleMadness"
+			m_matchKey = "ability_name"
+			m_matchExpr = "viscous_goo_bowling_ball"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+}

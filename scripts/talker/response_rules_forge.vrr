@@ -1,0 +1,1241 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+		"scripts/talker/response_rules_contextual_ping.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/generated_vo_hero_forge.vsndevts",
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Forge_Upgrade_Turret"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power1_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power1_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power1_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power1_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power1_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power1_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power1_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power1_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power1_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power1_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Upgrade_Turret"
+								m_Requirements = 
+								[
+									"IsTurret",
+								]
+							}
+						},
+						
+						{
+							m_name = "Forge_Upgrade_Mobile_Resupply"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power2_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power2_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power2_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power2_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power2_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power2_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power2_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power2_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power2_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power2_10_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power2_11_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power2_12_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Upgrade_Mobile_Resupply"
+								m_Requirements = 
+								[
+									"IsMobileResupply",
+								]
+							}
+						},
+						
+						{
+							m_name = "Forge_Upgrade_Wall"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power3_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power3_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power3_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power3_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power3_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power3_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power3_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power3_10_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power3_11_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power3_12_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Upgrade_Wall"
+								m_Requirements = 
+								[
+									"IsWall",
+								]
+							}
+						},
+						
+						{
+							m_name = "Forge_Upgrade_Rocket_Barrage"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power4_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power4_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power4_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power4_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power4_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power4_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power4_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power4_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power4_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_upgrade_power4_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Upgrade_Rocket_Barrage"
+								m_Requirements = 
+								[
+									"IsRocketBarrage",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUpgradeAbility",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Forge_Use_Turret"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power1_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power1_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power1_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power1_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power1_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Use_Turret"
+								m_Requirements = 
+								[
+									"IsTurret",
+									"Chance75",
+								]
+							}
+						},
+						
+						{
+							m_name = "Forge_Use_Mobile_Resupply"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power2_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power2_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power2_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power2_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power2_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Use_Mobile_Resupply"
+								m_Requirements = 
+								[
+									"IsMobileResupply",
+									"Chance75",
+								]
+							}
+						},
+						
+						{
+							m_name = "Forge_Use_Wall"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power3_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power3_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power3_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power3_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power3_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Use_Wall"
+								m_Requirements = 
+								[
+									"IsWall",
+									"Chance75",
+								]
+							}
+						},
+						
+						{
+							m_name = "Forge_Desperation_Turret"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Desperation_Turret"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsTurret",
+								]
+							}
+						},
+						
+						{
+							m_name = "Forge_Desperation_Wall"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Desperation_Wall"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsWall",
+								]
+							}
+						},
+						
+						{
+							m_name = "Forge_Desperation_Mobile_Resupply"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Desperation_Mobile_Resupply"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsMobileResupply",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Forge_Use_Rocket_Barrage_Ally"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power4_01_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power4_02_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power4_04_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power4_05_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power4_06_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power4_07_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power4_08_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power4_09_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power4_10_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Use_Rocket_Barrage_Ally"
+								m_Requirements = 
+								[
+									"IsRocketBarrage",
+									"IsSpokenToAlliesOnly",
+								]
+							}
+						},
+						
+						{
+							m_name = "Forge_Desperation_Rocket_Barrage"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power4_01_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power4_02_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power4_03_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power4_04_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_desperation_power4_05_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Desperation_Rocket_Barrage"
+								m_Requirements = 
+								[
+									"IsHealthLowerThan20Percent",
+									"IsRocketBarrage",
+									"IsSpokenToAlliesOnly",
+								]
+							}
+						},
+						
+						{
+							m_name = "Forge_Use_Rocket_Barrage_Enemy"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "forge_use_power4_03_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Use_Rocket_Barrage_Enemy"
+								m_Requirements = 
+								[
+									"IsRocketBarrage",
+									"IsSpokenToEnemiesOnly",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Forge_Introduced_By_Patron_Female"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_female_ally_forge_start_01_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_female_ally_forge_start_02_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_female_ally_forge_start_03_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_female_ally_forge_start_04_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_female_ally_forge_start_05_announcer"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Introduced_By_Patron_Female"
+								m_Requirements = 
+								[
+									"IsTeam3",
+								]
+							}
+						},
+						
+						{
+							m_name = "Forge_Introduced_By_Patron_Male"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_male_ally_forge_start_01_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_male_ally_forge_start_02_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_male_ally_forge_start_03_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_male_ally_forge_start_04_announcer"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "patron_male_ally_forge_start_05_announcer"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Forge_Introduced_By_Patron_Male"
+								m_Requirements = 
+								[
+									"IsTeam2",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptMatchStart",
+						]
+					}
+				},
+				
+				{
+					m_name = "forge_seasonal_unlock"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "newscaster_seasonal_forge_unlock_01_alt_01_seasonal_unlock"
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "forge_seasonal_unlock"
+						m_Requirements = 
+						[
+							"ConceptSeasonalEvent",
+						]
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsForge",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsTurret"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_shieldedsentry"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMobileResupply"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_mobile_resupply"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWall"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_fissure_wall"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRocketBarrage"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_rocket_barrage"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+}

@@ -1,0 +1,941 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "ConceptHeadingLane"
+			m_notes = "Ping Headed to Lane"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_HEADING_TO_LANE"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptBack"
+			m_notes = "Ping I'm Back"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_IM_BACK"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptCancelLastMessage"
+			m_notes = "Ping cancel last message"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "TLK_CITADEL_CANCEL_LAST_MESSAGE"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptIdolPing"
+			m_notes = "Pinged Idol"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_IDOL"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPingedTeammate"
+			m_notes = "Pinged Teammate"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_TEAMMATE"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPingedEnemyPlayer"
+			m_notes = "Pinged Enemy Player"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_ENEMY_PLAYER"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPingedMid"
+			m_notes = "Pinged Mid"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_MID"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAbilityPing"
+			m_notes = "Pinged Ability"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_ABILITY"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptRetreat"
+			m_notes = "Ping Retreat"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_RETREAT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptStayTogether"
+			m_notes = "Ping Stay Together"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_STAY_TOGETHER"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptHelp"
+			m_notes = "Ping Help"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_HELP"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptHelpWithIdol"
+			m_notes = "Ping Help With Idol"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_HELP_WITH_IDOL"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptYoureWelcome"
+			m_notes = "Ping You're Welcome"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_YOURE_WELCOME"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptThanks"
+			m_notes = "Ping Thank You"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_THANK_YOU"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptYes"
+			m_notes = "Ping Response Yes"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_YES"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptNo"
+			m_notes = "Ping Response No"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_NO"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptGoingIn"
+			m_notes = "Ping Going In"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_GOING_IN"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptGoodJob"
+			m_notes = "Ping Good Job"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_GOOD_JOB"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptGoodJobAllChat"
+			m_notes = "Ping Good Job All Chat"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_GOODJOB_ALLCHAT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptLetsGoHere"
+			m_notes = "Ping Let's go this way"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_LETS_GO_THIS_WAY"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptHeadedToBase"
+			m_notes = "Ping Headed to base"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_HEADED_TO_BASE"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptGoingToShop"
+			m_notes = "Ping Going To Sh-op"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_GOING_TO_SHOP"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPlayerSorry"
+			m_notes = "Ping Player Sorry"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_SORRY"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptGoodGame"
+			m_notes = "Ping Good Game"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_GOOD_GAME_ALLCHAT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptWellPlayed"
+			m_notes = "Ping Well Played"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_WELL_PLAYED_ALLCHAT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptThanksAllChat"
+			m_notes = "Ping Thank You"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_THANKS_ALLCHAT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptOnMyWay"
+			m_notes = "Ping On My Way"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_ON_MY_WAY"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPushLane"
+			m_notes = "Ping Push Lane"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_PUSH_LANE"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptDefendLane"
+			m_notes = "Ping Defend Lane"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_DEFEND_LANE"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptMissing"
+			m_notes = "Ping Missing"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_MISSING"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptNeedHeal"
+			m_notes = "Ping Need Heal"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_NEED_HEAL"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptHaveHeal"
+			m_notes = "Ping Have Heal"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_HAVE_HEAL"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptNeedPlan"
+			m_notes = "Ping Need Plan"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_NEED_PLAN"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPregame"
+			m_notes = "Ping Pre Game"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_PREGAME"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsPassive"
+			m_notes = "Single Ping"
+			m_matchKey = "ping_type"
+			m_matchExpr = "passive"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAggressive"
+			m_notes = "Double Ping"
+			m_matchKey = "ping_type"
+			m_matchExpr = "aggressive"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "TargetIsTier1Boss"
+			m_notes = "AI shout at"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "npc_trooper_boss"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "TargetIsTier2Boss"
+			m_notes = "AI shout at"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "npc_boss_tier2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "TargetIsTier3Boss"
+			m_notes = "AI shout at"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "npc_boss_tier3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFinalObjective"
+			m_notes = "AI shout at"
+			m_matchKey = "is_final_core"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PlayerInYellow"
+			m_notes = "AI shout at"
+			m_matchKey = "player_lane_color"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PlayerInGreen"
+			m_notes = "AI shout at"
+			m_matchKey = "player_lane_color"
+			m_matchExpr = "3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PlayerInBlue"
+			m_notes = "AI shout at"
+			m_matchKey = "player_lane_color"
+			m_matchExpr = "4"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PlayerInPurple"
+			m_notes = "AI shout at"
+			m_matchKey = "player_lane_color"
+			m_matchExpr = "6"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PlayerOnRoof"
+			m_notes = "Ping Locations"
+			m_matchKey = "ping_location"
+			m_matchExpr = "on_roof"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PlayerOnBridge"
+			m_notes = "Ping Locations"
+			m_matchKey = "ping_location"
+			m_matchExpr = "on_bridge"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PlayerTopOfGarage"
+			m_notes = "Ping Locations"
+			m_matchKey = "ping_location"
+			m_matchExpr = "top_of_garage"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "UnderGarage"
+			m_notes = "Ping Locations"
+			m_matchKey = "ping_location"
+			m_matchExpr = "under_garage"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "InsideMid"
+			m_notes = "Ping Locations"
+			m_matchKey = "ping_location"
+			m_matchExpr = "in_mid"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AboveMid"
+			m_notes = "Ping Locations"
+			m_matchKey = "ping_location"
+			m_matchExpr = "top_of_mid"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedTeammate"
+			m_notes = "is_same_team"
+			m_matchKey = "is_same_team"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedEnemy"
+			m_notes = "is_same_team"
+			m_matchKey = "is_same_team"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsItem"
+			m_notes = "is_item"
+			m_matchKey = "is_item"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "HealNovaItem"
+			m_notes = "pinged_ability_name"
+			m_matchKey = "pinged_ability_name"
+			m_matchExpr = "upgrade_health_nova"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "RefresherItem"
+			m_notes = "pinged_ability_name"
+			m_matchKey = "pinged_ability_name"
+			m_matchExpr = "upgrade_ability_refresher"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "RuptureItem"
+			m_notes = "pinged_ability_name"
+			m_matchKey = "pinged_ability_name"
+			m_matchExpr = "upgrade_rupture"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "StimPackItem"
+			m_notes = "pinged_ability_name"
+			m_matchKey = "pinged_ability_name"
+			m_matchExpr = "upgrade_health_stimpak"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "WarpStoneItem"
+			m_notes = "pinged_ability_name"
+			m_matchKey = "pinged_ability_name"
+			m_matchExpr = "upgrade_warp_stone"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "GlitchItem"
+			m_notes = "pinged_ability_name"
+			m_matchKey = "pinged_ability_name"
+			m_matchExpr = "upgrade_glitch"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "KnockdownItem"
+			m_notes = "pinged_ability_name"
+			m_matchKey = "pinged_ability_name"
+			m_matchExpr = "upgrade_target_stun"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "SilenceItem"
+			m_notes = "pinged_ability_name"
+			m_matchKey = "pinged_ability_name"
+			m_matchExpr = "upgrade_targeted_silence"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AbilityReady"
+			m_notes = "ability_pings"
+			m_matchKey = "ability_ready"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AbilityAlmostReady"
+			m_notes = "ability_pings"
+			m_matchKey = "ability_almost_ready"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AbilityOnCooldown"
+			m_notes = "ability_pings"
+			m_matchKey = "ability_ready"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbility1"
+			m_notes = "ability_pings"
+			m_matchKey = "ability_number"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbility2"
+			m_notes = "ability_pings"
+			m_matchKey = "ability_number"
+			m_matchExpr = "2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbility3"
+			m_notes = "ability_pings"
+			m_matchKey = "ability_number"
+			m_matchExpr = "3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbility4"
+			m_notes = "ability_pings"
+			m_matchKey = "ability_number"
+			m_matchExpr = "4"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedAstro"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_astro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedAtlas"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_atlas"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedBebop"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_bebop"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedBoho"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_boho"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedBookworm"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_bookworm"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedChrono"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_chrono"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedDoorman"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_doorman"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedDrifter"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_drifter"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedDynamo"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_dynamo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedFamiliar"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_familiar"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedFencer"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_fencer"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedForge"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_forge"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedFrank"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_frank"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedGhost"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_ghost"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedGigawatt"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_gigawatt"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedHaze"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_haze"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedHornet"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_hornet"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedInferno"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_inferno"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedKelvin"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_kelvin"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedKrill"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_krill"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedLash"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_lash"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedMagician"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_magician"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedMirage"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_mirage"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedNano"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_nano"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedNecro"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_necro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedOperative"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_operative"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedOrion"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_orion"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedPriest"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_priest"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedPunkgoat"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_punkgoat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedShiv"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_shiv"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedSynth"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_synth"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedTengu"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_tengu"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedTrapper"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_trapper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedUnicorn"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_unicorn"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedVampireBat"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_vampirebat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedViper"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_viper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedViscous"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_viscous"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedWarden"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_warden"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedWerewolf"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_werewolf"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedWraith"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_wraith"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedWrecker"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_wrecker"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PingedYamato"
+			m_matchKey = "pinged_hero_name"
+			m_matchExpr = "hero_yamato"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptRequestFollow"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_REQUEST_FOLLOW"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptGoingToGank"
+			m_notes = "Ping Going to Gank"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_GOING_TO_GANK"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPingRejuvDrop"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_REJUV_DROP"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPingNeedCover"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_NEED_COVER"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptNevermind"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_NEVERMIND"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptNoTeamFight"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_NO_TEAMFIGHT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPressAdvantage"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_PRESS_ADVANTAGE"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptLetsHide"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_LETS_HIDE"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptDangerArea"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_DANGER_AREA"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptClearTroopers"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_CLEAR_TROOPERS"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptMeetHere"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_MEET_HERE"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptFlank"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_FLANK"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPingLeaveArea"
+			m_matchKey = "ping_concept"
+			m_matchExpr = "CITADEL_PING_LEAVE_AREA"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+}

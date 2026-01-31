@@ -1,0 +1,1036 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+		"scripts/talker/response_rules_contextual_ping.vrr",
+		"scripts/talker/response_rules_announcer_criterion.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/generated_vo_hero_haze.vsndevts",
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Haze_Upgrade_Sleep_Dagger"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power1_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power1_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power1_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power1_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power1_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power1_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power1_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power1_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power1_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power1_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Upgrade_Sleep_Dagger"
+								m_Requirements = 
+								[
+									"IsSleepDagger",
+								]
+							}
+						},
+						
+						{
+							m_name = "Haze_Upgrade_Smoke_Bomb"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power2_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power2_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power2_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power2_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power2_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power2_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power2_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power2_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power2_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power2_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Upgrade_Smoke_Bomb"
+								m_Requirements = 
+								[
+									"IsSmokeBomb",
+								]
+							}
+						},
+						
+						{
+							m_name = "Haze_Upgrade_Fixation"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power3_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power3_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power3_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power3_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power3_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power3_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power3_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power3_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power3_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power3_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Upgrade_Fixation"
+								m_Requirements = 
+								[
+									"IsFixation",
+								]
+							}
+						},
+						
+						{
+							m_name = "Haze_Upgrade_Bullet_Flurry"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power4_01_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power4_02_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power4_03_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power4_04_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power4_05_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power4_06_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power4_07_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power4_08_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power4_09_hero_3d"
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_upgrade_power4_10_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Upgrade_Bullet_Flurry"
+								m_Requirements = 
+								[
+									"IsBulletFlurry",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUpgradeAbility",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Haze_Use_Sleep_Dagger"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power1_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power1_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power1_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power1_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power1_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Use_Sleep_Dagger"
+								m_Requirements = 
+								[
+									"IsSleepDagger",
+									"Chance75",
+								]
+							}
+						},
+						
+						{
+							m_name = "Haze_Use_Sleep_Dagger_Desperation"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Use_Sleep_Dagger_Desperation"
+								m_Requirements = 
+								[
+									"IsSleepDagger",
+									"IsHealthLowerThan20Percent",
+								]
+							}
+						},
+						
+						{
+							m_name = "Haze_Use_Smoke_Bomb"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power2_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power2_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power2_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power2_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power2_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Use_Smoke_Bomb"
+								m_Requirements = 
+								[
+									"IsSmokeBomb",
+									"Chance75",
+								]
+								m_recipientFilter = "speaker_and_observers"
+							}
+						},
+						
+						{
+							m_name = "Haze_Use_Smoke_Bomb_Desperation"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Use_Smoke_Bomb_Desperation"
+								m_Requirements = 
+								[
+									"IsSmokeBomb",
+									"IsHealthLowerThan20Percent",
+								]
+								m_recipientFilter = "speaker_and_observers"
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Haze_Use_Bullet_Flurry_Ally"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power4_01_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power4_03_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power4_04_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power4_06_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power4_07_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power4_08_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power4_09_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power4_10_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.150000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Use_Bullet_Flurry_Ally"
+								m_Requirements = 
+								[
+									"IsBulletFlurry",
+									"IsSpokenToAlliesOnly",
+								]
+								m_respeakDelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_name = "Haze_Use_Bullet_Flurry_Desperation"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power4_01_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 1.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power4_02_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 1.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power4_03_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 1.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power4_04_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 1.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_desperation_power4_05_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 1.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Use_Bullet_Flurry_Desperation"
+								m_Requirements = 
+								[
+									"IsBulletFlurry",
+									"IsHealthLowerThan20Percent",
+									"IsSpokenToAlliesOnly",
+								]
+								m_respeakDelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_name = "Haze_Use_Bullet_Flurry_Enemy"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_use_power4_05_ult_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.500000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Use_Bullet_Flurry_Enemy"
+								m_Requirements = 
+								[
+									"IsBulletFlurry",
+									"IsSpokenToEnemiesOnly",
+								]
+								m_respeakDelay.start = 0.000000
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+						]
+					}
+				},
+				
+				{
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityHitByProjectile",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Haze_Introduced_By_Patron_Female"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "Female_Patron_Welcome_Haze"
+									m_flWeight = 100.000000
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Introduced_By_Patron_Female"
+								m_Requirements = 
+								[
+									"IsTeam3",
+								]
+							}
+						},
+						
+						{
+							m_name = "Haze_Introduced_By_Patron_Male"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "Male_Patron_Welcome_Haze"
+									m_flWeight = 100.000000
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Introduced_By_Patron_Male"
+								m_Requirements = 
+								[
+									"IsTeam2",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptMatchStart",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Haze_Kill_Three_With_Bullet_Flurry_TEST"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "haze_killstreak_high_01_hero_3d"
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Haze_Kill_Three_With_Bullet_Flurry_TEST"
+								m_Requirements = 
+								[
+									"IsBulletFlurry",
+									"Killed3Players",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityFinish",
+						]
+					}
+				},
+				
+				{
+					m_name = "haze_seasonal_unlock"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "newscaster_seasonal_haze_unlock_01_comp_seasonal_unlock"
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "haze_seasonal_unlock"
+						m_Requirements = 
+						[
+							"ConceptSeasonalEvent",
+						]
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsHaze",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsSmokeBomb"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_smoke_bomb"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFixation"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_stacking_damage"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+}

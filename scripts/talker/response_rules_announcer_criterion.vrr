@@ -1,0 +1,1003 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "ConceptAnnounceBeginRegen"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ANN_BEGIN_REGEN"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnounceMidbossSpawn"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ANN_MIDBOSS_SPAWN"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnounceMidbossKilled"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ANN_MIDBOSS_KILLED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnounceEnemyDetected"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ANN_ENEMY_DETECTED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnounceRejuvinator"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_REJUVINATOR"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnounceVictory"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ANN_VICTORY"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnounceDefeat"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ANN_DEFEAT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnounceIdol"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ANN_IDOL"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncePickUpItem"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ANN_PICKUP_ITEM"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnounceDropItem"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ANN_DROP_ITEM"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnounceKill"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ANN_KILL"
+			m_bRequired = true
+			m_predelay.start = 1.000000
+		},
+		
+		{
+			m_name = "ConceptAnnounceKillStreak"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ANN_KILL_STREAK"
+			m_bRequired = true
+			m_predelay.start = 1.000000
+		},
+		
+		{
+			m_name = "ConceptAnnounceGuidedBotMatch"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ANN_GUIDED_BOT_MATCH"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTier1Attacked"
+			m_notes = "tier 1s"
+			m_matchKey = "announce_event"
+			m_matchExpr = "tier1_attacked"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTier2Attacked"
+			m_notes = "tier 1s"
+			m_matchKey = "announce_event"
+			m_matchExpr = "tier2_attacked"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTier1Destroyed"
+			m_notes = "tier 2s"
+			m_matchKey = "announce_event"
+			m_matchExpr = "tier1_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTier2Destroyed"
+			m_notes = "tier 2s"
+			m_matchKey = "announce_event"
+			m_matchExpr = "tier2_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBarracksDestroyed"
+			m_notes = "First in lane"
+			m_matchKey = "announce_event"
+			m_matchExpr = "barracks_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBothBarracksDestroyed"
+			m_notes = "Second in lane"
+			m_matchKey = "announce_event"
+			m_matchExpr = "both_barracks_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyTier1Destroyed"
+			m_notes = "tier 2s"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_tier1_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyTier2Destroyed"
+			m_notes = "tier 2s"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_tier2_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyBarracksDestroyed"
+			m_notes = "First in lane"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_barracks_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyBothBarracksDestroyed"
+			m_notes = "Second in lane"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_both_barracks_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDefeated"
+			m_notes = "game over"
+			m_matchKey = "announce_event"
+			m_matchExpr = "defeated"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWinningTeam"
+			m_notes = "game over"
+			m_matchKey = "announce_event"
+			m_matchExpr = "victory"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTitanAttacked"
+			m_notes = "titan"
+			m_matchKey = "announce_event"
+			m_matchExpr = "titan_attacked"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTitanDestroyed"
+			m_notes = "titan"
+			m_matchKey = "announce_event"
+			m_matchExpr = "titan_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyTitanDestroyed"
+			m_notes = "titan"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_titan_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCoreAttacked"
+			m_notes = "core"
+			m_matchKey = "announce_event"
+			m_matchExpr = "core_attacked"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCoreCritical"
+			m_notes = "core"
+			m_matchKey = "announce_event"
+			m_matchExpr = "core_critical"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCoreDestroyed"
+			m_notes = "core"
+			m_matchKey = "announce_event"
+			m_matchExpr = "core_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyCoreAttacked"
+			m_notes = "core"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_core_attacked"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyCoreCritical"
+			m_notes = "core"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_core_critical"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyCoreDestroyed"
+			m_notes = "core"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_core_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCoreHealing"
+			m_notes = "core"
+			m_matchKey = "announce_event"
+			m_matchExpr = "core_healing"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyCoreHealing"
+			m_notes = "core"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_core_healing"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsShieldGeneratorAttacked"
+			m_notes = "shield generators"
+			m_matchKey = "announce_event"
+			m_matchExpr = "shield_generator_attacked"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsShieldGeneratorDestroyed"
+			m_notes = "shield generators"
+			m_matchKey = "announce_event"
+			m_matchExpr = "shield_generator_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyShieldGeneratorDestroyed"
+			m_notes = "shield generators"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_shield_generator_destroyed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsShieldGeneratorAlive"
+			m_notes = "shield generators"
+			m_matchKey = "shield_generator_remaining"
+			m_matchExpr = ">0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEveryShieldGeneratorDead"
+			m_notes = "shield generators"
+			m_matchKey = "shield_generator_remaining"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsIdolSitting"
+			m_notes = "idol"
+			m_matchKey = "announce_event"
+			m_matchExpr = "idol_sitting"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsIdolPickedUp"
+			m_notes = "idol"
+			m_matchKey = "announce_event"
+			m_matchExpr = "idol_picked_up"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsIdolPickedUpByEnemy"
+			m_notes = "idol"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_idol_picked_up"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsIdolCashedIn"
+			m_notes = "idol"
+			m_matchKey = "announce_event"
+			m_matchExpr = "idol_cashed_in"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsIdolCashedInByEnemy"
+			m_notes = "idol"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_idol_cashed_in"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsIdolFumbled"
+			m_notes = "idol"
+			m_matchKey = "announce_event"
+			m_matchExpr = "idol_fumbled"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsIdolFumbledByEnemy"
+			m_notes = "idol"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_idol_fumbled"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMidbossSpawn"
+			m_notes = "midboss"
+			m_matchKey = "announce_event"
+			m_matchExpr = "midboss_spawn"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMidbossKilled"
+			m_notes = "midboss"
+			m_matchKey = "announce_event"
+			m_matchExpr = "midboss_killed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRejuvPickedUp"
+			m_notes = "midboss"
+			m_matchKey = "announce_event"
+			m_matchExpr = "rejuv_picked_up"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyRejuvPickedUp"
+			m_notes = "midboss"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_rejuv_picked_up"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsVaultSpawn"
+			m_notes = "vaults"
+			m_matchKey = "announce_event"
+			m_matchExpr = "vaults_spawn"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak"
+			m_notes = "kill streaks"
+			m_matchKey = "announce_event"
+			m_matchExpr = "kill_streak"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyKillStreak"
+			m_notes = "kill streaks"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_kill_streak"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFirstBlood"
+			m_notes = "kill streaks"
+			m_matchKey = "firstblood"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak3"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak4"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "4"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak5"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "5"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak6"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "6"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak7"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "7"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak8"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "8"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak9"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "9"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak10"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "10"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakEnded"
+			m_notes = "kill streaks"
+			m_matchKey = "announce_event"
+			m_matchExpr = "kill_streak_ended"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyKillStreakEnded"
+			m_notes = "kill streaks"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_kill_streak_ended"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakEnded3"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak_ended"
+			m_matchExpr = "3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakEnded4"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak_ended"
+			m_matchExpr = "4"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakEnded5"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak_ended"
+			m_matchExpr = "5"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakEnded6"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak_ended"
+			m_matchExpr = "6"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakEnded7"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak_ended"
+			m_matchExpr = "7"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakEnded8"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak_ended"
+			m_matchExpr = "8"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakEnded9"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak_ended"
+			m_matchExpr = "9"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakEnded10"
+			m_notes = "kill streaks"
+			m_matchKey = "kill_streak_ended"
+			m_matchExpr = ">=10"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakLowPatron"
+			m_matchKey = "kill_streak"
+			m_matchExpr = ">=3, <7"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakMidPatron"
+			m_matchKey = "kill_streak"
+			m_matchExpr = ">=7, <11"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakHighPatron"
+			m_matchKey = "kill_streak"
+			m_matchExpr = ">=11"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak11"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "11"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyTitanUnderAttack"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_titan_attacked"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsShielded"
+			m_matchKey = "shielded"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTeamWipe"
+			m_matchKey = "announce_event"
+			m_matchExpr = "team_wipe"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAboutToExpire"
+			m_matchKey = "announce_event"
+			m_matchExpr = "about_to_expire"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "HasExpired"
+			m_matchKey = "announce_event"
+			m_matchExpr = "expired"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncerEnemyBaseBossAttacked"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_ENEMY_BASE_BOSS_ATTACKED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncerEnemyBaseBossDestroyed"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_ENEMY_BASE_BOSS_DESTROYED"
+			m_bRequired = true
+			m_predelay.start = 1.000000
+		},
+		
+		{
+			m_name = "ConceptAnnouncerEnemyLaneBossAttacked"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_ENEMY_LANE_BOSS_ATTACKED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncerEnemyLaneBossDestroyed"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_ENEMY_LANE_BOSS_DESTROYED"
+			m_bRequired = true
+			m_predelay.start = 1.000000
+		},
+		
+		{
+			m_name = "ConceptAnnouncerTeamBaseBossAttacked"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_TEAM_BASE_BOSS_ATTACKED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncerTeamLaneBossAttacked"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_TEAM_LANE_BOSS_ATTACKED"
+			m_bRequired = true
+			m_predelay.start = 1.000000
+		},
+		
+		{
+			m_name = "ConceptAnnouncerTeamBaseBossDestroyed"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_TEAM_BASE_BOSS_DESTROYED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncerTeamLaneBossDestroyed"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_TEAM_LANE_BOSS_DESTROYED"
+			m_bRequired = true
+			m_predelay.start = 1.000000
+		},
+		
+		{
+			m_name = "ConceptAnnouncerCommendHero"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_COMMEND_HERO"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillAssist"
+			m_matchKey = "announce_event"
+			m_matchExpr = "kill_assist"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHeroHealing"
+			m_matchKey = "announce_event"
+			m_matchExpr = "heal_heroes"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Has5OrMoreAssists"
+			m_matchKey = "assist_count"
+			m_matchExpr = ">=5"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "HasHealedHeroes1Thousand"
+			m_matchKey = "other_hero_healing"
+			m_matchExpr = ">1000"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Has10OrMoreAssists"
+			m_matchKey = "assist_count"
+			m_matchExpr = ">=10"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "HasHealedHeroes2Thousand"
+			m_matchKey = "other_hero_healing"
+			m_matchExpr = ">2000"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "HasHealedHeroes5Thousand"
+			m_matchKey = "other_hero_healing"
+			m_matchExpr = ">5000"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Is10thAssist"
+			m_matchKey = "assist_count"
+			m_matchExpr = "10"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AreNearbyHeroesOutmatched"
+			m_matchKey = "nearby_hero_networth_pct_diff"
+			m_matchExpr = "<-50"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyEnteringBase"
+			m_notes = "enemy player entering our base"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_entering_base"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyLeavingBase"
+			m_notes = "enemy player leaving our base (or dying)"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_leaving_base"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllEnemyPlayersInBase"
+			m_matchKey = "num_enemy_players_in_base"
+			m_matchExpr = "6"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "NoEnemyPlayersInBase"
+			m_matchKey = "num_enemy_players_in_base"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "OneEnemyPlayerInBase"
+			m_matchKey = "num_enemy_players_in_base"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyStillInBase"
+			m_matchKey = "announce_event"
+			m_matchExpr = "enemy_still_in_base"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyJustEnteredBase"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyInBaseForAWhile"
+			m_matchKey = "time_enemy_in_base"
+			m_matchExpr = ">=30"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak12"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "12"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak13"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "13"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak14"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "14"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak15"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "15"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreak16Plus"
+			m_matchKey = "kill_streak"
+			m_matchExpr = ">=16"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncerVanguardCapturable"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_VANGUARD_CAPTURABLE"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncerTeamCapturingVanguard"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_TEAM_CAPTURING_VANGUARD"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncerEnemyCapturingVanguard"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_ENEMY_CAPTURING_VANGUARD"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncerTeamCapturedVanguard"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_TEAM_VANGUARD_CAPTURED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncerEnemyCapturedVanguard"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_ENEMY_VANGUARD_CAPTURED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncerTeamDestroyedVanguard"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_TEAM_VANGUARD_DESTROYED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAnnouncerEnemyDestroyedVanguard"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_ENEMY_VANGUARD_DESTROYED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsStreetbrawl"
+			m_matchKey = "gamemode"
+			m_matchExpr = "streetbrawl"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptStreetBrawlShop"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ANN_SHOP_PHASE"
+			m_bRequired = true
+			m_predelay.start = 4.000000
+		},
+		
+		{
+			m_name = "IsLastRound"
+			m_matchKey = "final"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsNormalRound"
+			m_matchKey = "final"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDeadlockNormal"
+			m_matchKey = "gamemode"
+			m_matchExpr = "Standard"
+			m_bRequired = true
+		},
+	]
+	m_ConceptPriorities = 
+	{
+		TLK_CITADEL_ANN_COMMEND_HERO = 382
+		TLK_CITADEL_ANN_TEAM_LANE_BOSS_DESTROYED = 520
+		TLK_CITADEL_ANN_TEAM_BASE_BOSS_DESTROYED = 520
+		TLK_CITADEL_ANN_TEAM_LANE_BOSS_ATTACKED = 520
+		TLK_CITADEL_ANN_TEAM_BASE_BOSS_ATTACKED = 520
+		TLK_CITADEL_ANN_ENEMY_LANE_BOSS_DESTROYED = 490
+		TLK_CITADEL_ANN_ENEMY_LANE_BOSS_ATTACKED = 400
+		TLK_CITADEL_ANN_ENEMY_BASE_BOSS_DESTROYED = 490
+		TLK_CITADEL_ANN_ENEMY_BASE_BOSS_ATTACKED = 400
+		TLK_CITADEL_ANN_BOSS_ATTACKED = 400
+		TLK_CITADEL_ANN_DROP_ITEM = 438
+		TLK_CITADEL_ANN_REJUVINATOR = 431
+		TLK_CITADEL_ANN_ENEMY_DETECTED = 471
+		TLK_CITADEL_ANN_MIDBOSS_KILLED = 471
+		TLK_CITADEL_ANN_MIDBOSS_SPAWN = 435
+		TLK_CITADEL_ANN_BEGIN_REGEN = 440
+		TLK_CITADEL_ANN_IDOL = 410
+		TLK_CITADEL_ANN_VICTORY = 600
+		TLK_CITADEL_ANN_DEFEAT = 510
+		TLK_CITADEL_ANN_GUIDED_BOT_MATCH = 2147483647
+		TLK_CITADEL_ANN_PICKUP_ITEM = 432
+		TLK_CITADEL_ANN_KILL = 470
+		TLK_CITADEL_ANN_KILL_STREAK = 470
+		TLK_CITADEL_ANN_BOSS_DESTROYED = 490
+		TLK_CITADEL_ANN_BOSS_DAMAGED = -1
+	}
+	m_speakerType = "citadel_announcer"
+}

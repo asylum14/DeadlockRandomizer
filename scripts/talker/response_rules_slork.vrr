@@ -1,0 +1,1135 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+		"scripts/talker/response_rules_contextual_ping.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/generated_vo_hero_slork.vsndevts",
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_children = 
+			[
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Slork_Upgrade_Scald"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_pEmbeddedRule = 
+							{
+								m_name = "Slork_Upgrade_Scald"
+								m_Requirements = 
+								[
+									"IsScald",
+								]
+							}
+						},
+						
+						{
+							m_name = "Slork_Upgrade_Breach"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_pEmbeddedRule = 
+							{
+								m_name = "Slork_Upgrade_Breach"
+								m_Requirements = 
+								[
+									"IsBreach",
+								]
+							}
+						},
+						
+						{
+							m_name = "Slork_Upgrade_Harpoon"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_pEmbeddedRule = 
+							{
+								m_name = "Slork_Upgrade_Harpoon"
+								m_Requirements = 
+								[
+									"IsHarpoon",
+								]
+							}
+						},
+						
+						{
+							m_name = "Slork_Upgrade_Invis"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_pEmbeddedRule = 
+							{
+								m_name = "Slork_Upgrade_Invis"
+								m_Requirements = 
+								[
+									"IsInvis",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUpgradeAbility",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Slork_Use_Scald"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power1_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power1_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power1_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power1_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power1_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power1_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power1_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power1_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power1_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power1_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Slork_Use_Scald"
+								m_Requirements = 
+								[
+									"IsScald",
+								]
+							}
+						},
+						
+						{
+							m_name = "Slork_Use_Breach"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power2_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power2_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power2_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power2_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power2_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power2_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power2_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power2_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power2_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power2_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Slork_Use_Breach"
+								m_Requirements = 
+								[
+									"IsBreach",
+								]
+							}
+						},
+						
+						{
+							m_name = "Slork_Use_Harpoon"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power3_01_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power3_02_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power3_03_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power3_04_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power3_05_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power3_06_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power3_07_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power3_08_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power3_09_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "slork_use_power3_10_ability_3d"
+									m_params = 
+									{
+										m_respeakdelay.start = 0.000000
+										m_predelay.start = 0.100000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Slork_Use_Harpoon"
+								m_Requirements = 
+								[
+									"IsHarpoon",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptAbilityCast",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Slork_Use_Invis"
+							m_notes = "ABILITY RELATED RESPONSES //"
+							m_pEmbeddedRule = 
+							{
+								m_name = "Slork_Use_Invis"
+								m_Requirements = 
+								[
+									"IsInvis",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptUltimateCast",
+						]
+					}
+				},
+				
+				{
+					m_children = 
+					[
+						
+						{
+							m_name = "Slork_Early_Shop"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_early_01"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_early_02"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_early_03"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_early_04"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_early_05"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_early_06"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_early_07"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_early_08"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_early_09"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_early_10"
+									m_params = 
+									{
+										m_bSpeakOnce = true
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Slork_Early_Shop"
+								m_Requirements = 
+								[
+									"CanBuy",
+									"IsAfter1Minute",
+									"IsBefore6Minute",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_Requirements = 
+						[
+							"ConceptOpenShop",
+						]
+					}
+				},
+				
+				{
+					m_name = "Slork_Upgrade_Tech_Or_Utility"
+					m_notes = "MANUAL SHOPPING LINES //"
+					m_responses = 
+					[
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_01"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_02"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_03"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_04"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_05"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_06"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_07"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_08"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_09"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_10"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_11"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_12"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_13"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_14"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+						
+						{
+							m_type = "SPEAK"
+							m_value = "shopkeeper_hotdog_buy_tech_15"
+							m_params = 
+							{
+								m_respeakdelay.start = 10.000000
+								m_predelay.start = 0.000000
+							}
+						},
+					]
+					m_children = 
+					[
+						
+						{
+							m_name = "Slork_Upgrade_Weapon"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_01"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_02"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_03"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_04"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_05"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_06"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_07"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_08"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_09"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_10"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_11"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_12"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_13"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_14"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_gun_15"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Slork_Upgrade_Weapon"
+								m_Requirements = 
+								[
+									"UpgradeWeapon",
+								]
+							}
+						},
+						
+						{
+							m_name = "Slork_Upgrade_Armor"
+							m_notes = "MANUAL SHOPPING LINES //"
+							m_responses = 
+							[
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_01"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_02"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_03"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_04"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_05"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_06"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_07"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_08"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_09"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_10"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_11"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_12"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_13"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_14"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+								
+								{
+									m_type = "SPEAK"
+									m_value = "shopkeeper_hotdog_buy_armor_15"
+									m_params = 
+									{
+										m_respeakdelay.start = 10.000000
+										m_predelay.start = 0.000000
+									}
+								},
+							]
+							m_pEmbeddedRule = 
+							{
+								m_name = "Slork_Upgrade_Armor"
+								m_Requirements = 
+								[
+									"UpgradeArmor",
+								]
+							}
+						},
+					]
+					m_pEmbeddedRule = 
+					{
+						m_name = "Slork_Upgrade_Tech_Or_Utility"
+						m_Requirements = 
+						[
+							"ConceptBuyUpgrade",
+						]
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_Requirements = 
+				[
+					"IsSlork",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsScald"
+			m_matchKey = "ability_name"
+			m_matchExpr = "fathom_scalding_spray"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBreach"
+			m_matchKey = "ability_name"
+			m_matchExpr = "fathom_breach"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHarpoon"
+			m_matchKey = "ability_name"
+			m_matchExpr = "fathom_reefdweller_harpoon"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsInvis"
+			m_matchKey = "ability_name"
+			m_matchExpr = "fathom_lurkers_ambush"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "player"
+}

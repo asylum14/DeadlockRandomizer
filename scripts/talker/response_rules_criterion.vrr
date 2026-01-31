@@ -1,0 +1,4897 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "ConceptCustom"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_CUSTOM"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptSurvived"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_SURVIVED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPain"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_PAIN"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptKill"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_KILL"
+			m_bRequired = true
+			m_respeakDelay.start = 5.000000
+			m_predelay.start = 1.000000
+		},
+		
+		{
+			m_name = "ConceptKillAssist"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_KILL_ASSIST"
+			m_bRequired = true
+			m_predelay.start = 1.000000
+		},
+		
+		{
+			m_name = "ConceptKillStreak"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_KILL_STREAK"
+			m_bRequired = true
+			m_predelay.start = 1.000000
+		},
+		
+		{
+			m_name = "ConceptDeath"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_DEATH"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptVictory"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_VICTORY"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptDefeat"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_DEFEAT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAbilityCast"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_CAST_EXECUTE"
+			m_bRequired = true
+			m_predelay.start = 0.100000
+		},
+		
+		{
+			m_name = "ConceptAbilityFinish"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_CAST_FINISH"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAbilityProjectileHit"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_PROJECTILE_HIT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAbilityHitByProjectile"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_HIT_BY_PROJECTILE"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAbilityTargetVictim"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_CAST_TARGET_VICTIM"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAbilityFinishVictim"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_CAST_FINISH_VICTIM"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptHeroSelected"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_HERO_SELECTED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptMatchStart"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_MATCH_START"
+			m_bRequired = true
+			m_recipientFilter = "speaker_and_observers"
+		},
+		
+		{
+			m_name = "ConceptUpgradeAbility"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_UPGRADE_ABILITY"
+			m_bRequired = true
+			m_recipientFilter = "speaker_and_observers"
+		},
+		
+		{
+			m_name = "ConceptBuyUpgrade"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_BUY_UPGRADE"
+			m_bRequired = true
+			m_recipientFilter = "speaker_only"
+			m_respeakDelay.start = 10.000000
+		},
+		
+		{
+			m_name = "ConceptSellUpgrade"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_SELL_UPGRADE"
+			m_bRequired = true
+			m_recipientFilter = "speaker_and_observers"
+		},
+		
+		{
+			m_name = "ConceptIdol"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_IDOL"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPickUpItem"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_PICKUP_ITEM"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptDeny"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_DENY"
+			m_bRequired = true
+			m_recipientFilter = "speaker_and_observers"
+		},
+		
+		{
+			m_name = "ConceptWasDenied"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_WAS_DENIED"
+			m_bRequired = true
+			m_recipientFilter = "speaker_and_observers"
+		},
+		
+		{
+			m_name = "ConceptAbilityPointGained"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_AP_GAINED"
+			m_bRequired = true
+			m_recipientFilter = "speaker_and_observers"
+			m_predelay.start = 1.000000
+		},
+		
+		{
+			m_name = "ConceptGoldGained"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_GOLD_GAINED"
+			m_bRequired = true
+			m_recipientFilter = "speaker_and_observers"
+			m_predelay.start = 1.500000
+		},
+		
+		{
+			m_name = "ConceptZipLine"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ZIPLINE"
+			m_bRequired = true
+			m_recipientFilter = "speaker_and_observers"
+		},
+		
+		{
+			m_name = "ConceptInterruptAbility"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_INTERRUPT_ABILITY"
+			m_bRequired = true
+			m_recipientFilter = "speaker_and_observers"
+		},
+		
+		{
+			m_name = "ConceptOpenShop"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_OPEN_SHOP"
+			m_bRequired = true
+			m_recipientFilter = "speaker_and_observers"
+		},
+		
+		{
+			m_name = "ConceptInteractWithAbility"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_INTERACT_WITH_ABILITY"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptEnemyEscaped"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ENEMY_ESCAPED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptUltReady"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ULTIMATE_READY"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptMovementEffort"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_MOVEMENT_EFFORT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptNeutralAggro"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_NEUTRAL_AGGRO"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptNeutralIdle"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_NEUTRAL_IDLE"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptHealedByPlayer"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_HEALED"
+			m_bRequired = true
+			m_respeakDelay.start = 10.000000
+		},
+		
+		{
+			m_name = "ConceptEnemyPickedUpRejuv"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ENEMY_PICKED_UP_REJUVENATOR"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptParry"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_PARRY"
+			m_bRequired = true
+			m_respeakDelay.start = 15.000000
+		},
+		
+		{
+			m_name = "ConceptAllyDied"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_ALLY_KILLED"
+			m_bRequired = true
+			m_recipientFilter = "speaker_and_observers"
+			m_respeakDelay.start = 10.000000
+		},
+		
+		{
+			m_name = "ConceptDropItem"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_DROP_ITEM"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptPing"
+			m_notes = "concepts"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_PING"
+			m_bRequired = true
+			m_respeakDelay.start = 3.000000
+		},
+		
+		{
+			m_name = "IsAfter50Minute"
+			m_notes = "Player Speaker"
+			m_matchKey = "gametime_minute"
+			m_matchExpr = ">50"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAfter20Minute"
+			m_notes = "Player Speaker"
+			m_matchKey = "gametime_minute"
+			m_matchExpr = ">20"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAfter10Minute"
+			m_notes = "Player Speaker"
+			m_matchKey = "gametime_minute"
+			m_matchExpr = ">10"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAfter1Minute"
+			m_notes = "Player Speaker"
+			m_matchKey = "gametime_minute"
+			m_matchExpr = ">1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBefore6Minute"
+			m_notes = "Player Speaker"
+			m_matchKey = "gametime_minute"
+			m_matchExpr = "<6"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBefore10Minute"
+			m_notes = "Player Speaker"
+			m_matchKey = "gametime_minute"
+			m_matchExpr = "<10"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBefore15Minute"
+			m_notes = "Player Speaker"
+			m_matchKey = "gametime_minute"
+			m_matchExpr = "<15"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBefore20Minute"
+			m_notes = "Player Speaker"
+			m_matchKey = "gametime_minute"
+			m_matchExpr = "<20"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBefore30Minute"
+			m_notes = "Player Speaker"
+			m_matchKey = "gametime_minute"
+			m_matchExpr = "<30"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHealthLowerThan10Percent"
+			m_notes = "Player Speaker"
+			m_matchKey = "playerhealthfrac"
+			m_matchExpr = "<0.1"
+			m_flWeight = 2.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyHealthLowerThan10Percent"
+			m_notes = "Player Speaker"
+			m_matchKey = "enemy_health_percent"
+			m_matchExpr = "<10"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetHealthBelow10Percent"
+			m_matchKey = "target_health_percent"
+			m_matchExpr = "<10"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetHealthBelow25Percent"
+			m_matchKey = "target_health_percent"
+			m_matchExpr = "<25"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetHealthBelow50Percent"
+			m_matchKey = "target_health_percent"
+			m_matchExpr = "<50"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetHealthAbove50Percent"
+			m_matchKey = "target_health_percent"
+			m_matchExpr = ">50"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetHealthAbove75Percent"
+			m_matchKey = "target_health_percent"
+			m_matchExpr = ">75"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "CanBuyT1Gear"
+			m_notes = "Player Speaker"
+			m_matchKey = "current_gold"
+			m_matchExpr = ">=800"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "CanBuyT2Gear"
+			m_notes = "Player Speaker"
+			m_matchKey = "current_gold"
+			m_matchExpr = ">=1600"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "CanBuyT3Gear"
+			m_notes = "Player Speaker"
+			m_matchKey = "current_gold"
+			m_matchExpr = ">=3200"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLowestNetworthOnTeam"
+			m_notes = "for ConceptZipLine"
+			m_matchKey = "is_lowest_networth"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetSelf"
+			m_notes = "this is part of ConceptAbilityCast for ability can target"
+			m_matchKey = "is_target_self"
+			m_matchExpr = "1"
+			m_flWeight = 2.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetEnemy"
+			m_notes = "this is part of ConceptAbilityCast for ability can target"
+			m_matchKey = "is_target_enemy"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetAlly"
+			m_notes = "this is part of ConceptAbilityCast for ability can target"
+			m_matchKey = "is_target_enemy"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "DidProjectileHitWorld"
+			m_notes = "this is part of ConceptAbilityProjectileHit for ability can target"
+			m_matchKey = "did_projecitle_hit_world"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "DidProjectileHitEnemy"
+			m_notes = "this is part of ConceptAbilityProjectileHit/ConceptAbilityHitByProjectile for ability can target"
+			m_matchKey = "did_projectile_hit_enemy"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetHighNetworth"
+			m_notes = "Networth Criterion"
+			m_matchKey = "networth_difference"
+			m_matchExpr = "<-6000"
+			m_flWeight = 2.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRevenge"
+			m_notes = "Kill Criterion"
+			m_matchKey = "revenge"
+			m_matchExpr = "1"
+			m_flWeight = 2.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyStreak"
+			m_notes = "Kill Criterion"
+			m_matchKey = "target_kill_streak"
+			m_matchExpr = ">3"
+			m_flWeight = 2.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMeleeKill"
+			m_notes = "Kill Criterion"
+			m_matchKey = "melee_kill"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAnnouncer"
+			m_notes = "types"
+			m_matchKey = "classname"
+			m_matchExpr = "citadel_announcer"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTier1Boss"
+			m_notes = "types"
+			m_matchKey = "classname"
+			m_matchExpr = "npc_trooper_boss"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTier2Boss"
+			m_notes = "types"
+			m_matchKey = "classname"
+			m_matchExpr = "npc_boss_tier2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTitan"
+			m_notes = "types"
+			m_matchKey = "classname"
+			m_matchExpr = "npc_boss_tier3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsNeutralTrooper"
+			m_notes = "types"
+			m_matchKey = "classname"
+			m_matchExpr = "npc_trooper_neutral"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTrooper"
+			m_notes = "types"
+			m_matchKey = "classname"
+			m_matchExpr = "npc_trooper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDuoDrone"
+			m_notes = "types"
+			m_matchKey = "classname"
+			m_matchExpr = "npc_duo_drone"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSushiBot"
+			m_notes = "types"
+			m_matchKey = "subclass"
+			m_matchExpr = "neutral_sushibot"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCleanBot"
+			m_notes = "types"
+			m_matchKey = "subclass"
+			m_matchExpr = "neutral_cleanbot"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsUnder50Meters"
+			m_notes = "for concept ally killed"
+			m_matchKey = "distance"
+			m_matchExpr = "<50"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLastAllyAlive"
+			m_notes = "for concept ally killed"
+			m_matchKey = "allies_alive"
+			m_matchExpr = "1"
+			m_flWeight = 3.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLastEnemyAlive"
+			m_notes = "for concept ally killed"
+			m_matchKey = "enemies_alive"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "YellowLane"
+			m_notes = "lane"
+			m_matchKey = "lane"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "GreenLane"
+			m_notes = "lane"
+			m_matchKey = "lane"
+			m_matchExpr = "3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "BlueLane"
+			m_notes = "lane"
+			m_matchKey = "lane"
+			m_matchExpr = "4"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "PurpleLane"
+			m_notes = "lane"
+			m_matchKey = "lane"
+			m_matchExpr = "6"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "NotEarlyIdol"
+			m_notes = "crate"
+			m_matchKey = "early_idol"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Ultimate"
+			m_notes = "abilities"
+			m_matchKey = "ultimate"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityZipLine"
+			m_notes = "abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_zip_line"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityBouncePad"
+			m_notes = "abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_bounce_pad"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityLasso"
+			m_notes = "abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_gravity_lasso"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityActionLassoDamageTarget"
+			m_notes = "abilities"
+			m_matchKey = "action"
+			m_matchExpr = "damage_lasso_target"
+		},
+		
+		{
+			m_name = "IsAbilityActionLoveBitesBurstDamage"
+			m_notes = "abilities"
+			m_matchKey = "action"
+			m_matchExpr = "love_bites_burst_damage"
+		},
+		
+		{
+			m_name = "UpgradeWeapon"
+			m_notes = "upgrades"
+			m_matchKey = "upgrade_type"
+			m_matchExpr = "Weapon"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "UpgradeArmor"
+			m_notes = "upgrades"
+			m_matchKey = "upgrade_type"
+			m_matchExpr = "Armor"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "UpgradeTech"
+			m_notes = "upgrades"
+			m_matchKey = "upgrade_type"
+			m_matchExpr = "Tech"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "UpgradeUtility"
+			m_notes = "upgrades"
+			m_matchKey = "upgrade_type"
+			m_matchExpr = "Utility"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityMetalSkin"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_metal_skin"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityRocketBoots"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_springy_boots"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityStasis"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_self_bubble"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityTechDefender"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_debuff_absorb"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityTechPurge"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_tech_purge"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityRefresher"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_ability_refresher"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityAreaImmobilize"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_aoe_root"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityEmpWave"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_aoe_silence"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityIceBlast"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_ice_blast"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityKnockdown"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_target_stun"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityRupture"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_rupture"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityGlitch"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_glitch"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilitySmoke"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_aoe_smoke_bomb"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityLeveler"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_leveler"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilitySurgingPower"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_surging_power"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilitySiphon"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_siphon"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityStasisBomb"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_stasis_bomb"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityPhantomStrike"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_phantom_strike"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityComboBreaker"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_combo_breaker"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityUnstoppable"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_unstoppable"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityAerialAssault"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_aerial_assault"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityDiscord"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_discord"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityVaccumWeb"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_aoe_root"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilitySoulDisruptor"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_mod_disruptor"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityEchoShard"
+			m_notes = "mod abilities"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_ability_power_shard"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Chance50"
+			m_notes = "chances \"randomnum\" is [0-100]"
+			m_matchKey = "randomnum"
+			m_matchExpr = "<50"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "TeamWinningByAlot"
+			m_notes = "open shop"
+			m_matchKey = "team_networth_diff"
+			m_matchExpr = ">10000"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "TeamLosingByAlot"
+			m_notes = "open shop"
+			m_matchKey = "team_networth_diff"
+			m_matchExpr = "<-8000"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "CanBuy"
+			m_notes = "open shop"
+			m_matchKey = "can_buy"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGoldFromObjective"
+			m_notes = "deny / was denied"
+			m_matchKey = "gold_from_objective"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsItemIdol"
+			m_notes = "pickup item"
+			m_matchKey = "item"
+			m_matchExpr = "idol"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsItemRejuv"
+			m_notes = "pickup item"
+			m_matchKey = "item"
+			m_matchExpr = "rejuv"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsItemNeutralGold"
+			m_notes = "pickup item"
+			m_matchKey = "item"
+			m_matchExpr = "neutral_gold"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLaningMetricsPhase"
+			m_notes = "guided bot match"
+			m_matchKey = "phase_laning_metrics"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsPowerUpPhase"
+			m_notes = "guided bot match"
+			m_matchKey = "phase_power_up"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillGuardianPhase"
+			m_notes = "guided bot match"
+			m_matchKey = "phase_kill_guardian"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCompletePhase"
+			m_notes = "guided bot match"
+			m_matchKey = "phase_complete"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWelcome"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "welcome"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLaneInfo"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "lane_info"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsZipline"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "zipline"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLearnAbility"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "learn_ability"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLearnInitialAbility"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "learn_initial_ability"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAim"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "zoom"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTakingGuardianDamage"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "taking_guardian_damage"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSpendMoney"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "buy_items"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSlide"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "slide"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMantle"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "mantle"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMelee"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "melee"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsUpgradeAbility"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "upgrade_ability"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFirstTier1Killed"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "tier1_killed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAdditionalTier1Killed"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "tier1_killed_repeat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTier1Remaining"
+			m_notes = "guided bot match"
+			m_matchKey = "enemy_t1s_destroyed"
+			m_matchExpr = "<4"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFirstTier2Killed"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "tier2_killed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAdditionalTier2Killed"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "tier2_killed_repeat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTier2Remaining"
+			m_notes = "guided bot match"
+			m_matchKey = "enemy_t2s_destroyed"
+			m_matchExpr = "<4"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTier3Killed"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "tier3_killed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsZiplineReminder"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "zipline_damage"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTrooperKilled"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "trooper_killed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMissedBounty"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "missed_bounty"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsPlayerDied"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "player_died"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGuideDied"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "guide_died"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDeniedEnemy"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "denied_enemy"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsNetWorthTaskIncomplete"
+			m_notes = "guided bot match"
+			m_matchKey = "net_worth_task_incomplete"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGoldOrbTaskIncomplete"
+			m_notes = "guided bot match"
+			m_matchKey = "gold_orb_task_incomplete"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRedOrbTaskIncomplete"
+			m_notes = "guided bot match"
+			m_matchKey = "red_orb_task_incomplete"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityUpgradeTaskIncomplete"
+			m_notes = "guided bot match"
+			m_matchKey = "ability_upgrade_task_incomplete"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsModPurchaseTaskIncomplete"
+			m_notes = "guided bot match"
+			m_matchKey = "mod_purchased_task_incomplete"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Is4TasksLeft"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "4_tasks_left"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Is3TasksLeft"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "3_tasks_left"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Is2TasksLeft"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "2_tasks_left"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Is1TasksLeft"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "1_tasks_left"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsNetWorthNag"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "net_worth_nag"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGoldCredNag"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "gold_cred_nag"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRedCredNag"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "red_cred_nag"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBuyModNag"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "buy_mod_nag"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsUpgradeAbilityNag"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "upgrade_ability_nag"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTurboModeGoBackToBase"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "turbo_mode_go_back_to_base"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTurboModeKillGuardian"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "turbo_mode_kill_guardian"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTurboModeComplete"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "turbo_mode_complete"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsReportCardGold"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "report_card_gold"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsReportCardSilver"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "report_card_silver"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsReportCardBronze"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "report_card_bronze"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGainGold"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "gold_gained"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGainAP"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "ap_gained"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGuidedPlayerGoldOver500"
+			m_notes = "guided bot match"
+			m_matchKey = "guided_player_gold"
+			m_matchExpr = ">=500"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGuidedPlayerGoldUnder500"
+			m_notes = "guided bot match"
+			m_matchKey = "guided_player_gold"
+			m_matchExpr = "<500"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGuidedPlayerAPOver0"
+			m_notes = "guided bot match"
+			m_matchKey = "guided_player_ap"
+			m_matchExpr = ">=1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGuidedPlayerAPEqual0"
+			m_notes = "guided bot match"
+			m_matchKey = "guided_player_ap"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLowHealth"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "low_health"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsParry"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "parry"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsStunned"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "stunned"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSilenced"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "silenced"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRooted"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "rooted"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDisarmed"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "disarmed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOpenShop"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "opened_shop"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOutOfStamina"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "no_stamina"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSeeNeutralCamp"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "see_neutral_camp"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSeeSafe"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "see_safe"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSeeMidboss"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "see_midboss"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetOutOfRange"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "target_out_of_range"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsIdolDropping"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "idol_dropping"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsT1ShieldUp"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "t1_shield_is_up"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsT1ShieldUpRepeat"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "t1_shield_is_up_repeat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsT2Damaged"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "t2_damaged"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillEnemyHero"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "kill_enemy_hero"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSpotEnemyHero"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "spot_enemy_hero"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSingleLane"
+			m_notes = "guided bot match"
+			m_matchKey = "active_lane"
+			m_matchExpr = ">0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAllLanes"
+			m_notes = "guided bot match"
+			m_matchKey = "active_lane"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLearnStartingAbility"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "learn_starting_ability"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsPlayerAheadOfCreepWave"
+			m_notes = "guided bot match"
+			m_matchKey = "guide_line"
+			m_matchExpr = "player_ahead_of_creeps"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHook"
+			m_notes = "added for common use"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_hook"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTeam2"
+			m_matchKey = "team_number"
+			m_matchExpr = "2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTeam3"
+			m_matchKey = "team_number"
+			m_matchExpr = "3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsNoKillStreak"
+			m_matchKey = "kill_streak"
+			m_matchExpr = "<=2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakLow"
+			m_matchKey = "kill_streak"
+			m_matchExpr = ">=4,<=6"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakMid"
+			m_matchKey = "kill_streak"
+			m_matchExpr = ">=8,<=10"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKillStreakHigh"
+			m_matchKey = "kill_streak"
+			m_matchExpr = ">=12"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCombo"
+			m_notes = "added for common use"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_ult_combo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyStreakMid"
+			m_notes = "Kill Criterion"
+			m_matchKey = "target_kill_streak"
+			m_matchExpr = ">5"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsPsychicLift"
+			m_notes = "added for common use"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_psychic_lift"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterEnemy"
+			m_matchKey = "caster_is_enemy"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterAlly"
+			m_matchKey = "caster_is_enemy"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetFarFromCaster"
+			m_matchKey = "caster_distance_to_target"
+			m_matchExpr = ">35"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptObserveProjectileHit"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_OBSERVE_PROJECTILE_HIT"
+			m_bRequired = true
+			m_respeakDelay.start = 15.000000
+		},
+		
+		{
+			m_name = "ConceptObserveCast"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_OBSERVE_CAST"
+			m_bRequired = true
+			m_respeakDelay.start = 10.000000
+		},
+		
+		{
+			m_name = "ConceptObserveCastFinish"
+			m_matchKey = "Concept"
+			m_matchExpr = "TLK_CITADEL_OBSERVE_CAST_FINISH"
+			m_bRequired = true
+			m_respeakDelay.start = 15.000000
+		},
+		
+		{
+			m_name = "IsStormCloud"
+			m_notes = "added for common use"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_storm_cloud"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCloseToCaster"
+			m_matchKey = "observer_distance_to_caster"
+			m_matchExpr = "<15"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "CasterHasUltimate"
+			m_matchKey = "caster_has_ultimate_ready"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsChargedTackle"
+			m_notes = "added for common use"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_charged_tackle"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMidDistanceFromCaster"
+			m_matchKey = "observer_distance_to_caster"
+			m_matchExpr = "<30"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "is_event_idol_spawn"
+			m_matchKey = "event"
+			m_matchExpr = "idol_spawn"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "is_event_idol_sitting"
+			m_matchKey = "event"
+			m_matchExpr = "idol_sitting"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "is_event_idol_landing"
+			m_matchKey = "event"
+			m_matchExpr = "idol_landing"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "is_event_idol_delivered"
+			m_matchKey = "event"
+			m_matchExpr = "idol_delivered"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAssassinate"
+			m_notes = "added for common use"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_hornet_snipe"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterFacingObserver"
+			m_matchKey = "caster_facing_observer"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsChargedShot"
+			m_notes = "added for common use"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_charged_shot"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSleepDagger"
+			m_notes = "added for common use"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_sleep_dagger"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRiotProtocol"
+			m_notes = "added for common use"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_warden_riot_protocol"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSwap"
+			m_notes = "added for common use"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_chrono_swap"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHealthSwap"
+			m_notes = "added for common use"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_health_swap"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsInfinitySlash"
+			m_notes = "added for common use"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_infinity_slash"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsObserverMidToTarget"
+			m_matchKey = "observer_distance_to_target"
+			m_matchExpr = "<=25"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHealthLowerThan25Percent"
+			m_matchKey = "playerhealthfrac"
+			m_matchExpr = "<.25"
+			m_flWeight = 2.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsObserverLowHealth"
+			m_matchKey = "observer_health_pct"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCarryingIdol"
+			m_matchKey = "is_carrying_idol"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "is_event_idol_holding"
+			m_matchKey = "event"
+			m_matchExpr = "idol_holding"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "CanBuyT4Gear"
+			m_matchKey = "current_gold"
+			m_matchExpr = ">=6500"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDamageHigh"
+			m_matchKey = "damage"
+			m_matchExpr = ">=150"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMoveTypeGroundDash"
+			m_matchKey = "move_type"
+			m_matchExpr = "ground_dash"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMoveTypeAirDash"
+			m_matchKey = "move_type"
+			m_matchExpr = "air_dash"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMoveTypeSlide"
+			m_matchKey = "move_type"
+			m_matchExpr = "slide"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMoveTypeGroundJump"
+			m_matchKey = "move_type"
+			m_matchExpr = "ground_jump"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMoveTypeAirJump"
+			m_matchKey = "move_type"
+			m_matchExpr = "air_jump"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMoveTypeMantle"
+			m_matchKey = "move_type"
+			m_matchExpr = "mantle"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDivinersKevlar"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_diviners_kevlar"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBeltFedMagazine"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_belt_fed_magazine"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDetentionRounds"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_weapon_detention_ammo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGlassCannon"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_glass_cannon"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMagicOverflow"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_tech_overflow"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRicochet"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_ricochet"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsPhantomStrike"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_phantom_strike"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSilencer"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_silencer"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSurgingPower"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_surging_power"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsUnstoppable"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_unstoppable"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEscalatingExposure"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_escalating_exposure"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLeech"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_damage_recycler"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEchoShard"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_ability_power_shard"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGlitch"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_glitch"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRefresher"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_ability_refresher"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsShadowWeave"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_cloaking_device_active"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSiphonBullets"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_siphon_bullets"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFervor"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_fervor"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBoundlessSpirit"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_boundless_spirit"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsItemTier1"
+			m_matchKey = "item_tier"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsItemTier2"
+			m_matchKey = "item_tier"
+			m_matchExpr = "2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsItemTier3"
+			m_matchKey = "item_tier"
+			m_matchExpr = "3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsItemTier4"
+			m_matchKey = "item_tier"
+			m_matchExpr = "4"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Affected1Player"
+			m_matchKey = "players_affected"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Affected2Players"
+			m_matchKey = "players_affected"
+			m_matchExpr = ">=2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Affected3Players"
+			m_matchKey = "players_affected"
+			m_matchExpr = ">=3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Affected4Players"
+			m_matchKey = "players_affected"
+			m_matchExpr = ">=4"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Affected5Players"
+			m_matchKey = "players_affected"
+			m_matchExpr = ">=5"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Affected6Players"
+			m_matchKey = "players_affected"
+			m_matchExpr = ">=6"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Killed1Player"
+			m_matchKey = "players_killed"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Killed2Players"
+			m_matchKey = "players_killed"
+			m_matchExpr = ">=2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Killed3Players"
+			m_matchKey = "players_killed"
+			m_matchExpr = ">=3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Killed4Players"
+			m_matchKey = "players_killed"
+			m_matchExpr = ">=4"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Killed5Players"
+			m_matchKey = "players_killed"
+			m_matchExpr = ">=5"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Killed6Players"
+			m_matchKey = "players_killed"
+			m_matchExpr = ">=6"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCastSuccessfull"
+			m_matchKey = "cast_success"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBlackHole"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_self_vacuum"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AffectedNoPlayer"
+			m_matchKey = "players_affected"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHealthy"
+			m_matchKey = "playerhealthfrac"
+			m_matchExpr = ">.95"
+			m_flWeight = 2.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBulletFlurry"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_bullet_flurry"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLeap"
+			m_matchKey = "ability_name"
+			m_matchExpr = "citadel_ability_bull_leap"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptUltimateCast"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_CAST_ULTIMATE"
+			m_bRequired = true
+			m_predelay.start = 0.150000
+		},
+		
+		{
+			m_name = "IsCripplingHeadshot"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_banshee_slugs"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFrenzy"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_fervor"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLuckyShot"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_critshot"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsInhibitor"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_inhibitor"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsColossus"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_colossus"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMysticReverb"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_tech_bleed"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityColossus"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_colossus"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHealthAbove50Percent"
+			m_matchKey = "playerhealthfrac"
+			m_matchExpr = ">0.5"
+			m_flWeight = 2.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptObservedSurvival"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_OBSERVED_SURVIVAL"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetHealthAbove25Percent"
+			m_matchKey = "target_health_percent"
+			m_matchExpr = ">25"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTargetHealthAbove10Percent"
+			m_matchKey = "target_health_percent"
+			m_matchExpr = ">10"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRecentDamageUnder5Percent"
+			m_matchKey = "recent_damage_percent"
+			m_matchExpr = "<5"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRecentDamageUnder2Percent"
+			m_matchKey = "recent_damage_percent"
+			m_matchExpr = "<2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRecentDamageUnder1Percent"
+			m_matchKey = "recent_damage_percent"
+			m_matchExpr = "<1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDamageOver50Percent"
+			m_matchKey = "damage_percent"
+			m_matchExpr = "> 50"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDamageOver25Percent"
+			m_matchKey = "damage_percent"
+			m_matchExpr = "> 25"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "HasHealedOver20Percent"
+			m_matchKey = "healing_percent"
+			m_matchExpr = ">20"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDamageOver40Percent"
+			m_matchKey = "damage_percent"
+			m_matchExpr = "> 40"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDamageOver20Percent"
+			m_matchKey = "damage_percent"
+			m_matchExpr = "> 20"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "HasHealedOver15Percent"
+			m_matchKey = "healing_percent"
+			m_matchExpr = ">15"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDamageOver10Percent"
+			m_matchKey = "damage_percent"
+			m_matchExpr = "> 10"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAbilityInterrupted"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ABILITY_INTERRUPTED"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptObservedInterruption"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_OBSERVED_INTERRUPT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsInterruptingAbilityCombo"
+			m_matchKey = "interrupting_ability"
+			m_matchExpr = "ability_ult_combo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsInterruptingAbilityGuidedArrow"
+			m_matchKey = "interrupting_ability"
+			m_matchExpr = "ability_guided_arrow"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyCastingLaserBeam"
+			m_matchKey = "enemy_casting_ability"
+			m_matchExpr = "citadel_ability_bebop_laser_beam"
+			m_flWeight = 4.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyCastingFireBomb"
+			m_matchKey = "enemy_casting_ability"
+			m_matchExpr = "ability_fire_bomb"
+			m_flWeight = 4.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsEnemyCastingSmokeBomb"
+			m_matchKey = "enemy_casting_ability"
+			m_matchExpr = "ability_smoke_bomb"
+			m_flWeight = 4.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLine01"
+			m_matchKey = "conversation_line"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLine02"
+			m_matchKey = "conversation_line"
+			m_matchExpr = "2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLine03"
+			m_matchKey = "conversation_line"
+			m_matchExpr = "3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLine04"
+			m_matchKey = "conversation_line"
+			m_matchExpr = "4"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLine05"
+			m_matchKey = "conversation_line"
+			m_matchExpr = "5"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLine06"
+			m_matchKey = "conversation_line"
+			m_matchExpr = "6"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLine07"
+			m_matchKey = "conversation_line"
+			m_matchExpr = "7"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLine08"
+			m_matchKey = "conversation_line"
+			m_matchExpr = "8"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLine09"
+			m_matchKey = "conversation_line"
+			m_matchExpr = "9"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLine10"
+			m_matchKey = "conversation_line"
+			m_matchExpr = "10"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptConversation"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_CONVERSATION"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsConversation1"
+			m_matchKey = "ConversationName"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsConversation2"
+			m_matchKey = "ConversationName"
+			m_matchExpr = "2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsConversation3"
+			m_matchKey = "ConversationName"
+			m_matchExpr = "3"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptLevelGained"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_LEVEL_GAINED"
+			m_bRequired = true
+			m_respeakDelay.start = 120.000000
+			m_predelay.start = 1.000000
+		},
+		
+		{
+			m_name = "ConceptLeavingArea"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_LEAVING_AREA"
+			m_bRequired = true
+			m_respeakDelay.start = 60.000000
+		},
+		
+		{
+			m_name = "ConceptHunting"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_HUNTING"
+			m_bRequired = true
+			m_respeakDelay.start = 30.000000
+		},
+		
+		{
+			m_name = "ConceptBeCareful"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_BE_CAREFUL"
+			m_bRequired = true
+			m_respeakDelay.start = 60.000000
+		},
+		
+		{
+			m_name = "InEnemyTerritoryFor2Seconds"
+			m_matchKey = "time_in_enemy_territory"
+			m_matchExpr = ">=2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AwayFromAlliesFor2Seconds"
+			m_matchKey = "time_since_near_ally"
+			m_matchExpr = ">=2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "NoNearbyEnemiesFor2Seconds"
+			m_matchKey = "time_since_saw_nearby_enemy"
+			m_matchExpr = ">=2"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "InEnemyTerritoryFor5Seconds"
+			m_matchKey = "time_in_enemy_territory"
+			m_matchExpr = ">=5"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "InEnemyTerritoryFor20Seconds"
+			m_matchKey = "time_in_enemy_territory"
+			m_matchExpr = ">=20"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHealthLowerThan20Percent"
+			m_matchKey = "playerhealthfrac"
+			m_matchExpr = "<.20"
+			m_flWeight = 2.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAfter5Minute"
+			m_notes = "Player Speaker"
+			m_matchKey = "gametime_minute"
+			m_matchExpr = ">5"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Chance75"
+			m_notes = "chances \"randomnum\" is [0-100]"
+			m_matchKey = "randomnum"
+			m_matchExpr = "<75"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptSpawn"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_SPAWN"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "DiedOnce"
+			m_matchKey = "death_count"
+			m_matchExpr = ">0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptSeasonalEvent"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_SEASONAL_EVENT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsChristmasCheer"
+			m_matchKey = "has_santa_hat"
+			m_matchExpr = "1"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMagicCarpet"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_magic_carpet"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsVeilWalker"
+			m_matchKey = "upgrade_name"
+			m_matchExpr = "upgrade_veil_walker"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsItemTier5"
+			m_matchKey = "item_tier"
+			m_matchExpr = "5"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsToggledOn"
+			m_matchKey = "toggle_state"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsToggledOff"
+			m_matchKey = "toggle_state"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityHotel"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_doorman_hotel"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsActionTeleportedToHotel"
+			m_matchKey = "action"
+			m_matchExpr = "teleported_to_hotel"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptDoormanHotelTaunt"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_DOORMAN_HOTEL_TAUNT"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsNotMaxLevel"
+			m_matchKey = "level"
+			m_matchExpr = "<=33"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "ConceptAbilityReady"
+			m_matchKey = "concept"
+			m_matchExpr = "TLK_CITADEL_ABILITY_READY"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMagicianBolt"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_magician_magicbolt"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSummonAssistant"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_magician_cloneturret"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsRabbitTrick"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_magician_animalhexarea"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMagicianUlt"
+			m_matchKey = "ability_name"
+			m_matchExpr = "ability_magician_bigbolt"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSpokenToAlliesOnly"
+			m_matchKey = "spoken_to_allies_only"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSpokenToEnemiesOnly"
+			m_matchKey = "spoken_to_enemies_only"
+			m_matchExpr = "1"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityCultistSacrifice"
+			m_matchKey = "ability_name"
+			m_matchExpr = "upgrade_non_player_bonus_sacrifice"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCastFailure"
+			m_matchKey = "cast_success"
+			m_matchExpr = "0"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "Chance100"
+			m_matchKey = "randomnum"
+			m_matchExpr = "100"
+			m_flWeight = 10.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "DidAbilityKill"
+			m_matchKey = "players_killed"
+			m_matchExpr = "0>"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAkimbo"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_akimbo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBallista"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_ballista"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAstro"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_astro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAtlas"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_atlas"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBebop"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_bebop"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsChrono"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_chrono"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDynamo"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_dynamo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsForge"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_forge"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGhost"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_ghost"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsGigawatt"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_gigawatt"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHaze"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_haze"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsHornet"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_hornet"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsInferno"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_inferno"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKali"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_kali"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKelvin"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_kelvin"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsKrill"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_krill"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsLash"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_lash"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMagician_Henry"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_magician_henry"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMagician_Savannah"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_magician_savannah"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsMirage"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_mirage"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsNano"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_nano"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOrion"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_orion"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsShiv"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_shiv"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSlork"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_slork"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSynth"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_synth"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTengu"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_tengu"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTokamak"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_tokamak"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsViscous"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_viscous"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWarden"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_warden"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWraith"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_wraith"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWrecker"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_wrecker"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsYamato"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_yamato"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsViper"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_viper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsTrapper"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_trapper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOperative"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_operative"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsPriest"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_priest"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFrank"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_frank"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBookworm"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_bookworm"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsVampirebat"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_vampirebat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDoorman"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_doorman"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsDrifter"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_drifter"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsPunkgoat"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_punkgoat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBoho"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_boho"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFencer"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_fencer"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFamiliar"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_familiar"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFamiliar_Asleep"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_familiar_asleep"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsUnicorn"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_unicorn"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsNecro"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_necro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWerewolf"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_werewolf"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWerewolf_Wolf"
+			m_matchKey = "classname"
+			m_matchExpr = "hero_werewolf_wolf"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyAkimbo"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_akimbo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyBallista"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_ballista"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyAstro"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_astro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyAtlas"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_atlas"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyBebop"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_bebop"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyChrono"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_chrono"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyDynamo"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_dynamo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyForge"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_forge"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyGhost"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_ghost"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyGigawatt"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_gigawatt"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyHaze"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_haze"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyHornet"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_hornet"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyInferno"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_inferno"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyKali"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_kali"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyKelvin"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_kelvin"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyKrill"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_krill"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyLash"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_lash"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyMagician"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_magician"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyMirage"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_mirage"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyNano"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_nano"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyOrion"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_orion"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyShiv"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_shiv"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllySlork"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_slork"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllySynth"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_synth"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyTengu"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_tengu"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyTokamak"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_tokamak"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyViscous"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_viscous"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyWarden"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_warden"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyWraith"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_wraith"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyWrecker"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_wrecker"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyYamato"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_yamato"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyViper"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_viper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyTrapper"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_trapper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyOperative"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_operative"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyPriest"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_priest"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyFrank"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_frank"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyVampirebat"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_vampirebat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyBookworm"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_bookworm"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyDoorman"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_doorman"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyDrifter"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_drifter"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyPunkgoat"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_punkgoat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyBoho"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_boho"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyFencer"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_fencer"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyFamiliar"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_familiar"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyUnicorn"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_unicorn"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyNecro"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_necro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "AllyWerewolf"
+			m_matchKey = "ally_hero_name"
+			m_matchExpr = "hero_werewolf"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyAkimbo"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_akimbo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyBallista"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_ballista"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyAstro"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_astro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyAtlas"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_atlas"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyBebop"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_bebop"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyChrono"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_chrono"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyDynamo"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_dynamo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyForge"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_forge"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyGhost"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_ghost"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyGigawatt"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_gigawatt"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyHaze"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_haze"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyHornet"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_hornet"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyInferno"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_inferno"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyKali"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_kali"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyKelvin"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_kelvin"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyKrill"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_krill"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyLash"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_lash"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyMagician"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_magician"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyMirage"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_mirage"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyNano"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_nano"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyOrion"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_orion"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyShiv"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_shiv"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemySlork"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_slork"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemySynth"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_synth"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyTengu"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_tengu"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyTokamak"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_tokamak"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyViscous"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_viscous"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyWarden"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_warden"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyWraith"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_wraith"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyWrecker"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_wrecker"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyYamato"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_yamato"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyViper"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_viper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyTrapper"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_trapper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyOperative"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_operative"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyPriest"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_priest"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyFrank"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_frank"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyVampirebat"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_vampirebat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyBookworm"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_bookworm"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyDoorman"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_doorman"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyDrifter"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_drifter"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyPunkgoat"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_punkgoat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyBoho"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_boho"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyFencer"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_fencer"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyFamiliar"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_familiar"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyUnicorn"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_unicorn"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyNecro"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_necro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "EnemyWerewolf"
+			m_matchKey = "enemy_hero_name"
+			m_matchExpr = "hero_werewolf"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterAkimbo"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_akimbo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterBallista"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_ballista"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterAstro"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_astro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterAtlas"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_atlas"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterBebop"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_bebop"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterChrono"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_chrono"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterDynamo"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_dynamo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterForge"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_forge"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterGhost"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_ghost"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterGigawatt"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_gigawatt"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterHaze"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_haze"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterHornet"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_hornet"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterInferno"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_inferno"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterKali"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_kali"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterKelvin"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_kelvin"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterKrill"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_krill"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterLash"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_lash"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterMagician"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_magician"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterMirage"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_mirage"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterNano"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_nano"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterOrion"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_orion"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterShiv"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_shiv"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterSlork"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_slork"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterSynth"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_synth"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterTengu"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_tengu"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterTokamak"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_tokamak"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterViscous"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_viscous"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterWarden"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_warden"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterWraith"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_wraith"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterWrecker"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_wrecker"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterYamato"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_yamato"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterViper"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_viper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterTrapper"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_trapper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterOperative"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_operative"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterPriest"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_priest"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterFrank"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_frank"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterVampirebat"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_vampirebat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterBookworm"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_bookworm"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterDoorman"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_doorman"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterDrifter"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_drifter"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterPunkgoat"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_punkgoat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterBoho"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_boho"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterFencer"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_fencer"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterFamiliar"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_familiar"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterUnicorn"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_unicorn"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterNecro"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_necro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCasterWerewolf"
+			m_matchKey = "caster_hero_name"
+			m_matchExpr = "hero_werewolf"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroAstro"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_astro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroAtlas"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_atlas"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroBebop"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_bebop"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroBoho"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_boho"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroBookworm"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_bookworm"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroChrono"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_chrono"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroDoorman"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_doorman"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroDrifter"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_drifter"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroDynamo"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_dynamo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroFamiliar"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_familiar"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroFencer"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_fencer"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroForge"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_forge"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroFrank"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_frank"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroGhost"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_ghost"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroGigawatt"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_gigawatt"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroHaze"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_haze"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroHornet"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_hornet"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroInferno"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_inferno"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroKelvin"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_kelvin"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroKrill"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_krill"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroLash"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_lash"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroMagician"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_magician"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroMirage"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_mirage"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroNano"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_nano"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroNecro"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_necro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroOperative"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_operative"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroOrion"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_orion"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroPriest"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_priest"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroPunkgoat"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_punkgoat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroShiv"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_shiv"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroSynth"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_synth"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroTengu"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_tengu"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroTrapper"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_trapper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroUnicorn"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_unicorn"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroVampireBat"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_vampirebat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroViper"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_viper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroViscous"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_viscous"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroWarden"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_warden"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroWerewolf"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_werewolf"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroWraith"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_wraith"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroWrecker"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_wrecker"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOtherHeroYamato"
+			m_matchKey = "targetclassname"
+			m_matchExpr = "hero_yamato"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromAkimbo"
+			m_matchKey = "From"
+			m_matchExpr = "hero_akimbo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromBallista"
+			m_matchKey = "From"
+			m_matchExpr = "hero_ballista"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromAstro"
+			m_matchKey = "From"
+			m_matchExpr = "hero_astro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromAtlas"
+			m_matchKey = "From"
+			m_matchExpr = "hero_atlas"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromBebop"
+			m_matchKey = "From"
+			m_matchExpr = "hero_bebop"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromChrono"
+			m_matchKey = "From"
+			m_matchExpr = "hero_chrono"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromDynamo"
+			m_matchKey = "From"
+			m_matchExpr = "hero_dynamo"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromForge"
+			m_matchKey = "From"
+			m_matchExpr = "hero_forge"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromGhost"
+			m_matchKey = "From"
+			m_matchExpr = "hero_ghost"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromGigawatt"
+			m_matchKey = "From"
+			m_matchExpr = "hero_gigawatt"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromHaze"
+			m_matchKey = "From"
+			m_matchExpr = "hero_haze"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromHornet"
+			m_matchKey = "From"
+			m_matchExpr = "hero_hornet"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromInferno"
+			m_matchKey = "From"
+			m_matchExpr = "hero_inferno"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromKali"
+			m_matchKey = "From"
+			m_matchExpr = "hero_kali"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromKelvin"
+			m_matchKey = "From"
+			m_matchExpr = "hero_kelvin"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromKrill"
+			m_matchKey = "From"
+			m_matchExpr = "hero_krill"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromLash"
+			m_matchKey = "From"
+			m_matchExpr = "hero_lash"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromMagician"
+			m_matchKey = "From"
+			m_matchExpr = "hero_magician"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromMirage"
+			m_matchKey = "From"
+			m_matchExpr = "hero_mirage"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromNano"
+			m_matchKey = "From"
+			m_matchExpr = "hero_nano"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromOrion"
+			m_matchKey = "From"
+			m_matchExpr = "hero_orion"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromShiv"
+			m_matchKey = "From"
+			m_matchExpr = "hero_shiv"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromSlork"
+			m_matchKey = "From"
+			m_matchExpr = "hero_slork"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromSynth"
+			m_matchKey = "From"
+			m_matchExpr = "hero_synth"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromTengu"
+			m_matchKey = "From"
+			m_matchExpr = "hero_tengu"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromTokamak"
+			m_matchKey = "From"
+			m_matchExpr = "hero_tokamak"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromViscous"
+			m_matchKey = "From"
+			m_matchExpr = "hero_viscous"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromWarden"
+			m_matchKey = "From"
+			m_matchExpr = "hero_warden"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromWraith"
+			m_matchKey = "From"
+			m_matchExpr = "hero_wraith"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromWrecker"
+			m_matchKey = "From"
+			m_matchExpr = "hero_wrecker"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromYamato"
+			m_matchKey = "From"
+			m_matchExpr = "hero_yamato"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromViper"
+			m_matchKey = "From"
+			m_matchExpr = "hero_viper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromTrapper"
+			m_matchKey = "From"
+			m_matchExpr = "hero_trapper"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromOperative"
+			m_matchKey = "From"
+			m_matchExpr = "hero_operative"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromPriest"
+			m_matchKey = "From"
+			m_matchExpr = "hero_priest"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromFrank"
+			m_matchKey = "From"
+			m_matchExpr = "hero_frank"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromVampirebat"
+			m_matchKey = "From"
+			m_matchExpr = "hero_vampirebat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromBookworm"
+			m_matchKey = "From"
+			m_matchExpr = "hero_bookworm"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromDoorman"
+			m_matchKey = "From"
+			m_matchExpr = "hero_doorman"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromDrifter"
+			m_matchKey = "From"
+			m_matchExpr = "hero_drifter"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromPunkgoat"
+			m_matchKey = "From"
+			m_matchExpr = "hero_punkgoat"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromBoho"
+			m_matchKey = "From"
+			m_matchExpr = "hero_boho"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromFencer"
+			m_matchKey = "From"
+			m_matchExpr = "hero_fencer"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromFamiliar"
+			m_matchKey = "From"
+			m_matchExpr = "hero_familiar"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromUnicorn"
+			m_matchKey = "From"
+			m_matchExpr = "hero_unicorn"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromNecro"
+			m_matchKey = "From"
+			m_matchExpr = "hero_necro"
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFromWerewolf"
+			m_matchKey = "From"
+			m_matchExpr = "hero_werewolf"
+			m_bRequired = true
+		},
+	]
+	m_ConceptPriorities = 
+	{
+		TLK_CITADEL_ABILITY_READY = 1
+		TLK_CITADEL_DOORMAN_HOTEL_TAUNT = 489
+		TLK_CITADEL_CONVERSATION = 516
+		TLK_CITADEL_SEASONAL_EVENT = 900
+		TLK_CITADEL_SPAWN = 450
+		TLK_CITADEL_LEVEL_GAINED = 370
+		TLK_CITADEL_LEAVING_AREA = 451
+		TLK_CITADEL_OBSERVED_INTERRUPT = 450
+		TLK_CITADEL_OBSERVED_SURVIVAL = 450
+		TLK_CITADEL_ABILITY_INTERRUPTED = 450
+		TLK_CITADEL_SURVIVED = 450
+		TLK_CITADEL_DENY = 370
+		TLK_CITADEL_BE_CAREFUL = 0
+		TLK_CITADEL_HUNTING = 450
+		TLK_CITADEL_CAST_ULTIMATE = 485
+		TLK_CITADEL_DROP_ITEM = 1
+		TLK_CITADEL_NEUTRAL_IDLE = 1
+		TLK_CITADEL_NEUTRAL_AGGRO = 2
+		TLK_CITADEL_MOVEMMENT_EFFORT = 0
+		TLK_CITADEL_ULTIMATE_READY = 375
+		TLK_CITADEL_IDOL = 2147483647
+		TLK_CITADEL_PROJECTILE_HIT = 450
+		TLK_CITADEL_CAST_FINISH = 450
+		TLK_CITADEL_UPGRADE_ABILITY = 370
+		TLK_CITADEL_BUY_UPGRADE = 2147483647
+		TLK_CITADEL_OPEN_SHOP = 2147483647
+		TLK_CITADEL_MATCH_START = 520
+		TLK_CITADEL_VICTORY = 510
+		TLK_CITADEL_DEFEAT = 510
+		TLK_CITADEL_GUIDED_BOT_MATCH = 2147483647
+		TLK_CITADEL_HERO_SELECTED = 2147483647
+		TLK_CITADEL_OBSERVE_PROJECTILE_HIT = 450
+		TLK_CITADEL_GOLD_GAINED = 370
+		TLK_CITADEL_AP_GAINED = 310
+		TLK_CITADEL_PARRY = 450
+		TLK_CITADEL_KILL_ASSIST = 450
+		TLK_CITADEL_HEALED = 450
+		TLK_CITADEL_ENEMY_ESCAPED = 386
+		TLK_CITADEL_WAS_DENIED = 381
+		TLK_CITADEL_ZIPLINE = 387
+		TLK_CITADEL_PICKUP_ITEM = 370
+		TLK_CITADEL_CAST_EXECUTE = 382
+		TLK_CITADEL_ALLY_KILLED = 459
+		TLK_CITADEL_ENEMY_PICKED_UP_REJUVENATOR = 460
+		TLK_CITADEL_KILL = 460
+		TLK_CITADEL_KILL_STREAK = 485
+		TLK_CITADEL_INTERACT_WITH_ABILITY = 450
+		TLK_CITADEL_INTERRUPT_ABILITY = 450
+		TLK_CITADEL_CAST_TARGET_VICTIM = 450
+		TLK_CITADEL_HIT_BY_PROJECTILE = 450
+		TLK_CITADEL_OBSERVE_CAST_FINISH = 450
+		TLK_CITADEL_OBSERVE_CAST = 450
+		TLK_CITADEL_PING = 515
+		TLK_CITADEL_DEATH = 490
+		TLK_CITADEL_PAIN = -1
+	}
+}

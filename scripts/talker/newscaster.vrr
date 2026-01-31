@@ -1,0 +1,431 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrr_c1:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_criterion.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/vo/generated_vo_misc.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_name = "general_newscaster"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_01_alt_01_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_01_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_02_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_03_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_05_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_06_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_07_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_08_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_09_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_10_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_11_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_12_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_14_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_15_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_17_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_19_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_20_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_21_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_22_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_23_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_24_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_26_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_27_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_28_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_29_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_30_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_31_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_32_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_33_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_34_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_35_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_36_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_38_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_40_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_41_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_42_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_43_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_44_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_45_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_46_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_47_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_48_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_49_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_50_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_51_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_52_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_53_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_54_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_55_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_56_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_57_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_58_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_59_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_60_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_61_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_62_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_63_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_64_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_65_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_66_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_67_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_68_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_69_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_70_02_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_70_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_71_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_72_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_73_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_74_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_75_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_76_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_77_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_78_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_81_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_82_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_83_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_84_newscaster"
+				},
+				
+				{
+					m_type = "SPEAK"
+					m_value = "newscaster_headline_85_newscaster"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "general_newscaster"
+				m_Requirements = 
+				[
+					"IsNewscaster",
+					"ConceptCustom",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "IsNewscaster"
+			m_matchKey = "classname"
+			m_matchExpr = "citadel_point_talker"
+			m_bRequired = true
+		},
+	]
+	m_speakerType = "citadel_point_talker"
+}
